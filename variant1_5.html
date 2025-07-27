@@ -371,12 +371,12 @@
         }
 
         .event-card {
-            background: white;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
             border-radius: 20px;
-            overflow: hidden;
+            padding: 30px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.1);
             transition: all 0.3s;
-            border: 1px solid #e9ecef;
+            border-left: 5px solid #0057B8;
         }
 
         .event-card:hover {
@@ -384,40 +384,33 @@
             box-shadow: 0 20px 50px rgba(0,0,0,0.15);
         }
 
-        .event-card img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            display: block;
+        .event-date {
+            background: #0057B8;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 10px;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 15px;
         }
 
-        .event-content {
-            padding: 25px;
-        }
-
-        .event-content h3 {
+        .event-title {
             font-size: 1.3rem;
             font-weight: bold;
             color: #0057B8;
-            margin-bottom: 15px;
-            line-height: 1.4;
+            margin-bottom: 10px;
         }
 
-        .event-content p {
+        .event-description {
             color: #666;
             line-height: 1.6;
             margin-bottom: 15px;
         }
 
-        .event-link {
-            color: #0057B8;
-            text-decoration: none;
-            font-weight: 600;
-            transition: color 0.3s;
-        }
-
-        .event-link:hover {
-            color: #004494;
+        .event-location {
+            font-size: 0.9rem;
+            color: #888;
+            font-style: italic;
         }
 
         /* Join the Cause Section */
@@ -578,9 +571,7 @@
                 height: 80px;
             }
             
-            .services-grid,
-            .events-grid,
-            .join-grid {
+            .services-grid {
                 grid-template-columns: 1fr;
             }
             
@@ -690,46 +681,28 @@
             <h2 class="section-title">Анонс майбутніх заходів</h2>
             <div class="events-grid">
                 <div class="event-card">
-                    <img src="uploads/2025/06/1-1024x768.png" alt="LinkedIn семінар" 
-                         srcset="uploads/2025/06/1-1024x768.png 1024w, 
-                                 uploads/2025/06/1-300x225.png 300w, 
-                                 uploads/2025/06/1-768x576.png 768w, 
-                                 uploads/2025/06/1-16x12.png 16w, 
-                                 uploads/2025/06/1.png 1080w" 
-                         sizes="(max-width: 800px) 100vw, 400px">
-                    <div class="event-content">
-                        <h3>Як виглядає профіль LinkedIn, який дійсно працює?</h3>
-                        <p>Саме це ми досліджували вчора під час нашого семінару в прямому ефірі в Дандерюді з Яною Літвіновою — і це було потужно!</p>
-                        <a href="https://example.com" class="event-link">Детальніше →</a>
+                    <div class="event-date">15 лютого 2025</div>
+                    <div class="event-title">Семінар з пошуку роботи</div>
+                    <div class="event-description">
+                        Практичний семінар з підготовки резюме, проходження співбесід та пошуку роботи в Швеції. Досвідчені консультанти поділяться секретами успіху.
                     </div>
+                    <div class="event-location">📍 Стокгольм, Kulturhuset</div>
                 </div>
                 <div class="event-card">
-                    <img src="uploads/2025/06/2-1024x768.png" alt="Stockholm Tech Show" 
-                         srcset="uploads/2025/06/2-1024x768.png 1024w, 
-                                 uploads/2025/06/2-300x225.png 300w, 
-                                 uploads/2025/06/2-768x576.png 768w, 
-                                 uploads/2025/06/2-16x12.png 16w, 
-                                 uploads/2025/06/2.png 1280w" 
-                         sizes="(max-width: 800px) 100vw, 400px">
-                    <div class="event-content">
-                        <h3>Виставковий та конгрес-центр Kistamässan</h3>
-                        <p>Вчора ми у SVIT UA мали можливість відвідати Stockholm Tech Show 2025 у виставковому та конгрес-центрі Kistamässan — динамічну подію, яка зібрала світових лідерів у галузі штучного інтелекту.</p>
-                        <a href="https://example.com" class="event-link">Детальніше →</a>
+                    <div class="event-date">22 лютого 2025</div>
+                    <div class="event-title">Курси шведської мови</div>
+                    <div class="event-description">
+                        Безкоштовні групові заняття з вивчення шведської мови для початківців. Інтерактивний формат, практичні вправи та дружня атмосфера.
                     </div>
+                    <div class="event-location">📍 Онлайн та Стокгольм</div>
                 </div>
                 <div class="event-card">
-                    <img src="uploads/2025/06/3-768x1024.png" alt="Літературний вечір" 
-                         srcset="uploads/2025/06/3-768x1024.png 768w, 
-                                 uploads/2025/06/3-225x300.png 225w, 
-                                 uploads/2025/06/3-1152x1536.png 1152w, 
-                                 uploads/2025/06/3-9x12.png 9w, 
-                                 uploads/2025/06/3.png 1280w" 
-                         sizes="(max-width: 768px) 100vw, 400px">
-                    <div class="event-content">
-                        <h3>Вдячний за натхненний літературний вечір у Стокгольмі!</h3>
-                        <p>Сьогодні команда SVIT UA мала честь відвідати презентацію «Світу Злати» — зворушливої історії про дитинство, перерване війною, та пошуки нового дому у Швеції.</p>
-                        <a href="https://example.com" class="event-link">Детальніше →</a>
+                    <div class="event-date">1 березня 2025</div>
+                    <div class="event-title">Дитячий фестиваль</div>
+                    <div class="event-description">
+                        Святкування для всієї родини з іграми, майстер-класами та українськими традиціями. Допоможемо дітям відчути зв'язок з батьківщиною.
                     </div>
+                    <div class="event-location">📍 Стокгольм, Folkets Park</div>
                 </div>
             </div>
         </div>
