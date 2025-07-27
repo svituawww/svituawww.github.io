@@ -550,9 +550,144 @@
             text-decoration: none;
         }
 
+        /* Mobile Menu Styles */
+        .mobile-menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 24px;
+            color: #0094e8;
+            cursor: pointer;
+            padding: 8px;
+            border-radius: 8px;
+            transition: all 0.3s;
+        }
+
+        .mobile-menu-toggle:hover {
+            background: rgba(0, 148, 232, 0.1);
+        }
+
+        .mobile-menu {
+            position: fixed;
+            top: 0;
+            left: -100%;
+            width: 280px;
+            height: 100vh;
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(20px);
+            box-shadow: 2px 0 20px rgba(0, 0, 0, 0.1);
+            transition: left 0.3s ease;
+            z-index: 1001;
+            padding: 80px 0 20px 0;
+            overflow-y: auto;
+        }
+
+        .mobile-menu.active {
+            left: 0;
+        }
+
+        .mobile-menu-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s;
+        }
+
+        .mobile-menu-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .mobile-menu-close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: none;
+            border: none;
+            font-size: 28px;
+            color: #0094e8;
+            cursor: pointer;
+            padding: 8px;
+            border-radius: 8px;
+            transition: all 0.3s;
+        }
+
+        .mobile-menu-close:hover {
+            background: rgba(0, 148, 232, 0.1);
+        }
+
+        .mobile-nav-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .mobile-nav-links li {
+            border-bottom: 1px solid rgba(0, 148, 232, 0.1);
+        }
+
+        .mobile-nav-links a {
+            display: block;
+            padding: 20px 30px;
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 18px;
+            transition: all 0.3s;
+        }
+
+        .mobile-nav-links a:hover {
+            background: rgba(0, 148, 232, 0.05);
+            color: #0094e8;
+            padding-left: 40px;
+        }
+
+        .mobile-language-section {
+            padding: 30px;
+            border-top: 2px solid rgba(0, 148, 232, 0.1);
+            margin-top: 20px;
+        }
+
+        .mobile-language-section h4 {
+            color: #0094e8;
+            margin-bottom: 15px;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .mobile-language-switch {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .mobile-language-switch .lang-btn {
+            min-width: 50px;
+            height: 45px;
+            font-size: 22px;
+        }
+
         /* Mobile Responsive */
         @media (max-width: 768px) {
             .nav-links {
+                display: none;
+            }
+
+            .mobile-menu-toggle {
+                display: block;
+            }
+            
+            nav {
+                position: relative;
+            }
+
+            nav .language-switch {
                 display: none;
             }
             
@@ -634,12 +769,45 @@
             <ul class="nav-links">
                 <li><a href="#home">Головна</a></li>
                 <li><a href="#services">Допомога</a></li>
+                <li><a href="#team">Про нас</a></li>
                 <li><a href="#faq">FAQ</a></li>
                 <li><a href="#contact">Контакти</a></li>
             </ul>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()" aria-label="Menu">
+                ☰
+            </button>
             
             <div style="display: flex; align-items: center; gap: 20px;">
                 <div class="language-switch">
+                    <a href="#" class="lang-btn active" title="Українська">🇺🇦</a>
+                    <a href="#" class="lang-btn" title="Svenska">🇸🇪</a>
+                    <a href="#" class="lang-btn" title="English">🇬🇧</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu Overlay -->
+        <div class="mobile-menu-overlay" onclick="closeMobileMenu()"></div>
+        
+        <!-- Mobile Menu -->
+        <nav class="mobile-menu">
+            <button class="mobile-menu-close" onclick="closeMobileMenu()" aria-label="Close Menu">
+                ✕
+            </button>
+            
+            <ul class="mobile-nav-links">
+                <li><a href="#home" onclick="closeMobileMenu()">Головна</a></li>
+                <li><a href="#services" onclick="closeMobileMenu()">Допомога</a></li>
+                <li><a href="#Volunteers" onclick="closeMobileMenu()">Волонтери</a></li>
+                <li><a href="#faq" onclick="closeMobileMenu()">FAQ</a></li>
+                <li><a href="#contact" onclick="closeMobileMenu()">Контакти</a></li>
+            </ul>
+
+            <div class="mobile-language-section">
+                <h4>Мова / Language</h4>
+                <div class="mobile-language-switch">
                     <a href="#" class="lang-btn active" title="Українська">🇺🇦</a>
                     <a href="#" class="lang-btn" title="Svenska">🇸🇪</a>
                     <a href="#" class="lang-btn" title="English">🇬🇧</a>
@@ -1237,6 +1405,32 @@
             const faqItem = element.parentNode;
             faqItem.classList.toggle('active');
         }
+
+        // Mobile Menu Functions
+        function toggleMobileMenu() {
+            const mobileMenu = document.querySelector('.mobile-menu');
+            const overlay = document.querySelector('.mobile-menu-overlay');
+            
+            mobileMenu.classList.add('active');
+            overlay.classList.add('active');
+            document.body.style.overflow = 'hidden'; // Prevent scroll
+        }
+
+        function closeMobileMenu() {
+            const mobileMenu = document.querySelector('.mobile-menu');
+            const overlay = document.querySelector('.mobile-menu-overlay');
+            
+            mobileMenu.classList.remove('active');
+            overlay.classList.remove('active');
+            document.body.style.overflow = ''; // Restore scroll
+        }
+
+        // Close mobile menu on window resize if it's open
+        window.addEventListener('resize', function() {
+            if (window.innerWidth > 768) {
+                closeMobileMenu();
+            }
+        });
 
         // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
