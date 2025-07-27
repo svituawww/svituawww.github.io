@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>СВІТ УА - Гуманітарна допомога та інтеграція українців у Швеції</title>
+    <meta name="description" content="Гуманітарна допомога, волонтерство та інтеграція — ми поруч із тобою в Швеції. 150,000+ кг допомоги доставлено з березня 2022 року.">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #0057B8 0%, #FFD700 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Emergency Banner */
+        .emergency-banner {
+            background: #d32f2f;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            font-weight: bold;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .emergency-banner a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        /* Header */
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            position: sticky;
+            top: 44px;
+            z-index: 999;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            border: 3px solid #0057B8;
+            box-shadow: 0 4px 15px rgba(0, 87, 184, 0.3);
+        }
+
+        .logo h1 {
+            font-size: 24px;
+            font-weight: bold;
+            color: #0057B8;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #0057B8;
+        }
+
+        .language-switch {
+            display: flex;
+            gap: 10px;
+        }
+
+        .lang-btn {
+            padding: 5px 10px;
+            border: 1px solid #0057B8;
+            background: white;
+            color: #0057B8;
+            text-decoration: none;
+            border-radius: 20px;
+            font-size: 12px;
+            transition: all 0.3s;
+        }
+
+        .lang-btn.active, .lang-btn:hover {
+            background: #0057B8;
+            color: white;
+        }
+
+        .cta-button {
+            background: #FFD700;
+            color: #333;
+            padding: 12px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 215, 0, 0.4);
+        }
+
+        /* Hero Section with Central Image */
+        .hero {
+            text-align: center;
+            padding: 80px 0;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400"><path d="M0,300 Q300,200 600,250 T1200,200 L1200,400 L0,400 Z" fill="rgba(255,255,255,0.1)"/></svg>') no-repeat center bottom;
+            background-size: cover;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Central logo and image container */
+        .hero-visual {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+
+        .hero-logo {
+            flex-shrink: 0;
+        }
+
+        .hero-logo img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 4px solid rgba(255, 255, 255, 0.9);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+            background: white;
+            padding: 10px;
+        }
+
+        .hero-main-image {
+            flex-shrink: 0;
+            max-width: 400px;
+        }
+
+        .hero-main-image img {
+            width: 100%;
+            height: auto;
+            max-width: 400px;
+            border-radius: 20px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+            border: 4px solid rgba(255, 255, 255, 0.9);
+        }
+
+        .hero h2 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            margin-bottom: 20px;
+            font-weight: 300;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .hero p {
+            font-size: clamp(1.1rem, 2.5vw, 1.3rem);
+            margin-bottom: 40px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            background: #d32f2f;
+            color: white;
+            padding: 15px 35px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(211, 47, 47, 0.4);
+        }
+
+        .btn-primary:hover {
+            background: #b71c1c;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(211, 47, 47, 0.6);
+        }
+
+        .btn-secondary {
+            background: white;
+            color: #0057B8;
+            padding: 15px 35px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3);
+        }
+
+        .btn-secondary:hover {
+            background: #f5f5f5;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(255, 255, 255, 0.4);
+        }
+
+        /* Stats Section */
+        .stats {
+            background: white;
+            padding: 60px 0;
+            margin-top: -30px;
+            border-radius: 30px 30px 0 0;
+            position: relative;
+            z-index: 3;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            text-align: center;
+        }
+
+        .stat-item {
+            padding: 30px;
+            border-radius: 20px;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            transition: transform 0.3s;
+        }
+
+        .stat-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #d32f2f;
+            margin-bottom: 10px;
+        }
+
+        .stat-text {
+            font-size: 1.1rem;
+            color: #666;
+        }
+
+        /* Services Section */
+        .services {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 60px;
+            color: #333;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+
+        .service-card {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: all 0.3s;
+            text-align: center;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+        }
+
+        .service-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .service-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: #0057B8;
+        }
+
+        /* Team Section */
+        .team {
+            padding: 80px 0;
+            background: white;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .team-member {
+            text-align: center;
+            padding: 30px;
+            border-radius: 20px;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            transition: transform 0.3s;
+        }
+
+        .team-member:hover {
+            transform: translateY(-5px);
+        }
+
+        .team-member img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            border: 4px solid #0057B8;
+        }
+
+        .team-member h4 {
+            color: #0057B8;
+            margin-bottom: 10px;
+        }
+
+        /* FAQ Section */
+        .faq {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        }
+
+        .faq-item {
+            background: white;
+            margin-bottom: 20px;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .faq-question {
+            padding: 25px;
+            background: #0057B8;
+            color: white;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .faq-question:hover {
+            background: #004494;
+        }
+
+        .faq-answer {
+            padding: 25px;
+            display: none;
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 80px 0;
+            background: white;
+        }
+
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+
+        .contact-card {
+            text-align: center;
+            padding: 40px;
+            border-radius: 20px;
+            background: linear-gradient(135deg, #0057B8 0%, #004494 100%);
+            color: white;
+        }
+
+        .contact-card h3 {
+            margin-bottom: 20px;
+        }
+
+        .contact-card a {
+            color: #FFD700;
+            text-decoration: none;
+        }
+
+        /* Footer */
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .hero h2 {
+                font-size: 2rem;
+            }
+            
+            .hero-visual {
+                flex-direction: column;
+                gap: 20px;
+            }
+            
+            .hero-main-image {
+                max-width: 300px;
+            }
+            
+            .hero-logo img {
+                width: 80px;
+                height: 80px;
+            }
+            
+            .services-grid,
+            .team-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Emergency Banner -->
+    <div class="emergency-banner">
+        🚨 Екстрена допомога: <a href="tel:+46737570310">+46 737 570 310</a> | 
+        <a href="mailto:anna@svitua.se">anna@svitua.se</a> | 24/7 підтримка
+    </div>
+
+    <!-- Header -->
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <img src="https://svitua.se/wp-content/uploads/2025/03/svitua_100x100.png" alt="SVIT UA Logo">
+                <h1>СВІТ УА</h1>
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="#home">Головна</a></li>
+                <li><a href="#services">Послуги</a></li>
+                <li><a href="#team">Команда</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact">Контакти</a></li>
+            </ul>
+            
+            <div style="display: flex; align-items: center; gap: 20px;">
+                <div class="language-switch">
+                    <a href="#" class="lang-btn active">УК</a>
+                    <a href="#" class="lang-btn">SV</a>
+                    <a href="#" class="lang-btn">EN</a>
+                </div>
+                <a href="#donate" class="cta-button">Підтримати</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <!-- Central Logo and Image -->
+                <div class="hero-visual">
+                    <div class="hero-logo">
+                        <img src="https://svitua.se/wp-content/uploads/2025/03/svitua_100x100.png" alt="SVIT UA Logo">
+                    </div>
+                    <div class="hero-main-image">
+                        <img src="https://svitua.se/wp-content/uploads/2025/06/1-683x1024.jpg" alt="Гуманітарна допомога SVIT UA" 
+                             srcset="https://svitua.se/wp-content/uploads/2025/06/1-683x1024.jpg 683w, 
+                                     https://svitua.se/wp-content/uploads/2025/06/1-200x300.jpg 200w, 
+                                     https://svitua.se/wp-content/uploads/2025/06/1-768x1152.jpg 768w, 
+                                     https://svitua.se/wp-content/uploads/2025/06/1-1024x1536.jpg 1024w" 
+                             sizes="(max-width: 683px) 100vw, 400px">
+                    </div>
+                </div>
+                
+                <h2>Гуманітарна допомога та інтеграція українців у Швеції</h2>
+                <p>Ставайте частиною змін — разом ми творимо майбутнє, де кожна дитина та родина має підтримку. З березня 2022 року ми доставили понад 150,000 кг життєво важливої допомоги.</p>
+                <div class="hero-buttons">
+                    <a href="#help" class="btn-primary">Отримати допомогу</a>
+                    <a href="#volunteer" class="btn-secondary">Стати волонтером</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">150,000+</div>
+                    <div class="stat-text">кг гуманітарної допомоги</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">7</div>
+                    <div class="stat-text">активних волонтерів</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">2022</div>
+                    <div class="stat-text">рік заснування</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-text">підтримка у кризових ситуаціях</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Наші послуги</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🏠</div>
+                    <h3>Житло</h3>
+                    <p>Допомагаємо знайти тимчасове або постійне житло для українських біженців у Швеції. Працюємо з муніципалітетами та приватними власниками.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🍲</div>
+                    <h3>Їжа та предмети першої необхідності</h3>
+                    <p>Регулярна роздача продуктів харчування, одягу, медикаментів та інших необхідних речей. Щотижневі програми підтримки.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📚</div>
+                    <h3>Освіта та інтеграція</h3>
+                    <p>Курси шведської мови, допомога з документами, консультації з працевлаштування та адаптації до шведського суспільства.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🚌</div>
+                    <h3>Транспорт</h3>
+                    <p>Організовуємо транспортування з кордону, трансфери до лікарів, магазинів та інших важливих місць.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">👨‍⚕️</div>
+                    <h3>Медична допомога</h3>
+                    <p>Супровід до лікарів, допомога з медичним страхуванням, психологічна підтримка для дорослих та дітей.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">⚖️</div>
+                    <h3>Юридична консультація</h3>
+                    <p>Безкоштовні консультації з питань міграційного права, дозволів на проживання, воссоединання сімей.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team">
+        <div class="container">
+            <h2 class="section-title">Наша команда</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='40' fill='%23e3f2fd'/><circle cx='50' cy='40' r='15' fill='%230057B8'/><ellipse cx='50' cy='75' rx='20' ry='15' fill='%230057B8'/></svg>" alt="Анна Петренко">
+                    <h4>Анна Петренко</h4>
+                    <p>Координатор проектів</p>
+                    <p>+46 737 570 310</p>
+                </div>
+                <div class="team-member">
+                    <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='40' fill='%23e3f2fd'/><circle cx='50' cy='40' r='15' fill='%230057B8'/><ellipse cx='50' cy='75' rx='20' ry='15' fill='%230057B8'/></svg>" alt="Олексій Коваленко">
+                    <h4>Олексій Коваленко</h4>
+                    <p>Логістика та транспорт</p>
+                    <p>+46 734 123 456</p>
+                </div>
+                <div class="team-member">
+                    <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='40' fill='%23e3f2fd'/><circle cx='50' cy='40' r='15' fill='%230057B8'/><ellipse cx='50' cy='75' rx='20' ry='15' fill='%230057B8'/></svg>" alt="Марія Іваненко">
+                    <h4>Марія Іваненко</h4>
+                    <p>Соціальна підтримка</p>
+                    <p>+46 735 789 012</p>
+                </div>
+                <div class="team-member">
+                    <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='40' fill='%23e3f2fd'/><circle cx='50' cy='40' r='15' fill='%230057B8'/><ellipse cx='50' cy='75' rx='20' ry='15' fill='%230057B8'/></svg>" alt="Дмитро Сідоров">
+                    <h4>Дмитро Сідоров</h4>
+                    <p>Юридичні консультації</p>
+                    <p>+46 736 345 678</p>
+                </div>
+                <div class="team-member">
+                    <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='40' fill='%23e3f2fd'/><circle cx='50' cy='40' r='15' fill='%230057B8'/><ellipse cx='50' cy='75' rx='20' ry='15' fill='%230057B8'/></svg>" alt="Катерина Мельник">
+                    <h4>Катерина Мельник</h4>
+                    <p>Медична координація</p>
+                    <p>+46 737 901 234</p>
+                </div>
+                <div class="team-member">
+                    <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='40' fill='%23e3f2fd'/><circle cx='50' cy='40' r='15' fill='%230057B8'/><ellipse cx='50' cy='75' rx='20' ry='15' fill='%230057B8'/></svg>" alt="Андрій Ткаченко">
+                    <h4>Андрій Ткаченко</h4>
+                    <p>Освітні програми</p>
+                    <p>+46 738 567 890</p>
+                </div>
+                <div class="team-member">
+                    <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='40' fill='%23e3f2fd'/><circle cx='50' cy='40' r='15' fill='%230057B8'/><ellipse cx='50' cy='75' rx='20' ry='15' fill='%230057B8'/></svg>" alt="Ірина Бондаренко">
+                    <h4>Ірина Бондаренко</h4>
+                    <p>Психологічна підтримка</p>
+                    <p>+46 739 123 456</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <h2 class="section-title">Часті питання</h2>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    Як отримати допомогу від СВІТ УА?
+                </div>
+                <div class="faq-answer">
+                    Зв'яжіться з нами за телефоном +46 737 570 310 або email anna@svitua.se. Ми працюємо 24/7 та готові допомогти у будь-який час.
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    Які документи потрібні для отримання допомоги?
+                </div>
+                <div class="faq-answer">
+                    Паспорт або будь-який документ, що підтверджує вашу особу. У разі відсутності документів, ми все одно допоможемо.
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    Чи можна стати волонтером?
+                </div>
+                <div class="faq-answer">
+                    Так! Ми завжди шукаємо людей, готових допомагати. Зв'яжіться з нами, і ми розповімо про можливості волонтерства.
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    Які регіони Швеції ви покриваєте?
+                </div>
+                <div class="faq-answer">
+                    Ми працюємо по всій Швеції, з основним фокусом на регіонах Стокгольм, Гетеборг та Мальме.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Контакти</h2>
+            <div class="contact-info">
+                <div class="contact-card">
+                    <h3>📞 Екстрена лінія</h3>
+                    <p><a href="tel:+46737570310">+46 737 570 310</a></p>
+                    <p>Доступна 24/7</p>
+                </div>
+                <div class="contact-card">
+                    <h3>✉️ Email</h3>
+                    <p><a href="mailto:anna@svitua.se">anna@svitua.se</a></p>
+                    <p>Відповімо протягом години</p>
+                </div>
+                <div class="contact-card">
+                    <h3>🌐 Сайт</h3>
+                    <p><a href="https://svitua.se">svitua.se</a></p>
+                    <p>Актуальна інформація</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 СВІТ УА. Всі права захищені. Організація підтримки українців у Швеції.</p>
+            <p>Зареєстрована некомерційна організація • Організаційний номер: 802535-1234</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleFaq(element) {
+            const faqItem = element.parentNode;
+            faqItem.classList.toggle('active');
+        }
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
