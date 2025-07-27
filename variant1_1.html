@@ -287,6 +287,41 @@
             color: #666;
         }
 
+        /* Partners Section */
+        .partners {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        }
+
+        .partners-carousel {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+
+        .partner-item {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: all 0.3s;
+        }
+
+        .partner-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+
+        .partner-item img {
+            width: 150px;
+            height: 150px;
+            object-fit: contain;
+            border-radius: 10px;
+        }
+
         /* Services Section */
         .services {
             padding: 80px 0;
@@ -487,7 +522,7 @@
     <header>
         <nav class="container">
             <div class="logo">
-                <img src="https://svitua.se/wp-content/uploads/2025/03/svitua_100x100.png" alt="SVIT UA Logo">
+                <img src="uploads/2025/03/svitua_100x100.png" alt="SVIT UA Logo">
                 <h1>SVIT UA</h1>
             </div>
             
@@ -517,14 +552,14 @@
                 <!-- Central Logo and Image -->
                 <div class="hero-visual">
                     <div class="hero-logo">
-                        <img src="https://svitua.se/wp-content/uploads/2025/03/svitua_100x100.png" alt="SVIT UA Logo">
+                        <img src="uploads/2025/03/svitua_100x100.png" alt="SVIT UA Logo">
                     </div>
                     <div class="hero-main-image">
-                        <img src="https://svitua.se/wp-content/uploads/2025/06/1-683x1024.jpg" alt="Гуманітарна допомога SVIT UA" 
-                             srcset="https://svitua.se/wp-content/uploads/2025/06/1-683x1024.jpg 683w, 
-                                     https://svitua.se/wp-content/uploads/2025/06/1-200x300.jpg 200w, 
-                                     https://svitua.se/wp-content/uploads/2025/06/1-768x1152.jpg 768w, 
-                                     https://svitua.se/wp-content/uploads/2025/06/1-1024x1536.jpg 1024w" 
+                        <img src="uploads/2025/06/1-683x1024.jpg" alt="Гуманітарна допомога SVIT UA" 
+                             srcset="uploads/2025/06/1-683x1024.jpg 683w, 
+                                     uploads/2025/06/1-200x300.jpg 200w, 
+                                     uploads/2025/06/1-768x1152.jpg 768w, 
+                                     uploads/2025/06/1-1024x1536.jpg 1024w" 
                              sizes="(max-width: 683px) 100vw, 400px">
                     </div>
                 </div>
@@ -558,6 +593,33 @@
                 <div class="stat-item">
                     <div class="stat-number">Анна</div>
                     <div class="stat-text">засновниця - Мартиненко</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section class="partners">
+        <div class="container">
+            <h2 class="section-title">Наші партнери</h2>
+            <div class="partners-carousel">
+                <div class="partner-item">
+                    <img src="uploads/2025/06/01-150x150.jpg" alt="Партнер 01">
+                </div>
+                <div class="partner-item">
+                    <img src="uploads/2025/06/02-150x150.jpg" alt="Партнер 02">
+                </div>
+                <div class="partner-item">
+                    <img src="uploads/2025/06/03-150x150.jpg" alt="Партнер 03">
+                </div>
+                <div class="partner-item">
+                    <img src="uploads/2025/06/04-3-150x150.jpg" alt="Партнер 04">
+                </div>
+                <div class="partner-item">
+                    <img src="uploads/2025/06/05-1-150x150.jpg" alt="Партнер 05">
+                </div>
+                <div class="partner-item">
+                    <img src="uploads/2025/06/06-4-150x150.jpg" alt="Партнер 06">
                 </div>
             </div>
         </div>
