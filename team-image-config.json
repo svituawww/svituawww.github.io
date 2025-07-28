@@ -134,14 +134,14 @@
     },
     "13-1": {
       "name": "Oksana Demyanova",
-      "scaleX": 60,
-      "scaleY": 75,
+      "scaleX": 90,
+      "scaleY": 95,
       "offsetX": 0,
-      "offsetY": -15,
-      "objectPosition": "center 35%",
-      "actualDimensions": "1024x682",
-      "aspectRatio": 1.50,
-      "note": "Landscape - using original until cropped version is deployed"
+      "offsetY": -3,
+      "objectPosition": "center center",
+      "actualDimensions": "718x813",
+      "aspectRatio": 0.88,
+      "note": "Manual crop - good portrait alignment"
     }
   },
   "defaultSettings": {
