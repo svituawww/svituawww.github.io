@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Команда - SVIT UA</title>
+    <meta name="description" content="Знайомтеся з нашою командою волонтерів SVIT UA - людьми, які присвячують свій час допомозі українцям у Швеції.">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #0094e8 0%, #FFD700 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            position: sticky;
+            top: 0;
+            z-index: 999;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            border: 3px solid #0094e8;
+            box-shadow: 0 4px 15px rgba(0, 87, 184, 0.3);
+        }
+
+        .logo h1 {
+            font-size: 24px;
+            font-weight: bold;
+            color: #0094e8;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #0094e8;
+        }
+
+        .back-btn {
+            background: #0094e8;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+
+        .back-btn:hover {
+            background: #007acc;
+            transform: translateY(-2px);
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 80px 0 60px;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400"><path d="M0,300 Q300,200 600,250 T1200,200 L1200,400 L0,400 Z" fill="rgba(255,255,255,0.1)"/></svg>') no-repeat center bottom;
+            background-size: cover;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.5rem, 6vw, 4rem);
+            margin-bottom: 20px;
+            font-weight: 300;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .hero p {
+            font-size: clamp(1.2rem, 3vw, 1.5rem);
+            margin-bottom: 40px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+        }
+
+        /* Team Section */
+        .team-section {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 60px;
+            color: #333;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-bottom: 80px;
+        }
+
+        .team-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: all 0.3s;
+            border: 2px solid transparent;
+        }
+
+        .team-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+            border-color: #0094e8;
+        }
+
+        .team-image {
+            position: relative;
+            overflow: hidden;
+            height: 300px;
+            background: #f8f9fa;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 15px 15px 0 0;
+        }
+
+        .team-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            transition: transform 0.3s ease;
+            border-radius: 15px 15px 0 0;
+        }
+
+        .team-card:hover .team-image img {
+            transform: scale(1.05);
+        }
+
+        .team-info {
+            padding: 30px;
+            text-align: center;
+        }
+
+        .team-info h3 {
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+            color: #0094e8;
+            font-weight: 600;
+        }
+
+        .team-info .position {
+            font-size: 1rem;
+            color: #666;
+            margin-bottom: 15px;
+            font-weight: 500;
+        }
+
+        .contact-info {
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid #e9ecef;
+        }
+
+        .contact-info p {
+            margin: 5px 0;
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .contact-info a {
+            color: #0094e8;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .contact-info a:hover {
+            color: #007acc;
+        }
+
+        /* Volunteer Section */
+        .volunteer-section {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #FFD700 0%, #FFF8DC 100%);
+            text-align: center;
+        }
+
+        .volunteer-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .volunteer-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        .volunteer-section p {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            color: #666;
+            line-height: 1.8;
+        }
+
+        .volunteer-btn {
+            background: #0094e8;
+            color: white;
+            padding: 15px 35px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(0, 148, 232, 0.4);
+            display: inline-block;
+        }
+
+        .volunteer-btn:hover {
+            background: #007acc;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 148, 232, 0.6);
+            color: white;
+        }
+
+        /* Footer */
+        footer {
+            background: linear-gradient(135deg, #0094e8 0%, #004494 100%);
+            color: #fff;
+            padding: 40px 20px;
+            font-family: sans-serif;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 30px;
+        }
+
+        .footer-section {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 10px;
+        }
+
+        .footer-logo img {
+            height: 48px;
+        }
+
+        .footer-logo strong {
+            color: #FFD700;
+            font-size: 18px;
+        }
+
+        .footer-section h4 {
+            color: #FFD700;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 12px;
+            margin-top: 15px;
+        }
+
+        .social-links a {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s;
+            text-decoration: none;
+        }
+
+        .social-links .instagram {
+            background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+        }
+
+        .social-links .facebook {
+            background: #1877F2;
+        }
+
+        .social-links .linkedin {
+            background: #0A66C2;
+        }
+
+        .social-links .telegram {
+            background: #0088cc;
+        }
+
+        .social-links .tiktok {
+            background: #000;
+        }
+
+        .social-links a:hover {
+            transform: translateY(-2px);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255,215,0,0.3);
+            margin-top: 30px;
+            padding-top: 12px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            font-size: 13px;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .team-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .team-image {
+                height: 250px;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .footer-content {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .team-image {
+                height: 200px;
+            }
+            
+            .team-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+        }
+
+        /* Loading Animation */
+        .team-card {
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 0.6s forwards;
+        }
+
+        .team-card:nth-child(1) { animation-delay: 0.1s; }
+        .team-card:nth-child(2) { animation-delay: 0.2s; }
+        .team-card:nth-child(3) { animation-delay: 0.3s; }
+        .team-card:nth-child(4) { animation-delay: 0.4s; }
+        .team-card:nth-child(5) { animation-delay: 0.5s; }
+        .team-card:nth-child(6) { animation-delay: 0.6s; }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <img src="uploads/2025/03/svitua_100x100.png" alt="SVIT UA Logo">
+                <h1>SVIT UA</h1>
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="variant1_1.html">Головна</a></li>
+                <li><a href="#team" class="active">Команда</a></li>
+                <li><a href="variant1_1.html#contact">Контакти</a></li>
+            </ul>
+            
+            <a href="variant1_1.html" class="back-btn">← Назад</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Команда волонтерів</h1>
+                <p>Знайомтеся з нашою командою — людьми, які присвячують свій час і енергію допомозі українцям у Швеції</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team-section">
+        <div class="container">
+            <h2 class="section-title">Наша команда</h2>
+            <div class="team-grid" id="teamGrid">
+                <!-- Team members will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Volunteer Section -->
+    <section class="volunteer-section">
+        <div class="container">
+            <div class="volunteer-content">
+                <h2>Стань волонтером та допоможи іншим</h2>
+                <p>Приєднуйся до нашої команди волонтерів і зроби свій внесок у добро. Разом ми можемо підтримати тих, хто цього потребує, зробити життя кращим і надихнути інших на добрі вчинки. Волонтерство — це можливість розвиватися, знайти нових друзів і відчути справжнє щастя від допомоги.</p>
+                <a href="variant1_1.html#contact" class="volunteer-btn">Зв'язатися з нами</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <img src="uploads/2025/06/logo.png" alt="SVIT UA">
+                    <strong>SVIT UA</strong>
+                </div>
+                <p style="margin:0; line-height:1.5; color:#E8F4FD;">
+                    SVIT UA — це команда, яка об'єднує людей, які вірять у силу підтримки, солідарності та дії.
+                </p>
+            </div>
+
+            <div class="footer-section">
+                <h4>Контакти</h4>
+                <p style="margin:0; color:#fff; font-weight:500;">+467 37 570 310</p>
+                <p style="margin:5px 0 0 0;"><a href="mailto:info@svitua.se" style="color:#fff; text-decoration:none; font-weight:500;">info@svitua.se</a></p>
+            </div>
+
+            <div class="footer-section">
+                <h4>Соціальні мережі</h4>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/svit_ua_se/" class="instagram" aria-label="Instagram">📷</a>
+                    <a href="https://www.tiktok.com/@svit.ua8?_t=ZM-8yNdJtXJKno&_r=1" class="tiktok" aria-label="TikTok">🎵</a>
+                    <a href="https://fb.com/profile.php?id=61574891125034" class="facebook" aria-label="Facebook">📘</a>
+                    <a href="https://t.me/svituainse" class="telegram" aria-label="Telegram">✈️</a>
+                    <a href="https://www.linkedin.com/company/svit-ua/" class="linkedin" aria-label="LinkedIn">💼</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <span style="color:#E8F4FD;">© 2025 SVIT UA</span>
+            <a href="#" style="color:#FFD700; text-decoration:none; font-weight:500;">Документи</a>
+        </div>
+    </footer>
+
+    <script>
+        // Team data from team_data.json
+        const teamData = {
+            "team_members": [
+                {
+                    "name": "Anna Martynenko",
+                    "position": "Голова організації",
+                    "email": "anna@svit.ua",
+                    "phone": "+46737570310",
+                    "image_url": "/uploads/2025/06/team-normalized/01-anna-400x400.jpg",
+                    "image_full_url": "https://svitua.se/wp-content/uploads/2025/06/team-normalized/01-anna-400x400.jpg",
+                    "github_image_full_url": "https://svituawww.github.io/uploads/2025/06/team-normalized/01-anna-400x400.jpg",
+                    "description": "Голова організації"
+                },
+                {
+                    "name": "Tetiana Kozhushko",
+                    "position": "Представник у місті Євлє",
+                    "email": "tetiana.kozhusko@svit.ua",
+                    "phone": "+46739911119",
+                    "image_url": "/uploads/2025/06/team-normalized/02-tetiana-400x400.jpg",
+                    "image_full_url": "https://svitua.se/wp-content/uploads/2025/06/team-normalized/02-tetiana-400x400.jpg",
+                    "github_image_full_url": "https://svituawww.github.io/uploads/2025/06/team-normalized/02-tetiana-400x400.jpg",
+                    "description": "Представник у місті Євлє"
+                },
+                {
+                    "name": "Hanna Moroz",
+                    "position": "Менеджер з комунікацій",
+                    "email": "hanna.moroz@svitua.se",
+                    "phone": "+46737157477",
+                    "image_url": "/uploads/2025/06/team-normalized/03-hanna-400x400.jpg",
+                    "image_full_url": "https://svitua.se/wp-content/uploads/2025/06/team-normalized/03-hanna-400x400.jpg",
+                    "github_image_full_url": "https://svituawww.github.io/uploads/2025/06/team-normalized/03-hanna-400x400.jpg",
+                    "description": "Менеджер з комунікацій"
+                },
+                {
+                    "name": "Nataliia Doroshenko",
+                    "position": "Психолог з підтримки в міграції",
+                    "email": "nataliia.doroshenko@svitua.se",
+                    "phone": "",
+                    "image_url": "/uploads/2025/06/team-normalized/04-nataliia-d-400x400.jpg",
+                    "image_full_url": "https://svitua.se/wp-content/uploads/2025/06/team-normalized/04-nataliia-d-400x400.jpg",
+                    "github_image_full_url": "https://svituawww.github.io/uploads/2025/06/team-normalized/04-nataliia-d-400x400.jpg",
+                    "description": "Психолог з підтримки в міграції"
+                },
+                {
+                    "name": "Yevheniia Smychyk",
+                    "position": "Координатор з підтримки ветеранів та військовослужбовців на реабілітації",
+                    "email": "yevheniia.smychyk@svitua.se",
+                    "phone": "+46727722418",
+                    "image_url": "/uploads/2025/06/team-normalized/05-yevheniia-400x400.jpg",
+                    "image_full_url": "https://svitua.se/wp-content/uploads/2025/06/team-normalized/05-yevheniia-400x400.jpg",
+                    "github_image_full_url": "https://svituawww.github.io/uploads/2025/06/team-normalized/05-yevheniia-400x400.jpg",
+                    "description": "Координатор з підтримки ветеранів та військовослужбовців на реабілітації"
+                },
+                {
+                    "name": "Yurii Bakurov",
+                    "position": "Content creator",
+                    "email": "yurii.bakurov@svitua.se",
+                    "phone": "",
+                    "image_url": "/uploads/2025/06/team-normalized/06-yurii-400x400.jpg",
+                    "image_full_url": "https://svitua.se/wp-content/uploads/2025/06/team-normalized/06-yurii-400x400.jpg",
+                    "github_image_full_url": "https://svituawww.github.io/uploads/2025/06/team-normalized/06-yurii-400x400.jpg",
+                    "description": "Content creator"
+                },
+                {
+                    "name": "Pavel Samoshko",
+                    "position": "Content creator",
+                    "email": "pavel.samoshko@svitua.se",
+                    "phone": "",
+                    "image_url": "/uploads/2025/06/team-normalized/07-pavel-400x400.jpg",
+                    "image_full_url": "https://svitua.se/wp-content/uploads/2025/06/team-normalized/07-pavel-400x400.jpg",
+                    "github_image_full_url": "https://svituawww.github.io/uploads/2025/06/team-normalized/07-pavel-400x400.jpg",
+                    "description": "Content creator"
+                },
+                {
+                    "name": "Olesya Koval",
+                    "position": "Менеджер з комунікації",
+                    "email": "olesya.koval@svitua.se",
+                    "phone": "+46739687180",
+                    "image_url": "/uploads/2025/06/team-normalized/08-olesya-400x400.jpg",
+                    "image_full_url": "https://svitua.se/wp-content/uploads/2025/06/team-normalized/08-olesya-400x400.jpg",
+                    "github_image_full_url": "https://svituawww.github.io/uploads/2025/06/team-normalized/08-olesya-400x400.jpg",
+                    "description": "Менеджер з комунікації"
+                },
+                {
+                    "name": "Nataliia Burdina",
+                    "position": "Інформаційний менеджер",
+                    "email": "nataliia.burdina@svitua.se",
+                    "phone": "+46764421616",
+                    "image_url": "/uploads/2025/06/team-normalized/09-nataliia-b-400x400.jpg",
+                    "image_full_url": "https://svitua.se/wp-content/uploads/2025/06/team-normalized/09-nataliia-b-400x400.jpg",
+                    "github_image_full_url": "https://svituawww.github.io/uploads/2025/06/team-normalized/09-nataliia-b-400x400.jpg",
+                    "description": "Інформаційний менеджер"
+                },
+                {
+                    "name": "Viktor Petrov",
+                    "position": "Менеджер з комунікацій",
+                    "email": "viktor.petrov@svitua.se",
+                    "phone": "+46764140017",
+                    "image_url": "/uploads/2025/06/team-normalized/10-viktor-400x400.jpg",
+                    "image_full_url": "https://svitua.se/wp-content/uploads/2025/06/team-normalized/10-viktor-400x400.jpg",
+                    "github_image_full_url": "https://svituawww.github.io/uploads/2025/06/team-normalized/10-viktor-400x400.jpg",
+                    "description": "Менеджер з комунікацій"
+                },
+                {
+                    "name": "Natalia Zhelizniak",
+                    "position": "Менеджер з комунікацій",
+                    "email": "natalia.zhelezniak@svitua.se",
+                    "phone": "+46704768382",
+                    "image_url": "/uploads/2025/06/team-normalized/11-natalia-z-400x400.jpg",
+                    "image_full_url": "https://svitua.se/wp-content/uploads/2025/06/team-normalized/11-natalia-z-400x400.jpg",
+                    "github_image_full_url": "https://svituawww.github.io/uploads/2025/06/team-normalized/11-natalia-z-400x400.jpg",
+                    "description": "Менеджер з комунікацій"
+                },
+                {
+                    "name": "Olesia Filenko",
+                    "position": "Еколог",
+                    "email": "olesia.filenko@svitua.se",
+                    "phone": "+46767515450",
+                    "image_url": "/uploads/2025/06/team-normalized/12-olesia-400x400.jpg",
+                    "image_full_url": "https://svitua.se/wp-content/uploads/2025/06/team-normalized/12-olesia-400x400.jpg",
+                    "github_image_full_url": "https://svituawww.github.io/uploads/2025/06/team-normalized/12-olesia-400x400.jpg",
+                    "description": "Еколог"
+                },
+                {
+                    "name": "Oksana Demyanova",
+                    "position": "Представник у місті Упсала",
+                    "email": "oksana.demyanova@svitua.se",
+                    "phone": "+46735760735",
+                    "image_url": "/uploads/2025/06/team-normalized/13-oksana-400x400.jpg",
+                    "image_full_url": "https://svitua.se/wp-content/uploads/2025/06/team-normalized/13-oksana-400x400.jpg",
+                    "github_image_full_url": "https://svituawww.github.io/uploads/2025/06/team-normalized/13-oksana-400x400.jpg",
+                    "description": "Представник у місті Упсала"
+                }
+            ]
+        };
+
+        // Initialize team page
+        function initTeamPage() {
+            const teamGrid = document.getElementById('teamGrid');
+            if (!teamGrid) return;
+
+            const teamCards = teamData.team_members.map(member => {
+                const phoneDisplay = member.phone ? `<p><strong>📞</strong> <a href="tel:${member.phone}">${member.phone}</a></p>` : '';
+                
+                return `
+                    <div class="team-card">
+                        <div class="team-image">
+                            <img src="${member.github_image_full_url}" 
+                                 alt="${member.name}"
+                                 onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZGRkIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZmlsbD0iIzk5OSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPk5vIEltYWdlPC90ZXh0Pjwvc3ZnPg=='; this.style.border='2px dashed #ccc';"
+                                 loading="lazy">
+                        </div>
+                        <div class="team-info">
+                            <h3>${member.name}</h3>
+                            <p class="position">${member.position}</p>
+                            <div class="contact-info">
+                                <p><strong>✉️</strong> <a href="mailto:${member.email}">${member.email}</a></p>
+                                ${phoneDisplay}
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+
+            teamGrid.innerHTML = teamCards;
+        }
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Initialize when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            initTeamPage();
+        });
+    </script>
+</body>
+</html>
