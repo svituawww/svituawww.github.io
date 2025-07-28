@@ -321,50 +321,47 @@
             color: #333;
         }
 
+        /* Team Grid Layout */
         .team-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 40px;
             margin-bottom: 80px;
+            padding: 20px;
         }
 
+        /* Team Card Structure */
         .team-card {
             background: white;
             border-radius: 20px;
-            overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            transition: all 0.3s;
             border: 2px solid transparent;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: all 0.3s ease;
         }
 
         .team-card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 20px 50px rgba(0,0,0,0.15);
             border-color: #0094e8;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
         }
 
-        .team-image {
-            position: relative;
-            overflow: hidden;
+        /* JSON-Driven Image Styling */
+        .team-card img {
+            width: var(--img-scale-x, 85%);
             height: 300px;
-            background: #f8f9fa;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            object-fit: contain;
+            object-position: var(--img-position, center center);
+            transform: scale(var(--img-scale-y, 0.9)) translateY(var(--img-offset-y, 0px));
+            margin: 0 auto;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
             border-radius: 15px 15px 0 0;
+            transition: all 0.3s ease;
+            display: block;
         }
 
-        .team-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: center;
-            transition: transform 0.3s ease;
-            border-radius: 15px 15px 0 0;
-        }
-
-        .team-card:hover .team-image img {
-            transform: scale(1.05);
+        .team-card:hover img {
+            transform: scale(var(--img-scale-y, 0.9)) translateY(var(--img-offset-y, 0px)) scale(1.05);
         }
 
         .team-info {
@@ -454,6 +451,7 @@
         }
 
         /* Mobile Responsive */
+        /* Mobile Responsive - IMPROVED IMAGE HEIGHT */
         @media (max-width: 768px) {
             .nav-links {
                 display: none;
@@ -471,25 +469,41 @@
                 display: none;
             }
 
-            .team-image {
-                height: 250px;
+            .team-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+                padding: 15px;
+            }
+            
+            /* Mobile: Increase image height significantly for better proportional view */
+            .team-card img {
+                height: 450px; /* Increased from 380px to 450px */
+                width: var(--img-mobile-scale-x, var(--img-scale-x, 92%)); /* Slightly wider on mobile */
+            }
+            
+            /* Mobile: Adjust padding to maintain card proportions */
+            .team-info {
+                padding: 25px;
+            }
+            
+            .team-info h3 {
+                font-size: 1.3rem;
             }
 
             .hero h1 {
                 font-size: 2.5rem;
             }
+        }
 
-            .team-grid {
-                grid-template-columns: 1fr;
-                gap: 30px;
+        /* Tablet Responsive - Medium adjustment */
+        @media (max-width: 1024px) and (min-width: 769px) {
+            .team-card img {
+                height: 320px; /* Slightly increased for tablet */
+                width: var(--img-tablet-scale-x, var(--img-scale-x, 88%));
             }
         }
 
         @media (max-width: 480px) {
-            .team-image {
-                height: 200px;
-            }
-            
             .team-grid {
                 grid-template-columns: 1fr;
                 gap: 20px;
@@ -852,7 +866,7 @@
         }
 
         // Initialize team page
-        function initTeamPage() {
+        async function initTeamPage() {
             const teamGrid = document.getElementById('teamGrid');
             if (!teamGrid) return;
 
@@ -861,17 +875,16 @@
                 
                 return `
                     <div class="team-card">
-                        <div class="team-image">
-                            <img src="${member.github_image_full_url}" 
-                                 alt="${member.name}"
-                                 onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZGRkIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZmlsbD0iIzk5OSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPk5vIEltYWdlPC90ZXh0Pjwvc3ZnPg=='; this.style.border='2px dashed #ccc';"
-                                 loading="lazy">
-                        </div>
+                        <img src="${member.github_image_full_url}" 
+                             alt="${member.name}"
+                             data-member="${member.name}"
+                             onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZGRkIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZmlsbD0iIzk5OSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPk5vIEltYWdlPC90ZXh0Pjwvc3ZnPg=='; this.style.border='2px dashed #ccc';"
+                             loading="lazy">
                         <div class="team-info">
                             <h3>${member.name}</h3>
                             <p class="position">${member.position}</p>
                             <div class="contact-info">
-                                <p><strong>📧</strong> <a href="mailto:${member.email}">${member.email}</a></p>
+                                <p><strong>�</strong> <a href="mailto:${member.email}">${member.email}</a></p>
                                 ${phoneDisplay}
                             </div>
                         </div>
@@ -880,6 +893,62 @@
             }).join('');
 
             teamGrid.innerHTML = teamCards;
+            
+            // Apply image configuration after team cards are rendered
+            await applyTeamImageConfig();
+        }
+
+        // JSON-Driven Image Configuration System (matching team2.html)
+        async function applyTeamImageConfig() {
+            try {
+                const response = await fetch('team-image-config.json');
+                const config = await response.json();
+                
+                console.log('Loading team image configuration...');
+                
+                // Apply settings to each team member image
+                Object.entries(config.teamImageSettings).forEach(([id, settings]) => {
+                    const img = document.querySelector(`img[data-member="${settings.name}"]`);
+                    if (img) {
+                        // Apply CSS custom properties for dynamic styling
+                        img.style.setProperty('--img-scale-x', `${settings.scaleX}%`);
+                        img.style.setProperty('--img-scale-y', settings.scaleY / 100);
+                        img.style.setProperty('--img-offset-y', `${settings.offsetY}px`);
+                        img.style.setProperty('--img-position', settings.objectPosition);
+                        
+                        // Mobile-specific scaling (slightly wider for better proportions)
+                        const mobileScaleX = Math.min(settings.scaleX + 7, 97); // +7% on mobile, max 97%
+                        img.style.setProperty('--img-mobile-scale-x', `${mobileScaleX}%`);
+                        
+                        // Tablet-specific scaling
+                        const tabletScaleX = Math.min(settings.scaleX + 3, 93); // +3% on tablet, max 93%
+                        img.style.setProperty('--img-tablet-scale-x', `${tabletScaleX}%`);
+                        
+                        // Add debug info
+                        img.setAttribute('title', `${settings.name} - ${settings.note}`);
+                        
+                        console.log(`Applied config for ${settings.name}: Desktop=${settings.scaleX}%, Tablet=${tabletScaleX}%, Mobile=${mobileScaleX}%`);
+                    } else {
+                        console.warn(`Image element not found for member: ${settings.name}`);
+                    }
+                });
+                
+                console.log('Team image configuration applied successfully!');
+                
+            } catch (error) {
+                console.error('Error loading team image configuration:', error);
+                console.log('Using default image settings');
+                
+                // Fallback to default settings with responsive scaling
+                document.querySelectorAll('.team-card img').forEach(img => {
+                    img.style.setProperty('--img-scale-x', '85%');
+                    img.style.setProperty('--img-scale-y', '0.95');
+                    img.style.setProperty('--img-offset-y', '-3px');
+                    img.style.setProperty('--img-position', 'center center');
+                    img.style.setProperty('--img-mobile-scale-x', '92%');
+                    img.style.setProperty('--img-tablet-scale-x', '88%');
+                });
+            }
         }
 
         // Initialize when page loads

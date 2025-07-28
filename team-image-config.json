@@ -1,0 +1,154 @@
+{
+  "teamImageSettings": {
+    "01-4": {
+      "name": "Anna Martynenko",
+      "scaleX": 90,
+      "scaleY": 100,
+      "offsetX": 0,
+      "offsetY": 0,
+      "objectPosition": "center center",
+      "actualDimensions": "824x1024",
+      "aspectRatio": 0.80,
+      "note": "Good portrait - minimal adjustment"
+    },
+    "02-4": {
+      "name": "Tetiana Kozhushko",
+      "scaleX": 88,
+      "scaleY": 95,
+      "offsetX": 0,
+      "offsetY": -3,
+      "objectPosition": "center center",
+      "actualDimensions": "600x800",
+      "aspectRatio": 0.75,
+      "note": "Good portrait - minimal adjustment"
+    },
+    "03": {
+      "name": "Hanna Moroz",
+      "scaleX": 85,
+      "scaleY": 95,
+      "offsetX": 0,
+      "offsetY": -2,
+      "objectPosition": "center center",
+      "actualDimensions": "590x816",
+      "aspectRatio": 0.72,
+      "note": "Good portrait - minimal adjustment"
+    },
+    "04-4": {
+      "name": "Nataliia Doroshenko",
+      "scaleX": 90,
+      "scaleY": 100,
+      "offsetX": 0,
+      "offsetY": 0,
+      "objectPosition": "center center",
+      "actualDimensions": "767x1024",
+      "aspectRatio": 0.75,
+      "note": "Good portrait - minimal adjustment"
+    },
+    "05-4": {
+      "name": "Yevheniia Smychyk",
+      "scaleX": 90,
+      "scaleY": 100,
+      "offsetX": 0,
+      "offsetY": 0,
+      "objectPosition": "center center",
+      "actualDimensions": "768x1024",
+      "aspectRatio": 0.75,
+      "note": "Good portrait - minimal adjustment"
+    },
+    "06-4": {
+      "name": "Yurii Bakurov",
+      "scaleX": 90,
+      "scaleY": 100,
+      "offsetX": 0,
+      "offsetY": 0,
+      "objectPosition": "center center",
+      "actualDimensions": "768x1024",
+      "aspectRatio": 0.75,
+      "note": "Good portrait - minimal adjustment"
+    },
+    "07-4": {
+      "name": "Pavel Samoshko",
+      "scaleX": 90,
+      "scaleY": 100,
+      "offsetX": 0,
+      "offsetY": 0,
+      "objectPosition": "center center",
+      "actualDimensions": "768x1024",
+      "aspectRatio": 0.75,
+      "note": "Good portrait - minimal adjustment"
+    },
+    "08-4": {
+      "name": "Olesya Koval",
+      "scaleX": 90,
+      "scaleY": 100,
+      "offsetX": 0,
+      "offsetY": 0,
+      "objectPosition": "center center",
+      "actualDimensions": "768x1024",
+      "aspectRatio": 0.75,
+      "note": "Good portrait - minimal adjustment"
+    },
+    "09-3": {
+      "name": "Nataliia Burdina",
+      "scaleX": 88,
+      "scaleY": 100,
+      "offsetX": 0,
+      "offsetY": 0,
+      "objectPosition": "center center",
+      "actualDimensions": "838x1024",
+      "aspectRatio": 0.82,
+      "note": "Good portrait - minimal adjustment"
+    },
+    "10-1": {
+      "name": "Viktor Petrov",
+      "scaleX": 90,
+      "scaleY": 100,
+      "offsetX": 0,
+      "offsetY": 0,
+      "objectPosition": "center center",
+      "actualDimensions": "768x1024",
+      "aspectRatio": 0.75,
+      "note": "Good portrait - minimal adjustment"
+    },
+    "11-1": {
+      "name": "Natalia Zhelizniak",
+      "scaleX": 90,
+      "scaleY": 100,
+      "offsetX": 0,
+      "offsetY": 0,
+      "objectPosition": "center center",
+      "actualDimensions": "768x1024",
+      "aspectRatio": 0.75,
+      "note": "Good portrait - minimal adjustment"
+    },
+    "12-1": {
+      "name": "Olesia Filenko",
+      "scaleX": 80,
+      "scaleY": 95,
+      "offsetX": 0,
+      "offsetY": -5,
+      "objectPosition": "center 45%",
+      "actualDimensions": "575x629",
+      "aspectRatio": 0.91,
+      "note": "Nearly square - moderate adjustment"
+    },
+    "13-1": {
+      "name": "Oksana Demyanova",
+      "scaleX": 60,
+      "scaleY": 75,
+      "offsetX": 0,
+      "offsetY": -15,
+      "objectPosition": "center 35%",
+      "actualDimensions": "1024x682",
+      "aspectRatio": 1.50,
+      "note": "Landscape - significant adjustment needed"
+    }
+  },
+  "defaultSettings": {
+    "scaleX": 85,
+    "scaleY": 95,
+    "offsetX": 0,
+    "offsetY": -3,
+    "objectPosition": "center center"
+  }
+}
