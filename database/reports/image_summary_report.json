@@ -1,0 +1,1129 @@
+{
+  "summary_info": {
+    "name": "SVIT UA Image Summary Report",
+    "version": "1.0.0",
+    "created": "2025-07-28",
+    "description": "Summary of all image sources found in HTML files",
+    "total_images": 105,
+    "unique_sources": 98
+  },
+  "image_sources": [
+    {
+      "src": "uploads/2025/06/logo.png",
+      "src1": "uploads1/2025/06/logo.png",
+      "new_src": "https://svituawww.github.io/uploads1/2025/06/logo.png",
+      "source_type": "img_tag",
+      "usage_context": [
+        "partner",
+        "logo"
+      ]
+    },
+    {
+      "src": "/uploads/2025/06/01-4-824x1024.jpg",
+      "src1": "/uploads1/2025/06/01-4-824x1024.jpg",
+      "new_src": "https://svituawww.github.io/uploads1/2025/06/01-4-824x1024.jpg",
+      "source_type": "js_reference",
+      "usage_context": [
+        "javascript",
+        "dynamic",
+        "team"
+      ]
+    },
+    {
+      "src": "/uploads/2025/06/02-4.jpg",
+      "src1": "/uploads1/2025/06/02-4.jpg",
+      "new_src": "https://svituawww.github.io/uploads1/2025/06/02-4.jpg",
+      "source_type": "js_reference",
+      "usage_context": [
+        "javascript",
+        "dynamic",
+        "team"
+      ]
+    },
+    {
+      "src": "/uploads/2025/06/03.png",
+      "src1": "/uploads1/2025/06/03.png",
+      "new_src": "https://svituawww.github.io/uploads1/2025/06/03.png",
+      "source_type": "js_reference",
+      "usage_context": [
+        "javascript",
+        "dynamic",
+        "team"
+      ]
+    },
+    {
+      "src": "/uploads/2025/06/04-4-767x1024.jpg",
+      "src1": "/uploads1/2025/06/04-4-767x1024.jpg",
+      "new_src": "https://svituawww.github.io/uploads1/2025/06/04-4-767x1024.jpg",
+      "source_type": "js_reference",
+      "usage_context": [
+        "javascript",
+        "dynamic",
+        "team"
+      ]
+    },
+    {
+      "src": "/uploads/2025/06/05-4-768x1024.jpg",
+      "src1": "/uploads1/2025/06/05-4-768x1024.jpg",
+      "new_src": "https://svituawww.github.io/uploads1/2025/06/05-4-768x1024.jpg",
+      "source_type": "js_reference",
+      "usage_context": [
+        "javascript",
+        "dynamic",
+        "team"
+      ]
+    },
+    {
+      "src": "/uploads/2025/06/06-4-768x1024.jpg",
+      "src1": "/uploads1/2025/06/06-4-768x1024.jpg",
+      "new_src": "https://svituawww.github.io/uploads1/2025/06/06-4-768x1024.jpg",
+      "source_type": "js_reference",
+      "usage_context": [
+        "javascript",
+        "dynamic",
+        "team"
+      ]
+    },
+    {
+      "src": "/uploads/2025/06/07-4-768x1024.jpg",
+      "src1": "/uploads1/2025/06/07-4-768x1024.jpg",
+      "new_src": "https://svituawww.github.io/uploads1/2025/06/07-4-768x1024.jpg",
+      "source_type": "js_reference",
+      "usage_context": [
+        "javascript",
+        "dynamic",
+        "team"
+      ]
+    },
+    {
+      "src": "/uploads/2025/06/08-4-768x1024.jpg",
+      "src1": "/uploads1/2025/06/08-4-768x1024.jpg",
+      "new_src": "https://svituawww.github.io/uploads1/2025/06/08-4-768x1024.jpg",
+      "source_type": "js_reference",
+      "usage_context": [
+        "javascript",
+        "dynamic",
+        "team"
+      ]
+    },
+    {
+      "src": "/uploads/2025/06/09-3-838x1024.jpg",
+      "src1": "/uploads1/2025/06/09-3-838x1024.jpg",
+      "new_src": "https://svituawww.github.io/uploads1/2025/06/09-3-838x1024.jpg",
+      "source_type": "js_reference",
+      "usage_context": [
+        "javascript",
+        "dynamic",
+        "team"
+      ]
+    },
+    {
+      "src": "/uploads/2025/06/10-1-768x1024.jpg",
+      "src1": "/uploads1/2025/06/10-1-768x1024.jpg",
+      "new_src": "https://svituawww.github.io/uploads1/2025/06/10-1-768x1024.jpg",
+      "source_type": "js_reference",
+      "usage_context": [
+        "javascript",
+        "dynamic",
+        "team"
+      ]
+    },
+    {
+      "src": "/uploads/2025/06/11-1-768x1024.jpg",
+      "src1": "/uploads1/2025/06/11-1-768x1024.jpg",
+      "new_src": "https://svituawww.github.io/uploads1/2025/06/11-1-768x1024.jpg",
+      "source_type": "js_reference",
+      "usage_context": [
+        "javascript",
+        "dynamic",
+        "team"
+      ]
+    },
+    {
+      "src": "/uploads/2025/06/12-1.jpg",
+      "src1": "/uploads1/2025/06/12-1.jpg",
+      "new_src": "https://svituawww.github.io/uploads1/2025/06/12-1.jpg",
+      "source_type": "js_reference",
+      "usage_context": [
+        "javascript",
+        "dynamic",
+        "team"
+      ]
+    },
+    {
+      "src": "/uploads/2025/06/13-1.jpg",
+      "src1": "/uploads1/2025/06/13-1.jpg",
+      "new_src": "https://svituawww.github.io/uploads1/2025/06/13-1.jpg",
+      "source_type": "js_reference",
+      "usage_context": [
+        "javascript",
+        "dynamic",
+        "team"
+      ]
+    },
+    {
+      "src": "uploads/2025/03/svitua_100x100.png",
+      "src1": "uploads1/2025/03/svitua_100x100.png",
+      "new_src": "https://svituawww.github.io/uploads1/2025/03/svitua_100x100.png",
+      "source_type": "img_tag",
+      "usage_context": [
+        "partner",
+        "logo"
+      ]
+    },
+    {
+      "src": "uploads/2025/06/1-683x1024.jpg",
+      "src1": "uploads1/2025/06/1-683x1024.jpg",
+      "new_src": "https://svituawww.github.io/uploads1/2025/06/1-683x1024.jpg",
+      "source_type": "img_tag",
+      "usage_context": [
+        "hero"
+      ]
+    },
+    {
+      "src": "uploads/2025/06/1-1024x768.png",
+      "src1": "uploads1/2025/06/1-1024x768.png",
+      "new_src": "https://svituawww.github.io/uploads1/2025/06/1-1024x768.png",
+      "source_type": "img_tag",
+      "usage_context": [
+        "gallery"
+      ]
+    },
+    {
+      "src": "uploads/2025/06/2-1024x768.png",
+      "src1": "uploads1/2025/06/2-1024x768.png",
+      "new_src": "https://svituawww.github.io/uploads1/2025/06/2-1024x768.png",
+      "source_type": "img_tag",
+      "usage_context": [
+        "gallery"
+      ]
+    },
+    {
+      "src": "uploads/2025/06/3-768x1024.png",
+      "src1": "uploads1/2025/06/3-768x1024.png",
+      "new_src": "https://svituawww.github.io/uploads1/2025/06/3-768x1024.png",
+      "source_type": "img_tag",
+      "usage_context": [
+        "gallery"
+      ]
+    },
+    {
+      "src": "uploads/2025/06/1-200x300.jpg",
+      "src1": "uploads1/2025/06/1-200x300.jpg",
+      "new_src": "https://svituawww.github.io/uploads1/2025/06/1-200x300.jpg",
+      "source_type": "srcset",
+      "usage_context": [
+        "responsive",
+        "srcset"
+      ]
+    },
+    {
+      "src": "uploads/2025/06/1-768x1152.jpg",
+      "src1": "uploads1/2025/06/1-768x1152.jpg",
+      "new_src": "https://svituawww.github.io/uploads1/2025/06/1-768x1152.jpg",
+      "source_type": "srcset",
+      "usage_context": [
+        "responsive",
+        "srcset"
+      ]
+    },
+    {
+      "src": "uploads/2025/06/1-1024x1536.jpg",
+      "src1": "uploads1/2025/06/1-1024x1536.jpg",
+      "new_src": "https://svituawww.github.io/uploads1/2025/06/1-1024x1536.jpg",
+      "source_type": "srcset",
+      "usage_context": [
+        "responsive",
+        "srcset"
+      ]
+    },
+    {
+      "src": "uploads/2025/06/1-300x225.png",
+      "src1": "uploads1/2025/06/1-300x225.png",
+      "new_src": "https://svituawww.github.io/uploads1/2025/06/1-300x225.png",
+      "source_type": "srcset",
+      "usage_context": [
+        "responsive",
+        "srcset"
+      ]
+    },
+    {
+      "src": "uploads/2025/06/1-768x576.png",
+      "src1": "uploads1/2025/06/1-768x576.png",
+      "new_src": "https://svituawww.github.io/uploads1/2025/06/1-768x576.png",
+      "source_type": "srcset",
+      "usage_context": [
+        "responsive",
+        "srcset"
+      ]
+    },
+    {
+      "src": "uploads/2025/06/1-16x12.png",
+      "src1": "uploads1/2025/06/1-16x12.png",
+      "new_src": "https://svituawww.github.io/uploads1/2025/06/1-16x12.png",
+      "source_type": "srcset",
+      "usage_context": [
+        "responsive",
+        "srcset"
+      ]
+    },
+    {
+      "src": "uploads/2025/06/1.png",
+      "src1": "uploads1/2025/06/1.png",
+      "new_src": "https://svituawww.github.io/uploads1/2025/06/1.png",
+      "source_type": "srcset",
+      "usage_context": [
+        "responsive",
+        "srcset"
+      ]
+    },
+    {
+      "src": "uploads/2025/06/2-300x225.png",
+      "src1": "uploads1/2025/06/2-300x225.png",
+      "new_src": "https://svituawww.github.io/uploads1/2025/06/2-300x225.png",
+      "source_type": "srcset",
+      "usage_context": [
+        "responsive",
+        "srcset"
+      ]
+    },
+    {
+      "src": "uploads/2025/06/2-768x576.png",
+      "src1": "uploads1/2025/06/2-768x576.png",
+      "new_src": "https://svituawww.github.io/uploads1/2025/06/2-768x576.png",
+      "source_type": "srcset",
+      "usage_context": [
+        "responsive",
+        "srcset"
+      ]
+    },
+    {
+      "src": "uploads/2025/06/2-16x12.png",
+      "src1": "uploads1/2025/06/2-16x12.png",
+      "new_src": "https://svituawww.github.io/uploads1/2025/06/2-16x12.png",
+      "source_type": "srcset",
+      "usage_context": [
+        "responsive",
+        "srcset"
+      ]
+    },
+    {
+      "src": "uploads/2025/06/2.png",
+      "src1": "uploads1/2025/06/2.png",
+      "new_src": "https://svituawww.github.io/uploads1/2025/06/2.png",
+      "source_type": "srcset",
+      "usage_context": [
+        "responsive",
+        "srcset"
+      ]
+    },
+    {
+      "src": "uploads/2025/06/3-225x300.png",
+      "src1": "uploads1/2025/06/3-225x300.png",
+      "new_src": "https://svituawww.github.io/uploads1/2025/06/3-225x300.png",
+      "source_type": "srcset",
+      "usage_context": [
+        "responsive",
+        "srcset"
+      ]
+    },
+    {
+      "src": "uploads/2025/06/3-1152x1536.png",
+      "src1": "uploads1/2025/06/3-1152x1536.png",
+      "new_src": "https://svituawww.github.io/uploads1/2025/06/3-1152x1536.png",
+      "source_type": "srcset",
+      "usage_context": [
+        "responsive",
+        "srcset"
+      ]
+    },
+    {
+      "src": "uploads/2025/06/3-9x12.png",
+      "src1": "uploads1/2025/06/3-9x12.png",
+      "new_src": "https://svituawww.github.io/uploads1/2025/06/3-9x12.png",
+      "source_type": "srcset",
+      "usage_context": [
+        "responsive",
+        "srcset"
+      ]
+    },
+    {
+      "src": "uploads/2025/06/3.png",
+      "src1": "uploads1/2025/06/3.png",
+      "new_src": "https://svituawww.github.io/uploads1/2025/06/3.png",
+      "source_type": "srcset",
+      "usage_context": [
+        "responsive",
+        "srcset"
+      ]
+    },
+    {
+      "src": "uploads/2025/06/normalized/2-150.jpg",
+      "src1": "uploads1/2025/06/normalized/2-150.jpg",
+      "new_src": "https://svituawww.github.io/uploads1/2025/06/normalized/2-150.jpg",
+      "source_type": "js_reference",
+      "usage_context": [
+        "javascript",
+        "dynamic",
+        "partner",
+        "carousel"
+      ]
+    },
+    {
+      "src": "uploads/2025/06/2.jpg",
+      "src1": "uploads1/2025/06/2.jpg",
+      "new_src": "https://svituawww.github.io/uploads1/2025/06/2.jpg",
+      "source_type": "js_reference",
+      "usage_context": [
+        "javascript",
+        "dynamic",
+        "partner",
+        "carousel"
+      ]
+    },
+    {
+      "src": "uploads/2025/06/normalized/3-150.jpg",
+      "src1": "uploads1/2025/06/normalized/3-150.jpg",
+      "new_src": "https://svituawww.github.io/uploads1/2025/06/normalized/3-150.jpg",
+      "source_type": "js_reference",
+      "usage_context": [
+        "javascript",
+        "dynamic",
+        "partner",
+        "carousel"
+      ]
+    },
+    {
+      "src": "uploads/2025/06/3.jpg",
+      "src1": "uploads1/2025/06/3.jpg",
+      "new_src": "https://svituawww.github.io/uploads1/2025/06/3.jpg",
+      "source_type": "js_reference",
+      "usage_context": [
+        "javascript",
+        "dynamic",
+        "partner",
+        "carousel"
+      ]
+    },
+    {
+      "src": "uploads/2025/06/normalized/4-150.jpg",
+      "src1": "uploads1/2025/06/normalized/4-150.jpg",
+      "new_src": "https://svituawww.github.io/uploads1/2025/06/normalized/4-150.jpg",
+      "source_type": "js_reference",
+      "usage_context": [
+        "javascript",
+        "dynamic",
+        "partner",
+        "carousel"
+      ]
+    },
+    {
+      "src": "uploads/2025/06/4.jpg",
+      "src1": "uploads1/2025/06/4.jpg",
+      "new_src": "https://svituawww.github.io/uploads1/2025/06/4.jpg",
+      "source_type": "js_reference",
+      "usage_context": [
+        "javascript",
+        "dynamic",
+        "partner",
+        "carousel"
+      ]
+    },
+    {
+      "src": "uploads/2025/06/normalized/5-150.jpg",
+      "src1": "uploads1/2025/06/normalized/5-150.jpg",
+      "new_src": "https://svituawww.github.io/uploads1/2025/06/normalized/5-150.jpg",
+      "source_type": "js_reference",
+      "usage_context": [
+        "javascript",
+        "dynamic",
+        "partner",
+        "carousel"
+      ]
+    },
+    {
+      "src": "uploads/2025/06/5.jpg",
+      "src1": "uploads1/2025/06/5.jpg",
+      "new_src": "https://svituawww.github.io/uploads1/2025/06/5.jpg",
+      "source_type": "js_reference",
+      "usage_context": [
+        "javascript",
+        "dynamic",
+        "partner",
+        "carousel"
+      ]
+    },
+    {
+      "src": "uploads/2025/06/normalized/6-150.jpg",
+      "src1": "uploads1/2025/06/normalized/6-150.jpg",
+      "new_src": "https://svituawww.github.io/uploads1/2025/06/normalized/6-150.jpg",
+      "source_type": "js_reference",
+      "usage_context": [
+        "javascript",
+        "dynamic",
+        "partner",
+        "carousel"
+      ]
+    },
+    {
+      "src": "uploads/2025/06/6.jpg",
+      "src1": "uploads1/2025/06/6.jpg",
+      "new_src": "https://svituawww.github.io/uploads1/2025/06/6.jpg",
+      "source_type": "js_reference",
+      "usage_context": [
+        "javascript",
+        "dynamic",
+        "partner",
+        "carousel"
+      ]
+    },
+    {
+      "src": "uploads/2025/06/normalized/7-150.jpg",
+      "src1": "uploads1/2025/06/normalized/7-150.jpg",
+      "new_src": "https://svituawww.github.io/uploads1/2025/06/normalized/7-150.jpg",
+      "source_type": "js_reference",
+      "usage_context": [
+        "javascript",
+        "dynamic",
+        "partner",
+        "carousel"
+      ]
+    },
+    {
+      "src": "uploads/2025/06/7.jpg",
+      "src1": "uploads1/2025/06/7.jpg",
+      "new_src": "https://svituawww.github.io/uploads1/2025/06/7.jpg",
+      "source_type": "js_reference",
+      "usage_context": [
+        "javascript",
+        "dynamic",
+        "partner",
+        "carousel"
+      ]
+    },
+    {
+      "src": "uploads/2025/06/normalized/8-150.jpg",
+      "src1": "uploads1/2025/06/normalized/8-150.jpg",
+      "new_src": "https://svituawww.github.io/uploads1/2025/06/normalized/8-150.jpg",
+      "source_type": "js_reference",
+      "usage_context": [
+        "javascript",
+        "dynamic",
+        "partner",
+        "carousel"
+      ]
+    },
+    {
+      "src": "uploads/2025/06/8.jpg",
+      "src1": "uploads1/2025/06/8.jpg",
+      "new_src": "https://svituawww.github.io/uploads1/2025/06/8.jpg",
+      "source_type": "js_reference",
+      "usage_context": [
+        "javascript",
+        "dynamic",
+        "partner",
+        "carousel"
+      ]
+    },
+    {
+      "src": "uploads/2025/06/normalized/9-150.jpg",
+      "src1": "uploads1/2025/06/normalized/9-150.jpg",
+      "new_src": "https://svituawww.github.io/uploads1/2025/06/normalized/9-150.jpg",
+      "source_type": "js_reference",
+      "usage_context": [
+        "javascript",
+        "dynamic",
+        "partner",
+        "carousel"
+      ]
+    },
+    {
+      "src": "uploads/2025/06/9.jpg",
+      "src1": "uploads1/2025/06/9.jpg",
+      "new_src": "https://svituawww.github.io/uploads1/2025/06/9.jpg",
+      "source_type": "js_reference",
+      "usage_context": [
+        "javascript",
+        "dynamic",
+        "partner",
+        "carousel"
+      ]
+    },
+    {
+      "src": "uploads/2025/06/normalized/10-150.jpg",
+      "src1": "uploads1/2025/06/normalized/10-150.jpg",
+      "new_src": "https://svituawww.github.io/uploads1/2025/06/normalized/10-150.jpg",
+      "source_type": "js_reference",
+      "usage_context": [
+        "javascript",
+        "dynamic",
+        "partner",
+        "carousel"
+      ]
+    },
+    {
+      "src": "uploads/2025/06/10.jpg",
+      "src1": "uploads1/2025/06/10.jpg",
+      "new_src": "https://svituawww.github.io/uploads1/2025/06/10.jpg",
+      "source_type": "js_reference",
+      "usage_context": [
+        "javascript",
+        "dynamic",
+        "partner",
+        "carousel"
+      ]
+    },
+    {
+      "src": "uploads/2025/06/normalized/11-150.jpg",
+      "src1": "uploads1/2025/06/normalized/11-150.jpg",
+      "new_src": "https://svituawww.github.io/uploads1/2025/06/normalized/11-150.jpg",
+      "source_type": "js_reference",
+      "usage_context": [
+        "javascript",
+        "dynamic",
+        "partner",
+        "carousel"
+      ]
+    },
+    {
+      "src": "uploads/2025/06/11.jpg",
+      "src1": "uploads1/2025/06/11.jpg",
+      "new_src": "https://svituawww.github.io/uploads1/2025/06/11.jpg",
+      "source_type": "js_reference",
+      "usage_context": [
+        "javascript",
+        "dynamic",
+        "partner",
+        "carousel"
+      ]
+    },
+    {
+      "src": "uploads/2025/06/normalized/13-150.jpg",
+      "src1": "uploads1/2025/06/normalized/13-150.jpg",
+      "new_src": "https://svituawww.github.io/uploads1/2025/06/normalized/13-150.jpg",
+      "source_type": "js_reference",
+      "usage_context": [
+        "javascript",
+        "dynamic",
+        "partner",
+        "carousel"
+      ]
+    },
+    {
+      "src": "uploads/2025/06/13.jpg",
+      "src1": "uploads1/2025/06/13.jpg",
+      "new_src": "https://svituawww.github.io/uploads1/2025/06/13.jpg",
+      "source_type": "js_reference",
+      "usage_context": [
+        "javascript",
+        "dynamic",
+        "partner",
+        "carousel"
+      ]
+    },
+    {
+      "src": "uploads/2025/06/normalized/14-150.jpg",
+      "src1": "uploads1/2025/06/normalized/14-150.jpg",
+      "new_src": "https://svituawww.github.io/uploads1/2025/06/normalized/14-150.jpg",
+      "source_type": "js_reference",
+      "usage_context": [
+        "javascript",
+        "dynamic",
+        "partner",
+        "carousel"
+      ]
+    },
+    {
+      "src": "uploads/2025/06/14.jpg",
+      "src1": "uploads1/2025/06/14.jpg",
+      "new_src": "https://svituawww.github.io/uploads1/2025/06/14.jpg",
+      "source_type": "js_reference",
+      "usage_context": [
+        "javascript",
+        "dynamic",
+        "partner",
+        "carousel"
+      ]
+    },
+    {
+      "src": "uploads/2025/06/normalized/15-150.jpg",
+      "src1": "uploads1/2025/06/normalized/15-150.jpg",
+      "new_src": "https://svituawww.github.io/uploads1/2025/06/normalized/15-150.jpg",
+      "source_type": "js_reference",
+      "usage_context": [
+        "javascript",
+        "dynamic",
+        "partner",
+        "carousel"
+      ]
+    },
+    {
+      "src": "uploads/2025/06/15.jpg",
+      "src1": "uploads1/2025/06/15.jpg",
+      "new_src": "https://svituawww.github.io/uploads1/2025/06/15.jpg",
+      "source_type": "js_reference",
+      "usage_context": [
+        "javascript",
+        "dynamic",
+        "partner",
+        "carousel"
+      ]
+    },
+    {
+      "src": "uploads/2025/06/normalized/16-150.jpg",
+      "src1": "uploads1/2025/06/normalized/16-150.jpg",
+      "new_src": "https://svituawww.github.io/uploads1/2025/06/normalized/16-150.jpg",
+      "source_type": "js_reference",
+      "usage_context": [
+        "javascript",
+        "dynamic",
+        "partner",
+        "carousel"
+      ]
+    },
+    {
+      "src": "uploads/2025/06/16.jpg",
+      "src1": "uploads1/2025/06/16.jpg",
+      "new_src": "https://svituawww.github.io/uploads1/2025/06/16.jpg",
+      "source_type": "js_reference",
+      "usage_context": [
+        "javascript",
+        "dynamic",
+        "partner",
+        "carousel"
+      ]
+    },
+    {
+      "src": "uploads/2025/06/normalized/17-150.jpg",
+      "src1": "uploads1/2025/06/normalized/17-150.jpg",
+      "new_src": "https://svituawww.github.io/uploads1/2025/06/normalized/17-150.jpg",
+      "source_type": "js_reference",
+      "usage_context": [
+        "javascript",
+        "dynamic",
+        "partner",
+        "carousel"
+      ]
+    },
+    {
+      "src": "uploads/2025/06/17.jpg",
+      "src1": "uploads1/2025/06/17.jpg",
+      "new_src": "https://svituawww.github.io/uploads1/2025/06/17.jpg",
+      "source_type": "js_reference",
+      "usage_context": [
+        "javascript",
+        "dynamic",
+        "partner",
+        "carousel"
+      ]
+    },
+    {
+      "src": "uploads/2025/06/normalized/18-150.jpg",
+      "src1": "uploads1/2025/06/normalized/18-150.jpg",
+      "new_src": "https://svituawww.github.io/uploads1/2025/06/normalized/18-150.jpg",
+      "source_type": "js_reference",
+      "usage_context": [
+        "javascript",
+        "dynamic",
+        "partner",
+        "carousel"
+      ]
+    },
+    {
+      "src": "uploads/2025/06/18.jpg",
+      "src1": "uploads1/2025/06/18.jpg",
+      "new_src": "https://svituawww.github.io/uploads1/2025/06/18.jpg",
+      "source_type": "js_reference",
+      "usage_context": [
+        "javascript",
+        "dynamic",
+        "partner",
+        "carousel"
+      ]
+    },
+    {
+      "src": "uploads/2025/06/normalized/19-150.jpg",
+      "src1": "uploads1/2025/06/normalized/19-150.jpg",
+      "new_src": "https://svituawww.github.io/uploads1/2025/06/normalized/19-150.jpg",
+      "source_type": "js_reference",
+      "usage_context": [
+        "javascript",
+        "dynamic",
+        "partner",
+        "carousel"
+      ]
+    },
+    {
+      "src": "uploads/2025/06/19.jpg",
+      "src1": "uploads1/2025/06/19.jpg",
+      "new_src": "https://svituawww.github.io/uploads1/2025/06/19.jpg",
+      "source_type": "js_reference",
+      "usage_context": [
+        "javascript",
+        "dynamic",
+        "partner",
+        "carousel"
+      ]
+    },
+    {
+      "src": "uploads/2025/06/normalized/20-150.jpg",
+      "src1": "uploads1/2025/06/normalized/20-150.jpg",
+      "new_src": "https://svituawww.github.io/uploads1/2025/06/normalized/20-150.jpg",
+      "source_type": "js_reference",
+      "usage_context": [
+        "javascript",
+        "dynamic",
+        "partner",
+        "carousel"
+      ]
+    },
+    {
+      "src": "uploads/2025/06/20.jpg",
+      "src1": "uploads1/2025/06/20.jpg",
+      "new_src": "https://svituawww.github.io/uploads1/2025/06/20.jpg",
+      "source_type": "js_reference",
+      "usage_context": [
+        "javascript",
+        "dynamic",
+        "partner",
+        "carousel"
+      ]
+    },
+    {
+      "src": "uploads/2025/06/normalized/21-150.jpg",
+      "src1": "uploads1/2025/06/normalized/21-150.jpg",
+      "new_src": "https://svituawww.github.io/uploads1/2025/06/normalized/21-150.jpg",
+      "source_type": "js_reference",
+      "usage_context": [
+        "javascript",
+        "dynamic",
+        "partner",
+        "carousel"
+      ]
+    },
+    {
+      "src": "uploads/2025/06/21.jpg",
+      "src1": "uploads1/2025/06/21.jpg",
+      "new_src": "https://svituawww.github.io/uploads1/2025/06/21.jpg",
+      "source_type": "js_reference",
+      "usage_context": [
+        "javascript",
+        "dynamic",
+        "partner",
+        "carousel"
+      ]
+    },
+    {
+      "src": "uploads/2025/06/normalized/22-150.jpg",
+      "src1": "uploads1/2025/06/normalized/22-150.jpg",
+      "new_src": "https://svituawww.github.io/uploads1/2025/06/normalized/22-150.jpg",
+      "source_type": "js_reference",
+      "usage_context": [
+        "javascript",
+        "dynamic",
+        "partner",
+        "carousel"
+      ]
+    },
+    {
+      "src": "uploads/2025/06/22.jpg",
+      "src1": "uploads1/2025/06/22.jpg",
+      "new_src": "https://svituawww.github.io/uploads1/2025/06/22.jpg",
+      "source_type": "js_reference",
+      "usage_context": [
+        "javascript",
+        "dynamic",
+        "partner",
+        "carousel"
+      ]
+    },
+    {
+      "src": "uploads/2025/06/normalized/23-150.jpg",
+      "src1": "uploads1/2025/06/normalized/23-150.jpg",
+      "new_src": "https://svituawww.github.io/uploads1/2025/06/normalized/23-150.jpg",
+      "source_type": "js_reference",
+      "usage_context": [
+        "javascript",
+        "dynamic",
+        "partner",
+        "carousel"
+      ]
+    },
+    {
+      "src": "uploads/2025/06/23.jpg",
+      "src1": "uploads1/2025/06/23.jpg",
+      "new_src": "https://svituawww.github.io/uploads1/2025/06/23.jpg",
+      "source_type": "js_reference",
+      "usage_context": [
+        "javascript",
+        "dynamic",
+        "partner",
+        "carousel"
+      ]
+    },
+    {
+      "src": "uploads/2025/06/normalized/24-150.jpg",
+      "src1": "uploads1/2025/06/normalized/24-150.jpg",
+      "new_src": "https://svituawww.github.io/uploads1/2025/06/normalized/24-150.jpg",
+      "source_type": "js_reference",
+      "usage_context": [
+        "javascript",
+        "dynamic",
+        "partner",
+        "carousel"
+      ]
+    },
+    {
+      "src": "uploads/2025/06/24.jpg",
+      "src1": "uploads1/2025/06/24.jpg",
+      "new_src": "https://svituawww.github.io/uploads1/2025/06/24.jpg",
+      "source_type": "js_reference",
+      "usage_context": [
+        "javascript",
+        "dynamic",
+        "partner",
+        "carousel"
+      ]
+    },
+    {
+      "src": "uploads/2025/06/normalized/25-150.jpg",
+      "src1": "uploads1/2025/06/normalized/25-150.jpg",
+      "new_src": "https://svituawww.github.io/uploads1/2025/06/normalized/25-150.jpg",
+      "source_type": "js_reference",
+      "usage_context": [
+        "javascript",
+        "dynamic",
+        "partner",
+        "carousel"
+      ]
+    },
+    {
+      "src": "uploads/2025/06/25.jpg",
+      "src1": "uploads1/2025/06/25.jpg",
+      "new_src": "https://svituawww.github.io/uploads1/2025/06/25.jpg",
+      "source_type": "js_reference",
+      "usage_context": [
+        "javascript",
+        "dynamic",
+        "partner",
+        "carousel"
+      ]
+    },
+    {
+      "src": "uploads/2025/06/normalized/26-150.jpg",
+      "src1": "uploads1/2025/06/normalized/26-150.jpg",
+      "new_src": "https://svituawww.github.io/uploads1/2025/06/normalized/26-150.jpg",
+      "source_type": "js_reference",
+      "usage_context": [
+        "javascript",
+        "dynamic",
+        "partner",
+        "carousel"
+      ]
+    },
+    {
+      "src": "uploads/2025/06/26.jpg",
+      "src1": "uploads1/2025/06/26.jpg",
+      "new_src": "https://svituawww.github.io/uploads1/2025/06/26.jpg",
+      "source_type": "js_reference",
+      "usage_context": [
+        "javascript",
+        "dynamic",
+        "partner",
+        "carousel"
+      ]
+    },
+    {
+      "src": "uploads/2025/06/normalized/29-150.jpg",
+      "src1": "uploads1/2025/06/normalized/29-150.jpg",
+      "new_src": "https://svituawww.github.io/uploads1/2025/06/normalized/29-150.jpg",
+      "source_type": "js_reference",
+      "usage_context": [
+        "javascript",
+        "dynamic",
+        "partner",
+        "carousel"
+      ]
+    },
+    {
+      "src": "uploads/2025/06/29.jpg",
+      "src1": "uploads1/2025/06/29.jpg",
+      "new_src": "https://svituawww.github.io/uploads1/2025/06/29.jpg",
+      "source_type": "js_reference",
+      "usage_context": [
+        "javascript",
+        "dynamic",
+        "partner",
+        "carousel"
+      ]
+    },
+    {
+      "src": "uploads/2025/06/normalized/31-150.jpg",
+      "src1": "uploads1/2025/06/normalized/31-150.jpg",
+      "new_src": "https://svituawww.github.io/uploads1/2025/06/normalized/31-150.jpg",
+      "source_type": "js_reference",
+      "usage_context": [
+        "javascript",
+        "dynamic",
+        "partner",
+        "carousel"
+      ]
+    },
+    {
+      "src": "uploads/2025/06/31.jpg",
+      "src1": "uploads1/2025/06/31.jpg",
+      "new_src": "https://svituawww.github.io/uploads1/2025/06/31.jpg",
+      "source_type": "js_reference",
+      "usage_context": [
+        "javascript",
+        "dynamic",
+        "partner",
+        "carousel"
+      ]
+    },
+    {
+      "src": "uploads/2025/06/normalized/32-150.jpg",
+      "src1": "uploads1/2025/06/normalized/32-150.jpg",
+      "new_src": "https://svituawww.github.io/uploads1/2025/06/normalized/32-150.jpg",
+      "source_type": "js_reference",
+      "usage_context": [
+        "javascript",
+        "dynamic",
+        "partner",
+        "carousel"
+      ]
+    },
+    {
+      "src": "uploads/2025/06/32.jpg",
+      "src1": "uploads1/2025/06/32.jpg",
+      "new_src": "https://svituawww.github.io/uploads1/2025/06/32.jpg",
+      "source_type": "js_reference",
+      "usage_context": [
+        "javascript",
+        "dynamic",
+        "partner",
+        "carousel"
+      ]
+    },
+    {
+      "src": "uploads/2025/06/normalized/33-150.jpg",
+      "src1": "uploads1/2025/06/normalized/33-150.jpg",
+      "new_src": "https://svituawww.github.io/uploads1/2025/06/normalized/33-150.jpg",
+      "source_type": "js_reference",
+      "usage_context": [
+        "javascript",
+        "dynamic",
+        "partner",
+        "carousel"
+      ]
+    },
+    {
+      "src": "uploads/2025/06/33.jpg",
+      "src1": "uploads1/2025/06/33.jpg",
+      "new_src": "https://svituawww.github.io/uploads1/2025/06/33.jpg",
+      "source_type": "js_reference",
+      "usage_context": [
+        "javascript",
+        "dynamic",
+        "partner",
+        "carousel"
+      ]
+    },
+    {
+      "src": "uploads/2025/06/normalized/34-150.jpg",
+      "src1": "uploads1/2025/06/normalized/34-150.jpg",
+      "new_src": "https://svituawww.github.io/uploads1/2025/06/normalized/34-150.jpg",
+      "source_type": "js_reference",
+      "usage_context": [
+        "javascript",
+        "dynamic",
+        "partner",
+        "carousel"
+      ]
+    },
+    {
+      "src": "uploads/2025/06/34.jpg",
+      "src1": "uploads1/2025/06/34.jpg",
+      "new_src": "https://svituawww.github.io/uploads1/2025/06/34.jpg",
+      "source_type": "js_reference",
+      "usage_context": [
+        "javascript",
+        "dynamic",
+        "partner",
+        "carousel"
+      ]
+    },
+    {
+      "src": "uploads/2025/06/normalized/35-150.jpg",
+      "src1": "uploads1/2025/06/normalized/35-150.jpg",
+      "new_src": "https://svituawww.github.io/uploads1/2025/06/normalized/35-150.jpg",
+      "source_type": "js_reference",
+      "usage_context": [
+        "javascript",
+        "dynamic",
+        "partner",
+        "carousel"
+      ]
+    },
+    {
+      "src": "uploads/2025/06/35.jpg",
+      "src1": "uploads1/2025/06/35.jpg",
+      "new_src": "https://svituawww.github.io/uploads1/2025/06/35.jpg",
+      "source_type": "js_reference",
+      "usage_context": [
+        "javascript",
+        "dynamic",
+        "partner",
+        "carousel"
+      ]
+    },
+    {
+      "src": "uploads/2025/06/normalized/37-150.jpg",
+      "src1": "uploads1/2025/06/normalized/37-150.jpg",
+      "new_src": "https://svituawww.github.io/uploads1/2025/06/normalized/37-150.jpg",
+      "source_type": "js_reference",
+      "usage_context": [
+        "javascript",
+        "dynamic",
+        "partner",
+        "carousel"
+      ]
+    },
+    {
+      "src": "uploads/2025/06/37.jpg",
+      "src1": "uploads1/2025/06/37.jpg",
+      "new_src": "https://svituawww.github.io/uploads1/2025/06/37.jpg",
+      "source_type": "js_reference",
+      "usage_context": [
+        "javascript",
+        "dynamic",
+        "partner",
+        "carousel"
+      ]
+    },
+    {
+      "src": "uploads/2025/06/normalized/12-150.jpg",
+      "src1": "uploads1/2025/06/normalized/12-150.jpg",
+      "new_src": "https://svituawww.github.io/uploads1/2025/06/normalized/12-150.jpg",
+      "source_type": "js_reference",
+      "usage_context": [
+        "javascript",
+        "dynamic",
+        "partner",
+        "carousel"
+      ]
+    },
+    {
+      "src": "uploads/2025/06/12.jpg",
+      "src1": "uploads1/2025/06/12.jpg",
+      "new_src": "https://svituawww.github.io/uploads1/2025/06/12.jpg",
+      "source_type": "js_reference",
+      "usage_context": [
+        "javascript",
+        "dynamic",
+        "partner",
+        "carousel"
+      ]
+    }
+  ]
+}
