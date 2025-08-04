@@ -1,0 +1,1883 @@
+[
+  {
+    "name": "html",
+    "id": "f0d10a6c",
+    "element_attr_content": "<html lang=\"uk\">",
+    "inner_content": "\n<928554c2>\n<2dc46095>\n",
+    "parent_id": null,
+    "order": 1,
+    "level": 1
+  },
+  {
+    "name": "head",
+    "id": "928554c2",
+    "element_attr_content": "<head>",
+    "inner_content": "\n<240ef8ec>\n<6a433c45>\n<1342e932>\n<758229bf>\n",
+    "parent_id": "f0d10a6c",
+    "order": 2,
+    "level": 2
+  },
+  {
+    "name": "meta",
+    "id": "240ef8ec",
+    "element_attr_content": "<meta charset=\"UTF-8\">",
+    "inner_content": "",
+    "parent_id": "928554c2",
+    "order": 3,
+    "level": 3
+  },
+  {
+    "name": "meta",
+    "id": "6a433c45",
+    "element_attr_content": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+    "inner_content": "",
+    "parent_id": "928554c2",
+    "order": 4,
+    "level": 3
+  },
+  {
+    "name": "title",
+    "id": "1342e932",
+    "element_attr_content": "<title>",
+    "inner_content": "SVIT UA - Гуманітарна допомога та інтеграція українців у Швеції",
+    "parent_id": "928554c2",
+    "order": 5,
+    "level": 3
+  },
+  {
+    "name": "meta",
+    "id": "758229bf",
+    "element_attr_content": "<meta name=\"description\" content=\"Гуманітарна допомога, волонтерство та інтеграція — ми поруч із тобою в Швеції. SVIT UA об'єднує людей, які вірять у силу підтримки, солідарності та дій.\">",
+    "inner_content": "",
+    "parent_id": "928554c2",
+    "order": 6,
+    "level": 3
+  },
+  {
+    "name": "body",
+    "id": "2dc46095",
+    "element_attr_content": "<body>",
+    "inner_content": "\n Header \n<b0dd804e>\n Hero Section \n<b0f965d2>\n Partners Section \n<9288a091>\n Services Section \n<2689df8c>\n Upcoming Events Section \n<5e93e9f7>\n Join the Cause Section \n<82963739>\n FAQ Section \n<f778a009>\n Contact Section \n<4bea3b4c>\n Footer \n<00542854>\n Floating Donate Button \n<e030ac62>\n",
+    "parent_id": "f0d10a6c",
+    "order": 7,
+    "level": 2
+  },
+  {
+    "name": "header",
+    "id": "b0dd804e",
+    "element_attr_content": "<header>",
+    "inner_content": "\n<805b51ad>\n Mobile Menu Overlay \n<a07e10d3>\n Mobile Menu \n<b4b62821>\n",
+    "parent_id": "2dc46095",
+    "order": 8,
+    "level": 3
+  },
+  {
+    "name": "nav",
+    "id": "805b51ad",
+    "element_attr_content": "<nav class=\"container\">",
+    "inner_content": "\n<118a3f09>\n<1d9b7a5a>\n Mobile Menu Toggle \n<720eb507>\n<3928a6e3>\n",
+    "parent_id": "b0dd804e",
+    "order": 9,
+    "level": 4
+  },
+  {
+    "name": "div",
+    "id": "118a3f09",
+    "element_attr_content": "<div class=\"logo\">",
+    "inner_content": "\n<3b7d8c74>\n<7e33dcad>\n",
+    "parent_id": "805b51ad",
+    "order": 10,
+    "level": 5
+  },
+  {
+    "name": "img",
+    "id": "3b7d8c74",
+    "element_attr_content": "<img src=\"https://svituawww.github.io/uploads1/2025/03/svitua_100x100.png\" alt=\"SVIT UA Logo\">",
+    "inner_content": "",
+    "parent_id": "118a3f09",
+    "order": 11,
+    "level": 6
+  },
+  {
+    "name": "h1",
+    "id": "7e33dcad",
+    "element_attr_content": "<h1>",
+    "inner_content": "SVIT UA",
+    "parent_id": "118a3f09",
+    "order": 12,
+    "level": 6
+  },
+  {
+    "name": "ul",
+    "id": "1d9b7a5a",
+    "element_attr_content": "<ul class=\"nav-links\">",
+    "inner_content": "\n<974a94c9>\n<6254933a>\n<4c217fd5>\n<2ed949cb>\n<072b2661>\n",
+    "parent_id": "805b51ad",
+    "order": 13,
+    "level": 5
+  },
+  {
+    "name": "li",
+    "id": "974a94c9",
+    "element_attr_content": "<li>",
+    "inner_content": "<b09c215b>",
+    "parent_id": "1d9b7a5a",
+    "order": 14,
+    "level": 6
+  },
+  {
+    "name": "a",
+    "id": "b09c215b",
+    "element_attr_content": "<a href=\"#home\">",
+    "inner_content": "Головна",
+    "parent_id": "974a94c9",
+    "order": 15,
+    "level": 7
+  },
+  {
+    "name": "li",
+    "id": "6254933a",
+    "element_attr_content": "<li>",
+    "inner_content": "<21cd9e46>",
+    "parent_id": "1d9b7a5a",
+    "order": 16,
+    "level": 6
+  },
+  {
+    "name": "a",
+    "id": "21cd9e46",
+    "element_attr_content": "<a href=\"#services\">",
+    "inner_content": "Допомога",
+    "parent_id": "6254933a",
+    "order": 17,
+    "level": 7
+  },
+  {
+    "name": "li",
+    "id": "4c217fd5",
+    "element_attr_content": "<li>",
+    "inner_content": "<ded9f941>",
+    "parent_id": "1d9b7a5a",
+    "order": 18,
+    "level": 6
+  },
+  {
+    "name": "a",
+    "id": "ded9f941",
+    "element_attr_content": "<a href=\"team.html\">",
+    "inner_content": "Про нас",
+    "parent_id": "4c217fd5",
+    "order": 19,
+    "level": 7
+  },
+  {
+    "name": "li",
+    "id": "2ed949cb",
+    "element_attr_content": "<li>",
+    "inner_content": "<ae07e630>",
+    "parent_id": "1d9b7a5a",
+    "order": 20,
+    "level": 6
+  },
+  {
+    "name": "a",
+    "id": "ae07e630",
+    "element_attr_content": "<a href=\"#faq\">",
+    "inner_content": "FAQ",
+    "parent_id": "2ed949cb",
+    "order": 21,
+    "level": 7
+  },
+  {
+    "name": "li",
+    "id": "072b2661",
+    "element_attr_content": "<li>",
+    "inner_content": "<045559d9>",
+    "parent_id": "1d9b7a5a",
+    "order": 22,
+    "level": 6
+  },
+  {
+    "name": "a",
+    "id": "045559d9",
+    "element_attr_content": "<a href=\"#contact\">",
+    "inner_content": "Контакти",
+    "parent_id": "072b2661",
+    "order": 23,
+    "level": 7
+  },
+  {
+    "name": "button",
+    "id": "720eb507",
+    "element_attr_content": "<button class=\"mobile-menu-toggle\" onclick=\"toggleMobileMenu()\" aria-label=\"Menu\">",
+    "inner_content": "\n                ☰\n            ",
+    "parent_id": "805b51ad",
+    "order": 24,
+    "level": 5
+  },
+  {
+    "name": "div",
+    "id": "3928a6e3",
+    "element_attr_content": "<div style=\"display: flex; align-items: center; gap: 20px;\">",
+    "inner_content": "\n<31658807>\n",
+    "parent_id": "805b51ad",
+    "order": 25,
+    "level": 5
+  },
+  {
+    "name": "div",
+    "id": "31658807",
+    "element_attr_content": "<div class=\"language-switch\">",
+    "inner_content": "\n<ddbb218d>\n<a5f9e613>\n<fa4c2be3>\n",
+    "parent_id": "3928a6e3",
+    "order": 26,
+    "level": 6
+  },
+  {
+    "name": "a",
+    "id": "ddbb218d",
+    "element_attr_content": "<a href=\"#\" class=\"lang-btn active\" title=\"Українська\">",
+    "inner_content": "🇺🇦",
+    "parent_id": "31658807",
+    "order": 27,
+    "level": 7
+  },
+  {
+    "name": "a",
+    "id": "a5f9e613",
+    "element_attr_content": "<a href=\"#\" class=\"lang-btn\" title=\"Svenska\">",
+    "inner_content": "🇸🇪",
+    "parent_id": "31658807",
+    "order": 28,
+    "level": 7
+  },
+  {
+    "name": "a",
+    "id": "fa4c2be3",
+    "element_attr_content": "<a href=\"#\" class=\"lang-btn\" title=\"English\">",
+    "inner_content": "🇬🇧",
+    "parent_id": "31658807",
+    "order": 29,
+    "level": 7
+  },
+  {
+    "name": "div",
+    "id": "a07e10d3",
+    "element_attr_content": "<div class=\"mobile-menu-overlay\" onclick=\"closeMobileMenu()\">",
+    "inner_content": "",
+    "parent_id": "b0dd804e",
+    "order": 30,
+    "level": 4
+  },
+  {
+    "name": "nav",
+    "id": "b4b62821",
+    "element_attr_content": "<nav class=\"mobile-menu\">",
+    "inner_content": "\n<27c8ba9c>\n<4cd13a52>\n<c948d694>\n",
+    "parent_id": "b0dd804e",
+    "order": 31,
+    "level": 4
+  },
+  {
+    "name": "button",
+    "id": "27c8ba9c",
+    "element_attr_content": "<button class=\"mobile-menu-close\" onclick=\"closeMobileMenu()\" aria-label=\"Close Menu\">",
+    "inner_content": "\n                ✕\n            ",
+    "parent_id": "b4b62821",
+    "order": 32,
+    "level": 5
+  },
+  {
+    "name": "ul",
+    "id": "4cd13a52",
+    "element_attr_content": "<ul class=\"mobile-nav-links\">",
+    "inner_content": "\n<ea0c1250>\n<28fb57a7>\n<d68e8230>\n<6695139f>\n<21ece068>\n",
+    "parent_id": "b4b62821",
+    "order": 33,
+    "level": 5
+  },
+  {
+    "name": "li",
+    "id": "ea0c1250",
+    "element_attr_content": "<li>",
+    "inner_content": "<2af6c71a>",
+    "parent_id": "4cd13a52",
+    "order": 34,
+    "level": 6
+  },
+  {
+    "name": "a",
+    "id": "2af6c71a",
+    "element_attr_content": "<a href=\"#home\" onclick=\"closeMobileMenu()\">",
+    "inner_content": "Головна",
+    "parent_id": "ea0c1250",
+    "order": 35,
+    "level": 7
+  },
+  {
+    "name": "li",
+    "id": "28fb57a7",
+    "element_attr_content": "<li>",
+    "inner_content": "<7590d6f9>",
+    "parent_id": "4cd13a52",
+    "order": 36,
+    "level": 6
+  },
+  {
+    "name": "a",
+    "id": "7590d6f9",
+    "element_attr_content": "<a href=\"#services\" onclick=\"closeMobileMenu()\">",
+    "inner_content": "Допомога",
+    "parent_id": "28fb57a7",
+    "order": 37,
+    "level": 7
+  },
+  {
+    "name": "li",
+    "id": "d68e8230",
+    "element_attr_content": "<li>",
+    "inner_content": "<a0c06a16>",
+    "parent_id": "4cd13a52",
+    "order": 38,
+    "level": 6
+  },
+  {
+    "name": "a",
+    "id": "a0c06a16",
+    "element_attr_content": "<a href=\"team.html\" onclick=\"closeMobileMenu()\">",
+    "inner_content": "Про нас",
+    "parent_id": "d68e8230",
+    "order": 39,
+    "level": 7
+  },
+  {
+    "name": "li",
+    "id": "6695139f",
+    "element_attr_content": "<li>",
+    "inner_content": "<48fc6771>",
+    "parent_id": "4cd13a52",
+    "order": 40,
+    "level": 6
+  },
+  {
+    "name": "a",
+    "id": "48fc6771",
+    "element_attr_content": "<a href=\"#faq\" onclick=\"closeMobileMenu()\">",
+    "inner_content": "FAQ",
+    "parent_id": "6695139f",
+    "order": 41,
+    "level": 7
+  },
+  {
+    "name": "li",
+    "id": "21ece068",
+    "element_attr_content": "<li>",
+    "inner_content": "<b3bbc22d>",
+    "parent_id": "4cd13a52",
+    "order": 42,
+    "level": 6
+  },
+  {
+    "name": "a",
+    "id": "b3bbc22d",
+    "element_attr_content": "<a href=\"#contact\" onclick=\"closeMobileMenu()\">",
+    "inner_content": "Контакти",
+    "parent_id": "21ece068",
+    "order": 43,
+    "level": 7
+  },
+  {
+    "name": "div",
+    "id": "c948d694",
+    "element_attr_content": "<div class=\"mobile-language-section\">",
+    "inner_content": "\n<1e000d32>\n<cead0428>\n",
+    "parent_id": "b4b62821",
+    "order": 44,
+    "level": 5
+  },
+  {
+    "name": "h4",
+    "id": "1e000d32",
+    "element_attr_content": "<h4>",
+    "inner_content": "Мова / Language",
+    "parent_id": "c948d694",
+    "order": 45,
+    "level": 6
+  },
+  {
+    "name": "div",
+    "id": "cead0428",
+    "element_attr_content": "<div class=\"mobile-language-switch\">",
+    "inner_content": "\n<09fcf285>\n<338f0936>\n<2f2bb513>\n",
+    "parent_id": "c948d694",
+    "order": 46,
+    "level": 6
+  },
+  {
+    "name": "a",
+    "id": "09fcf285",
+    "element_attr_content": "<a href=\"#\" class=\"lang-btn active\" title=\"Українська\">",
+    "inner_content": "🇺🇦",
+    "parent_id": "cead0428",
+    "order": 47,
+    "level": 7
+  },
+  {
+    "name": "a",
+    "id": "338f0936",
+    "element_attr_content": "<a href=\"#\" class=\"lang-btn\" title=\"Svenska\">",
+    "inner_content": "🇸🇪",
+    "parent_id": "cead0428",
+    "order": 48,
+    "level": 7
+  },
+  {
+    "name": "a",
+    "id": "2f2bb513",
+    "element_attr_content": "<a href=\"#\" class=\"lang-btn\" title=\"English\">",
+    "inner_content": "🇬🇧",
+    "parent_id": "cead0428",
+    "order": 49,
+    "level": 7
+  },
+  {
+    "name": "section",
+    "id": "b0f965d2",
+    "element_attr_content": "<section id=\"home\" class=\"hero\">",
+    "inner_content": "\n<0f464d85>\n",
+    "parent_id": "2dc46095",
+    "order": 50,
+    "level": 3
+  },
+  {
+    "name": "div",
+    "id": "0f464d85",
+    "element_attr_content": "<div class=\"container\">",
+    "inner_content": "\n<f66adf20>\n",
+    "parent_id": "b0f965d2",
+    "order": 51,
+    "level": 4
+  },
+  {
+    "name": "div",
+    "id": "f66adf20",
+    "element_attr_content": "<div class=\"hero-content\">",
+    "inner_content": "\n Central Logo and Image \n<59da02df>\n<b9d5244a>\n<8136e120>\n<92ea00bb>\n",
+    "parent_id": "0f464d85",
+    "order": 52,
+    "level": 5
+  },
+  {
+    "name": "div",
+    "id": "59da02df",
+    "element_attr_content": "<div class=\"hero-visual\">",
+    "inner_content": "\n<789ab7ca>\n<b20e3db8>\n",
+    "parent_id": "f66adf20",
+    "order": 53,
+    "level": 6
+  },
+  {
+    "name": "div",
+    "id": "789ab7ca",
+    "element_attr_content": "<div class=\"hero-logo\">",
+    "inner_content": "\n<5857181c>\n",
+    "parent_id": "59da02df",
+    "order": 54,
+    "level": 7
+  },
+  {
+    "name": "img",
+    "id": "5857181c",
+    "element_attr_content": "<img src=\"https://svituawww.github.io/uploads1/2025/03/svitua_100x100.png\" alt=\"SVIT UA Logo\">",
+    "inner_content": "",
+    "parent_id": "789ab7ca",
+    "order": 55,
+    "level": 8
+  },
+  {
+    "name": "div",
+    "id": "b20e3db8",
+    "element_attr_content": "<div class=\"hero-main-image\">",
+    "inner_content": "\n<02ebc673>\n",
+    "parent_id": "59da02df",
+    "order": 56,
+    "level": 7
+  },
+  {
+    "name": "img",
+    "id": "02ebc673",
+    "element_attr_content": "<img src=\"https://svituawww.github.io/uploads1/2025/06/1-683x1024.jpg\" alt=\"Гуманітарна допомога SVIT UA\" srcset=\"https://svituawww.github.io/uploads1/2025/06/1-683x1024.jpg 683w, \n                                     https://svituawww.github.io/uploads1/2025/06/1-200x300.jpg 200w, \n                                     https://svituawww.github.io/uploads1/2025/06/1-768x1152.jpg 768w, \n                                     https://svituawww.github.io/uploads1/2025/06/1-1024x1536.jpg 1024w\" sizes=\"(max-width: 683px) 100vw, 400px\">",
+    "inner_content": "",
+    "parent_id": "b20e3db8",
+    "order": 57,
+    "level": 8
+  },
+  {
+    "name": "h2",
+    "id": "b9d5244a",
+    "element_attr_content": "<h2>",
+    "inner_content": "Гуманітарна допомога, волонтерство та інтеграція — ми поруч із тобою в Швеції",
+    "parent_id": "f66adf20",
+    "order": 58,
+    "level": 6
+  },
+  {
+    "name": "p",
+    "id": "8136e120",
+    "element_attr_content": "<p>",
+    "inner_content": "Ставайте частиною змін — разом ми творимо майбутнє, де кожна дитина та родина має підтримку",
+    "parent_id": "f66adf20",
+    "order": 59,
+    "level": 6
+  },
+  {
+    "name": "div",
+    "id": "92ea00bb",
+    "element_attr_content": "<div class=\"hero-buttons\">",
+    "inner_content": "\n<3b74683f>\n<238bd6a4>\n",
+    "parent_id": "f66adf20",
+    "order": 60,
+    "level": 6
+  },
+  {
+    "name": "a",
+    "id": "3b74683f",
+    "element_attr_content": "<a href=\"#donate\" class=\"btn-primary\">",
+    "inner_content": "Підтримати",
+    "parent_id": "92ea00bb",
+    "order": 61,
+    "level": 7
+  },
+  {
+    "name": "a",
+    "id": "238bd6a4",
+    "element_attr_content": "<a href=\"#contact\" class=\"btn-secondary\">",
+    "inner_content": "Зв'язатися",
+    "parent_id": "92ea00bb",
+    "order": 62,
+    "level": 7
+  },
+  {
+    "name": "section",
+    "id": "9288a091",
+    "element_attr_content": "<section class=\"partners\">",
+    "inner_content": "\n<54bcf9b2>\n",
+    "parent_id": "2dc46095",
+    "order": 63,
+    "level": 3
+  },
+  {
+    "name": "div",
+    "id": "54bcf9b2",
+    "element_attr_content": "<div class=\"container\">",
+    "inner_content": "\n<0e24a24d>\n<107ca6d1>\n",
+    "parent_id": "9288a091",
+    "order": 64,
+    "level": 4
+  },
+  {
+    "name": "h2",
+    "id": "0e24a24d",
+    "element_attr_content": "<h2 class=\"section-title\">",
+    "inner_content": "Наші партнери",
+    "parent_id": "54bcf9b2",
+    "order": 65,
+    "level": 5
+  },
+  {
+    "name": "div",
+    "id": "107ca6d1",
+    "element_attr_content": "<div class=\"partners-carousel-container\">",
+    "inner_content": "\n<7833f55c>\n",
+    "parent_id": "54bcf9b2",
+    "order": 66,
+    "level": 5
+  },
+  {
+    "name": "div",
+    "id": "7833f55c",
+    "element_attr_content": "<div class=\"partners-carousel\" id=\"partnersCarousel\">",
+    "inner_content": "\n Partners will be loaded dynamically from partners1.json \n",
+    "parent_id": "107ca6d1",
+    "order": 67,
+    "level": 6
+  },
+  {
+    "name": "section",
+    "id": "2689df8c",
+    "element_attr_content": "<section id=\"services\" class=\"services\">",
+    "inner_content": "\n<5246a45f>\n",
+    "parent_id": "2dc46095",
+    "order": 68,
+    "level": 3
+  },
+  {
+    "name": "div",
+    "id": "5246a45f",
+    "element_attr_content": "<div class=\"container\">",
+    "inner_content": "\n<d6bb4d90>\n<e22f8089>\n",
+    "parent_id": "2689df8c",
+    "order": 69,
+    "level": 4
+  },
+  {
+    "name": "h2",
+    "id": "d6bb4d90",
+    "element_attr_content": "<h2 class=\"section-title\">",
+    "inner_content": "Ми надаємо",
+    "parent_id": "5246a45f",
+    "order": 70,
+    "level": 5
+  },
+  {
+    "name": "div",
+    "id": "e22f8089",
+    "element_attr_content": "<div class=\"services-grid\">",
+    "inner_content": "\n<547b18f8>\n<e4652730>\n<72dcbab8>\n",
+    "parent_id": "5246a45f",
+    "order": 71,
+    "level": 5
+  },
+  {
+    "name": "div",
+    "id": "547b18f8",
+    "element_attr_content": "<div class=\"service-card\">",
+    "inner_content": "\n<4257cc3f>\n<f2061758>\n<738a3570>\n",
+    "parent_id": "e22f8089",
+    "order": 72,
+    "level": 6
+  },
+  {
+    "name": "div",
+    "id": "4257cc3f",
+    "element_attr_content": "<div class=\"service-icon\">",
+    "inner_content": "🏠",
+    "parent_id": "547b18f8",
+    "order": 73,
+    "level": 7
+  },
+  {
+    "name": "h3",
+    "id": "f2061758",
+    "element_attr_content": "<h3>",
+    "inner_content": "Гуманітарна допомога",
+    "parent_id": "547b18f8",
+    "order": 74,
+    "level": 7
+  },
+  {
+    "name": "p",
+    "id": "738a3570",
+    "element_attr_content": "<p>",
+    "inner_content": "Ми забезпечуємо людей у складних життєвих обставинах найнеобхіднішим: продуктами, одягом, засобами гігієни та підтримкою в надзвичайних ситуаціях.\nНаша мета — щоб кожен, хто опинився у вразливому становищі, відчув: він не один.",
+    "parent_id": "547b18f8",
+    "order": 75,
+    "level": 7
+  },
+  {
+    "name": "div",
+    "id": "e4652730",
+    "element_attr_content": "<div class=\"service-card\">",
+    "inner_content": "\n<a07b32c1>\n<c6cafa02>\n<5259c4e2>\n",
+    "parent_id": "e22f8089",
+    "order": 76,
+    "level": 6
+  },
+  {
+    "name": "div",
+    "id": "a07b32c1",
+    "element_attr_content": "<div class=\"service-icon\">",
+    "inner_content": "🤝",
+    "parent_id": "e4652730",
+    "order": 77,
+    "level": 7
+  },
+  {
+    "name": "h3",
+    "id": "c6cafa02",
+    "element_attr_content": "<h3>",
+    "inner_content": "Волонтерство та громадська активність",
+    "parent_id": "e4652730",
+    "order": 78,
+    "level": 7
+  },
+  {
+    "name": "p",
+    "id": "5259c4e2",
+    "element_attr_content": "<p>",
+    "inner_content": "Ми об’єднуємо тих, хто хоче допомагати іншим. Створюємо простір для ініціатив, активізуємо громаду, надихаємо людей діяти — на заходах, акціях, у повсякденному житті.",
+    "parent_id": "e4652730",
+    "order": 79,
+    "level": 7
+  },
+  {
+    "name": "div",
+    "id": "72dcbab8",
+    "element_attr_content": "<div class=\"service-card\">",
+    "inner_content": "\n<69b0f76d>\n<dae97044>\n<6e00816a>\n",
+    "parent_id": "e22f8089",
+    "order": 80,
+    "level": 6
+  },
+  {
+    "name": "div",
+    "id": "69b0f76d",
+    "element_attr_content": "<div class=\"service-icon\">",
+    "inner_content": "📚",
+    "parent_id": "72dcbab8",
+    "order": 81,
+    "level": 7
+  },
+  {
+    "name": "h3",
+    "id": "dae97044",
+    "element_attr_content": "<h3>",
+    "inner_content": "Підтримка та інтеграція мігрантів",
+    "parent_id": "72dcbab8",
+    "order": 82,
+    "level": 7
+  },
+  {
+    "name": "p",
+    "id": "6e00816a",
+    "element_attr_content": "<p>",
+    "inner_content": "Допомагаємо мігрантам адаптуватися до життя в Швеції. Проводимо інформаційні семінари, індивідуальні консультації, допомагаємо з пошуком роботи, навчанням, легалізацією. Розкриваємо можливості, пояснюємо систему, підтримуємо на кожному етапі.",
+    "parent_id": "72dcbab8",
+    "order": 83,
+    "level": 7
+  },
+  {
+    "name": "section",
+    "id": "5e93e9f7",
+    "element_attr_content": "<section class=\"upcoming-events\">",
+    "inner_content": "\n<d026461b>\n",
+    "parent_id": "2dc46095",
+    "order": 84,
+    "level": 3
+  },
+  {
+    "name": "div",
+    "id": "d026461b",
+    "element_attr_content": "<div class=\"container\">",
+    "inner_content": "\n<ee5a29f4>\n<6dbdf588>\n",
+    "parent_id": "5e93e9f7",
+    "order": 85,
+    "level": 4
+  },
+  {
+    "name": "h2",
+    "id": "ee5a29f4",
+    "element_attr_content": "<h2 class=\"section-title\">",
+    "inner_content": "Анонс майбутніх заходів",
+    "parent_id": "d026461b",
+    "order": 86,
+    "level": 5
+  },
+  {
+    "name": "div",
+    "id": "6dbdf588",
+    "element_attr_content": "<div class=\"events-grid\">",
+    "inner_content": "\n<eb59ad8d>\n<f260473f>\n<d50f4aef>\n",
+    "parent_id": "d026461b",
+    "order": 87,
+    "level": 5
+  },
+  {
+    "name": "div",
+    "id": "eb59ad8d",
+    "element_attr_content": "<div class=\"event-card\">",
+    "inner_content": "\n<7344e00e>\n<aac3e5c8>\n",
+    "parent_id": "6dbdf588",
+    "order": 88,
+    "level": 6
+  },
+  {
+    "name": "img",
+    "id": "7344e00e",
+    "element_attr_content": "<img src=\"https://svituawww.github.io/uploads1/2025/06/1-1024x768.png\" alt=\"LinkedIn семінар\" srcset=\"https://svituawww.github.io/uploads1/2025/06/1-1024x768.png 1024w, \n                                 https://svituawww.github.io/uploads1/2025/06/1-300x225.png 300w, \n                                 https://svituawww.github.io/uploads1/2025/06/1-768x576.png 768w, \n                                 https://svituawww.github.io/uploads1/2025/06/1-16x12.png 16w, \n                                 https://svituawww.github.io/uploads1/2025/06/1.png 1080w\" sizes=\"(max-width: 800px) 100vw, 400px\">",
+    "inner_content": "",
+    "parent_id": "eb59ad8d",
+    "order": 89,
+    "level": 7
+  },
+  {
+    "name": "div",
+    "id": "aac3e5c8",
+    "element_attr_content": "<div class=\"event-content\">",
+    "inner_content": "\n<a431c0a5>\n<3e33bebf>\n<1eedd6f3>\n",
+    "parent_id": "eb59ad8d",
+    "order": 90,
+    "level": 7
+  },
+  {
+    "name": "h3",
+    "id": "a431c0a5",
+    "element_attr_content": "<h3>",
+    "inner_content": "Як виглядає профіль LinkedIn, який дійсно працює?",
+    "parent_id": "aac3e5c8",
+    "order": 91,
+    "level": 8
+  },
+  {
+    "name": "p",
+    "id": "3e33bebf",
+    "element_attr_content": "<p>",
+    "inner_content": "Саме це ми досліджували вчора під час нашого семінару в прямому ефірі в Дандерюді з Яною Літвіновою — і це було потужно!",
+    "parent_id": "aac3e5c8",
+    "order": 92,
+    "level": 8
+  },
+  {
+    "name": "a",
+    "id": "1eedd6f3",
+    "element_attr_content": "<a href=\"https://example.com\" class=\"event-link\">",
+    "inner_content": "Детальніше →",
+    "parent_id": "aac3e5c8",
+    "order": 93,
+    "level": 8
+  },
+  {
+    "name": "div",
+    "id": "f260473f",
+    "element_attr_content": "<div class=\"event-card\">",
+    "inner_content": "\n<843f6c8c>\n<f2f37d1b>\n",
+    "parent_id": "6dbdf588",
+    "order": 94,
+    "level": 6
+  },
+  {
+    "name": "img",
+    "id": "843f6c8c",
+    "element_attr_content": "<img src=\"https://svituawww.github.io/uploads1/2025/06/2-1024x768.png\" alt=\"Stockholm Tech Show\" srcset=\"https://svituawww.github.io/uploads1/2025/06/2-1024x768.png 1024w, \n                                 https://svituawww.github.io/uploads1/2025/06/2-300x225.png 300w, \n                                 https://svituawww.github.io/uploads1/2025/06/2-768x576.png 768w, \n                                 https://svituawww.github.io/uploads1/2025/06/2-16x12.png 16w, \n                                 https://svituawww.github.io/uploads1/2025/06/2.png 1280w\" sizes=\"(max-width: 800px) 100vw, 400px\">",
+    "inner_content": "",
+    "parent_id": "f260473f",
+    "order": 95,
+    "level": 7
+  },
+  {
+    "name": "div",
+    "id": "f2f37d1b",
+    "element_attr_content": "<div class=\"event-content\">",
+    "inner_content": "\n<11b8b67d>\n<f80b4741>\n<cd24b60f>\n",
+    "parent_id": "f260473f",
+    "order": 96,
+    "level": 7
+  },
+  {
+    "name": "h3",
+    "id": "11b8b67d",
+    "element_attr_content": "<h3>",
+    "inner_content": "Виставковий та конгрес-центр Kistamässan",
+    "parent_id": "f2f37d1b",
+    "order": 97,
+    "level": 8
+  },
+  {
+    "name": "p",
+    "id": "f80b4741",
+    "element_attr_content": "<p>",
+    "inner_content": "Вчора ми у SVIT UA мали можливість відвідати Stockholm Tech Show 2025 у виставковому та конгрес-центрі Kistamässan — динамічну подію, яка зібрала світових лідерів у галузі штучного інтелекту.",
+    "parent_id": "f2f37d1b",
+    "order": 98,
+    "level": 8
+  },
+  {
+    "name": "a",
+    "id": "cd24b60f",
+    "element_attr_content": "<a href=\"https://example.com\" class=\"event-link\">",
+    "inner_content": "Детальніше →",
+    "parent_id": "f2f37d1b",
+    "order": 99,
+    "level": 8
+  },
+  {
+    "name": "div",
+    "id": "d50f4aef",
+    "element_attr_content": "<div class=\"event-card\">",
+    "inner_content": "\n<f450a97f>\n<81a059db>\n",
+    "parent_id": "6dbdf588",
+    "order": 100,
+    "level": 6
+  },
+  {
+    "name": "img",
+    "id": "f450a97f",
+    "element_attr_content": "<img src=\"https://svituawww.github.io/uploads1/2025/06/3-768x1024.png\" alt=\"Літературний вечір\" srcset=\"https://svituawww.github.io/uploads1/2025/06/3-768x1024.png 768w, \n                                 https://svituawww.github.io/uploads1/2025/06/3-225x300.png 225w, \n                                 https://svituawww.github.io/uploads1/2025/06/3-1152x1536.png 1152w, \n                                 https://svituawww.github.io/uploads1/2025/06/3-9x12.png 9w, \n                                 https://svituawww.github.io/uploads1/2025/06/3.png 1280w\" sizes=\"(max-width: 768px) 100vw, 400px\">",
+    "inner_content": "",
+    "parent_id": "d50f4aef",
+    "order": 101,
+    "level": 7
+  },
+  {
+    "name": "div",
+    "id": "81a059db",
+    "element_attr_content": "<div class=\"event-content\">",
+    "inner_content": "\n<7ee3bac5>\n<baa455ab>\n<fe0bca8d>\n",
+    "parent_id": "d50f4aef",
+    "order": 102,
+    "level": 7
+  },
+  {
+    "name": "h3",
+    "id": "7ee3bac5",
+    "element_attr_content": "<h3>",
+    "inner_content": "Вдячний за натхненний літературний вечір у Стокгольмі!",
+    "parent_id": "81a059db",
+    "order": 103,
+    "level": 8
+  },
+  {
+    "name": "p",
+    "id": "baa455ab",
+    "element_attr_content": "<p>",
+    "inner_content": "Сьогодні команда SVIT UA мала честь відвідати презентацію «Світу Злати» — зворушливої історії про дитинство, перерване війною, та пошуки нового дому у Швеції.",
+    "parent_id": "81a059db",
+    "order": 104,
+    "level": 8
+  },
+  {
+    "name": "a",
+    "id": "fe0bca8d",
+    "element_attr_content": "<a href=\"https://example.com\" class=\"event-link\">",
+    "inner_content": "Детальніше →",
+    "parent_id": "81a059db",
+    "order": 105,
+    "level": 8
+  },
+  {
+    "name": "section",
+    "id": "82963739",
+    "element_attr_content": "<section class=\"join-cause\">",
+    "inner_content": "\n<83a7b4ca>\n",
+    "parent_id": "2dc46095",
+    "order": 106,
+    "level": 3
+  },
+  {
+    "name": "div",
+    "id": "83a7b4ca",
+    "element_attr_content": "<div class=\"container\">",
+    "inner_content": "\n<f98e55b8>\n<85dbade9>\n<53635e46>\n",
+    "parent_id": "82963739",
+    "order": 107,
+    "level": 4
+  },
+  {
+    "name": "h2",
+    "id": "f98e55b8",
+    "element_attr_content": "<h2 class=\"section-title\">",
+    "inner_content": "Приєднатися до справи",
+    "parent_id": "83a7b4ca",
+    "order": 108,
+    "level": 5
+  },
+  {
+    "name": "p",
+    "id": "85dbade9",
+    "element_attr_content": "<p class=\"lead\">",
+    "inner_content": "Станьте частиною нашої місії — разом ми можемо більше",
+    "parent_id": "83a7b4ca",
+    "order": 109,
+    "level": 5
+  },
+  {
+    "name": "div",
+    "id": "53635e46",
+    "element_attr_content": "<div class=\"join-grid\">",
+    "inner_content": "\n<3a907776>\n<017ffff2>\n<f77919a1>\n",
+    "parent_id": "83a7b4ca",
+    "order": 110,
+    "level": 5
+  },
+  {
+    "name": "div",
+    "id": "3a907776",
+    "element_attr_content": "<div class=\"join-card\">",
+    "inner_content": "\n<a2dc7f3c>\n<b5ca4fd8>\n<6ee9772e>\n<faae5c0f>\n",
+    "parent_id": "53635e46",
+    "order": 111,
+    "level": 6
+  },
+  {
+    "name": "div",
+    "id": "a2dc7f3c",
+    "element_attr_content": "<div class=\"join-icon\">",
+    "inner_content": "🤝",
+    "parent_id": "3a907776",
+    "order": 112,
+    "level": 7
+  },
+  {
+    "name": "h3",
+    "id": "b5ca4fd8",
+    "element_attr_content": "<h3>",
+    "inner_content": "Стати волонтером",
+    "parent_id": "3a907776",
+    "order": 113,
+    "level": 7
+  },
+  {
+    "name": "p",
+    "id": "6ee9772e",
+    "element_attr_content": "<p>",
+    "inner_content": "Приєднуйтесь до нашої команди та допомагайте людям, які цього потребують. Ваш час та зусилля можуть змінити чиєсь життя.",
+    "parent_id": "3a907776",
+    "order": 114,
+    "level": 7
+  },
+  {
+    "name": "a",
+    "id": "faae5c0f",
+    "element_attr_content": "<a href=\"#contact\" class=\"join-btn\">",
+    "inner_content": "Приєднатися",
+    "parent_id": "3a907776",
+    "order": 115,
+    "level": 7
+  },
+  {
+    "name": "div",
+    "id": "017ffff2",
+    "element_attr_content": "<div class=\"join-card\">",
+    "inner_content": "\n<e42c567a>\n<1e6fb158>\n<9aab2ce5>\n<7463ad26>\n",
+    "parent_id": "53635e46",
+    "order": 116,
+    "level": 6
+  },
+  {
+    "name": "div",
+    "id": "e42c567a",
+    "element_attr_content": "<div class=\"join-icon\">",
+    "inner_content": "💝",
+    "parent_id": "017ffff2",
+    "order": 117,
+    "level": 7
+  },
+  {
+    "name": "h3",
+    "id": "1e6fb158",
+    "element_attr_content": "<h3>",
+    "inner_content": "Зробити пожертву",
+    "parent_id": "017ffff2",
+    "order": 118,
+    "level": 7
+  },
+  {
+    "name": "p",
+    "id": "9aab2ce5",
+    "element_attr_content": "<p>",
+    "inner_content": "Ваша фінансова підтримка допомагає нам розширювати програми та надавати більше допомоги тим, хто її потребує.",
+    "parent_id": "017ffff2",
+    "order": 119,
+    "level": 7
+  },
+  {
+    "name": "a",
+    "id": "7463ad26",
+    "element_attr_content": "<a href=\"#donate\" class=\"join-btn\">",
+    "inner_content": "Підтримати",
+    "parent_id": "017ffff2",
+    "order": 120,
+    "level": 7
+  },
+  {
+    "name": "div",
+    "id": "f77919a1",
+    "element_attr_content": "<div class=\"join-card\">",
+    "inner_content": "\n<cb645b8a>\n<336cbd62>\n<8d52a162>\n<76206a80>\n",
+    "parent_id": "53635e46",
+    "order": 121,
+    "level": 6
+  },
+  {
+    "name": "div",
+    "id": "cb645b8a",
+    "element_attr_content": "<div class=\"join-icon\">",
+    "inner_content": "📢",
+    "parent_id": "f77919a1",
+    "order": 122,
+    "level": 7
+  },
+  {
+    "name": "h3",
+    "id": "336cbd62",
+    "element_attr_content": "<h3>",
+    "inner_content": "Поширити інформацію",
+    "parent_id": "f77919a1",
+    "order": 123,
+    "level": 7
+  },
+  {
+    "name": "p",
+    "id": "8d52a162",
+    "element_attr_content": "<p>",
+    "inner_content": "Розкажіть друзям та знайомим про нашу роботу. Чим більше людей знає про нас, тим більше ми можемо допомогти.",
+    "parent_id": "f77919a1",
+    "order": 124,
+    "level": 7
+  },
+  {
+    "name": "a",
+    "id": "76206a80",
+    "element_attr_content": "<a href=\"#\" class=\"join-btn\">",
+    "inner_content": "Поділитися",
+    "parent_id": "f77919a1",
+    "order": 125,
+    "level": 7
+  },
+  {
+    "name": "section",
+    "id": "f778a009",
+    "element_attr_content": "<section id=\"faq\" class=\"faq\">",
+    "inner_content": "\n<f3476dab>\n",
+    "parent_id": "2dc46095",
+    "order": 126,
+    "level": 3
+  },
+  {
+    "name": "div",
+    "id": "f3476dab",
+    "element_attr_content": "<div class=\"container\">",
+    "inner_content": "\n<f47a1c4a>\n<309441b2>\n<b4c058ea>\n<640aeb20>\n<a200c528>\n<1d3636c4>\n<92d795fe>\n<0d0c9150>\n<3185f3a2>\n<1d24c69d>\n",
+    "parent_id": "f778a009",
+    "order": 127,
+    "level": 4
+  },
+  {
+    "name": "h2",
+    "id": "f47a1c4a",
+    "element_attr_content": "<h2 class=\"section-title\">",
+    "inner_content": "Часті питання",
+    "parent_id": "f3476dab",
+    "order": 128,
+    "level": 5
+  },
+  {
+    "name": "div",
+    "id": "309441b2",
+    "element_attr_content": "<div class=\"faq-item\">",
+    "inner_content": "\n<b20b5d35>\n<ee79c328>\n",
+    "parent_id": "f3476dab",
+    "order": 129,
+    "level": 5
+  },
+  {
+    "name": "div",
+    "id": "b20b5d35",
+    "element_attr_content": "<div class=\"faq-question\" onclick=\"toggleFaq(this)\">",
+    "inner_content": "\n                    Хто може звернутися до SVIT UA за допомогою?\n                ",
+    "parent_id": "309441b2",
+    "order": 130,
+    "level": 6
+  },
+  {
+    "name": "div",
+    "id": "ee79c328",
+    "element_attr_content": "<div class=\"faq-answer\">",
+    "inner_content": "\n                    Ми відкриті для всіх, хто потребує підтримки: мігрантів, біженців, переселенців, а також тих, хто опинився у складних життєвих обставинах.\n                ",
+    "parent_id": "309441b2",
+    "order": 131,
+    "level": 6
+  },
+  {
+    "name": "div",
+    "id": "b4c058ea",
+    "element_attr_content": "<div class=\"faq-item\">",
+    "inner_content": "\n<5e352957>\n<9c04954b>\n",
+    "parent_id": "f3476dab",
+    "order": 132,
+    "level": 5
+  },
+  {
+    "name": "div",
+    "id": "5e352957",
+    "element_attr_content": "<div class=\"faq-question\" onclick=\"toggleFaq(this)\">",
+    "inner_content": "\n                    Яка саме допомога доступна?\n                ",
+    "parent_id": "b4c058ea",
+    "order": 133,
+    "level": 6
+  },
+  {
+    "name": "div",
+    "id": "9c04954b",
+    "element_attr_content": "<div class=\"faq-answer\">",
+    "inner_content": "\n                    Ми надаємо гуманітарну допомогу, допомагаємо з інтеграцією, проводимо освітні семінари, консультації з пошуку роботи та інші види підтримки.\n                ",
+    "parent_id": "b4c058ea",
+    "order": 134,
+    "level": 6
+  },
+  {
+    "name": "div",
+    "id": "640aeb20",
+    "element_attr_content": "<div class=\"faq-item\">",
+    "inner_content": "\n<de6a8bc6>\n<29f9ab75>\n",
+    "parent_id": "f3476dab",
+    "order": 135,
+    "level": 5
+  },
+  {
+    "name": "div",
+    "id": "de6a8bc6",
+    "element_attr_content": "<div class=\"faq-question\" onclick=\"toggleFaq(this)\">",
+    "inner_content": "\n                    Як стати волонтером SVIT UA?\n                ",
+    "parent_id": "640aeb20",
+    "order": 136,
+    "level": 6
+  },
+  {
+    "name": "div",
+    "id": "29f9ab75",
+    "element_attr_content": "<div class=\"faq-answer\">",
+    "inner_content": "\n                    Зв'яжіться з нами через контактну форму або за телефоном. Ми завжди шукаємо людей, готових допомагати спільноті.\n                ",
+    "parent_id": "640aeb20",
+    "order": 137,
+    "level": 6
+  },
+  {
+    "name": "div",
+    "id": "a200c528",
+    "element_attr_content": "<div class=\"faq-item\">",
+    "inner_content": "\n<08ef7288>\n<0846a2cd>\n",
+    "parent_id": "f3476dab",
+    "order": 138,
+    "level": 5
+  },
+  {
+    "name": "div",
+    "id": "08ef7288",
+    "element_attr_content": "<div class=\"faq-question\" onclick=\"toggleFaq(this)\">",
+    "inner_content": "\n                    В яких регіонах Швеції ви працюєте?\n                ",
+    "parent_id": "a200c528",
+    "order": 139,
+    "level": 6
+  },
+  {
+    "name": "div",
+    "id": "0846a2cd",
+    "element_attr_content": "<div class=\"faq-answer\">",
+    "inner_content": "\n                    Наша головна база в Стокгольмі, але ми надаємо підтримку по всій Швеції, особливо в великих містах.\n                ",
+    "parent_id": "a200c528",
+    "order": 140,
+    "level": 6
+  },
+  {
+    "name": "div",
+    "id": "1d3636c4",
+    "element_attr_content": "<div class=\"faq-item\">",
+    "inner_content": "\n<15122b4d>\n<55a8faab>\n",
+    "parent_id": "f3476dab",
+    "order": 141,
+    "level": 5
+  },
+  {
+    "name": "div",
+    "id": "15122b4d",
+    "element_attr_content": "<div class=\"faq-question\" onclick=\"toggleFaq(this)\">",
+    "inner_content": "\n                    Як потрапити на семінар або консультацію?\n                ",
+    "parent_id": "1d3636c4",
+    "order": 142,
+    "level": 6
+  },
+  {
+    "name": "div",
+    "id": "55a8faab",
+    "element_attr_content": "<div class=\"faq-answer\">",
+    "inner_content": "\n                    Запишіться через наш сайт, телефон або соціальні мережі. Багато заходів безкоштовні та відкриті для всіх.\n                ",
+    "parent_id": "1d3636c4",
+    "order": 143,
+    "level": 6
+  },
+  {
+    "name": "div",
+    "id": "92d795fe",
+    "element_attr_content": "<div class=\"faq-item\">",
+    "inner_content": "\n<d057b21c>\n<0931de73>\n",
+    "parent_id": "f3476dab",
+    "order": 144,
+    "level": 5
+  },
+  {
+    "name": "div",
+    "id": "d057b21c",
+    "element_attr_content": "<div class=\"faq-question\" onclick=\"toggleFaq(this)\">",
+    "inner_content": "\n                    Чи допомагаєте ви з пошуком роботи?\n                ",
+    "parent_id": "92d795fe",
+    "order": 145,
+    "level": 6
+  },
+  {
+    "name": "div",
+    "id": "0931de73",
+    "element_attr_content": "<div class=\"faq-answer\">",
+    "inner_content": "\n                    Так, ми проводимо семінари з пошуку роботи, допомагаємо з резюме, підготовкою до співбесід та налагодженням професійних зв'язків.\n                ",
+    "parent_id": "92d795fe",
+    "order": 146,
+    "level": 6
+  },
+  {
+    "name": "div",
+    "id": "0d0c9150",
+    "element_attr_content": "<div class=\"faq-item\">",
+    "inner_content": "\n<ca2a62c5>\n<e77d3761>\n",
+    "parent_id": "f3476dab",
+    "order": 147,
+    "level": 5
+  },
+  {
+    "name": "div",
+    "id": "ca2a62c5",
+    "element_attr_content": "<div class=\"faq-question\" onclick=\"toggleFaq(this)\">",
+    "inner_content": "\n                    Ви співпрацюєте з Arbetsförmedlingen або Migrationsverket?\n                ",
+    "parent_id": "0d0c9150",
+    "order": 148,
+    "level": 6
+  },
+  {
+    "name": "div",
+    "id": "e77d3761",
+    "element_attr_content": "<div class=\"faq-answer\">",
+    "inner_content": "\n                    Ми працюємо як незалежна організація, але можемо надати інформацію про взаємодію з державними службами та допомогти з оформленням документів.\n                ",
+    "parent_id": "0d0c9150",
+    "order": 149,
+    "level": 6
+  },
+  {
+    "name": "div",
+    "id": "3185f3a2",
+    "element_attr_content": "<div class=\"faq-item\">",
+    "inner_content": "\n<4f9ea3d0>\n<4d4697cc>\n",
+    "parent_id": "f3476dab",
+    "order": 150,
+    "level": 5
+  },
+  {
+    "name": "div",
+    "id": "4f9ea3d0",
+    "element_attr_content": "<div class=\"faq-question\" onclick=\"toggleFaq(this)\">",
+    "inner_content": "\n                    Чи можна вас підтримати фінансово або ресурсами?\n                ",
+    "parent_id": "3185f3a2",
+    "order": 151,
+    "level": 6
+  },
+  {
+    "name": "div",
+    "id": "4d4697cc",
+    "element_attr_content": "<div class=\"faq-answer\">",
+    "inner_content": "\n                    Так, ми приймаємо пожертви через банківські перекази або PayPal. Також приймаємо речові пожертви: одяг, продукти, предмети першої необхідності.\n                ",
+    "parent_id": "3185f3a2",
+    "order": 152,
+    "level": 6
+  },
+  {
+    "name": "div",
+    "id": "1d24c69d",
+    "element_attr_content": "<div class=\"faq-item\">",
+    "inner_content": "\n<511f0648>\n<16fb1d36>\n",
+    "parent_id": "f3476dab",
+    "order": 153,
+    "level": 5
+  },
+  {
+    "name": "div",
+    "id": "511f0648",
+    "element_attr_content": "<div class=\"faq-question\" onclick=\"toggleFaq(this)\">",
+    "inner_content": "\n                    Чи проводите ви допомогу онлайн?\n                ",
+    "parent_id": "1d24c69d",
+    "order": 154,
+    "level": 6
+  },
+  {
+    "name": "div",
+    "id": "16fb1d36",
+    "element_attr_content": "<div class=\"faq-answer\">",
+    "inner_content": "\n                    Так, багато наших консультацій та семінарів доступні онлайн. Ми також надаємо інформаційну підтримку через соціальні мережі та месенджери.\n                ",
+    "parent_id": "1d24c69d",
+    "order": 155,
+    "level": 6
+  },
+  {
+    "name": "section",
+    "id": "4bea3b4c",
+    "element_attr_content": "<section id=\"contact\" class=\"contact\">",
+    "inner_content": "\n<52b3c35c>\n",
+    "parent_id": "2dc46095",
+    "order": 156,
+    "level": 3
+  },
+  {
+    "name": "div",
+    "id": "52b3c35c",
+    "element_attr_content": "<div class=\"container\">",
+    "inner_content": "\n<8029993f>\n<92b00feb>\n",
+    "parent_id": "4bea3b4c",
+    "order": 157,
+    "level": 4
+  },
+  {
+    "name": "h2",
+    "id": "8029993f",
+    "element_attr_content": "<h2 class=\"section-title\">",
+    "inner_content": "Контакти",
+    "parent_id": "52b3c35c",
+    "order": 158,
+    "level": 5
+  },
+  {
+    "name": "div",
+    "id": "92b00feb",
+    "element_attr_content": "<div class=\"contact-info\">",
+    "inner_content": "\n<c38833ba>\n<4e8e8dcd>\n<cf601a52>\n",
+    "parent_id": "52b3c35c",
+    "order": 159,
+    "level": 5
+  },
+  {
+    "name": "div",
+    "id": "c38833ba",
+    "element_attr_content": "<div class=\"contact-card\">",
+    "inner_content": "\n<258a2da0>\n<77794319>\n<0b82b6ec>\n",
+    "parent_id": "92b00feb",
+    "order": 160,
+    "level": 6
+  },
+  {
+    "name": "h3",
+    "id": "258a2da0",
+    "element_attr_content": "<h3>",
+    "inner_content": "📞 Телефон",
+    "parent_id": "c38833ba",
+    "order": 161,
+    "level": 7
+  },
+  {
+    "name": "p",
+    "id": "77794319",
+    "element_attr_content": "<p>",
+    "inner_content": "<822852b3>",
+    "parent_id": "c38833ba",
+    "order": 162,
+    "level": 7
+  },
+  {
+    "name": "a",
+    "id": "822852b3",
+    "element_attr_content": "<a href=\"tel:+46737570310\">",
+    "inner_content": "+46 737 570 310",
+    "parent_id": "77794319",
+    "order": 163,
+    "level": 8
+  },
+  {
+    "name": "p",
+    "id": "0b82b6ec",
+    "element_attr_content": "<p>",
+    "inner_content": "Зв'язатися з нами",
+    "parent_id": "c38833ba",
+    "order": 164,
+    "level": 7
+  },
+  {
+    "name": "div",
+    "id": "4e8e8dcd",
+    "element_attr_content": "<div class=\"contact-card\">",
+    "inner_content": "\n<5e3c540b>\n<5038cba9>\n<493bfa55>\n",
+    "parent_id": "92b00feb",
+    "order": 165,
+    "level": 6
+  },
+  {
+    "name": "h3",
+    "id": "5e3c540b",
+    "element_attr_content": "<h3>",
+    "inner_content": "✉️ Email",
+    "parent_id": "4e8e8dcd",
+    "order": 166,
+    "level": 7
+  },
+  {
+    "name": "p",
+    "id": "5038cba9",
+    "element_attr_content": "<p>",
+    "inner_content": "<ef5d2258>",
+    "parent_id": "4e8e8dcd",
+    "order": 167,
+    "level": 7
+  },
+  {
+    "name": "a",
+    "id": "ef5d2258",
+    "element_attr_content": "<a href=\"mailto:info@svitua.se\">",
+    "inner_content": "info@svitua.se",
+    "parent_id": "5038cba9",
+    "order": 168,
+    "level": 8
+  },
+  {
+    "name": "p",
+    "id": "493bfa55",
+    "element_attr_content": "<p>",
+    "inner_content": "Напишіть нам",
+    "parent_id": "4e8e8dcd",
+    "order": 169,
+    "level": 7
+  },
+  {
+    "name": "div",
+    "id": "cf601a52",
+    "element_attr_content": "<div class=\"contact-card\">",
+    "inner_content": "\n<556f6828>\n<505d6b04>\n<e57194be>\n",
+    "parent_id": "92b00feb",
+    "order": 170,
+    "level": 6
+  },
+  {
+    "name": "h3",
+    "id": "556f6828",
+    "element_attr_content": "<h3>",
+    "inner_content": "🌐 Сайт",
+    "parent_id": "cf601a52",
+    "order": 171,
+    "level": 7
+  },
+  {
+    "name": "p",
+    "id": "505d6b04",
+    "element_attr_content": "<p>",
+    "inner_content": "<bf30224c>",
+    "parent_id": "cf601a52",
+    "order": 172,
+    "level": 7
+  },
+  {
+    "name": "a",
+    "id": "bf30224c",
+    "element_attr_content": "<a href=\"https://svitua.se\">",
+    "inner_content": "svitua.se",
+    "parent_id": "505d6b04",
+    "order": 173,
+    "level": 8
+  },
+  {
+    "name": "p",
+    "id": "e57194be",
+    "element_attr_content": "<p>",
+    "inner_content": "Актуальна інформація",
+    "parent_id": "cf601a52",
+    "order": 174,
+    "level": 7
+  },
+  {
+    "name": "footer",
+    "id": "00542854",
+    "element_attr_content": "<footer style=\"background: linear-gradient(135deg, #0094e8 0%, #004494 100%); color:#fff; padding:40px 20px; font-family:sans-serif;\">",
+    "inner_content": "\n<6d85f903>\n<0bfa0f65>\n",
+    "parent_id": "2dc46095",
+    "order": 175,
+    "level": 3
+  },
+  {
+    "name": "div",
+    "id": "6d85f903",
+    "element_attr_content": "<div style=\"max-width:1200px; margin:0 auto; display:flex; flex-wrap:wrap; justify-content:space-between; align-items:flex-start; gap:30px;\">",
+    "inner_content": "\n Left Column \n<b309a37c>\n Center \n<b5c60417>\n Right Column \n<61b3b58b>\n",
+    "parent_id": "00542854",
+    "order": 176,
+    "level": 4
+  },
+  {
+    "name": "div",
+    "id": "b309a37c",
+    "element_attr_content": "<div style=\"flex:1 1 300px; min-width:250px;\">",
+    "inner_content": "\n<d1fd6c3b>\n <p style=\"margin:0; line-height:1.5; color:#E8F4FD;\" class=\"Swedish\">\n                    SVIT UA är ett team som förenar människor som<br>\n                    tror på kraften i stöd, solidaritet och handling.\n                </p>\n                <p style=\"margin:0; line-height:1.5; color:#E8F4FD;\" class=\"English\">\n                    SVIT UA is a team that unites people who believe in the power of support, solidarity, and action.\n                </p> \n<69ef8ac2>\n",
+    "parent_id": "6d85f903",
+    "order": 177,
+    "level": 5
+  },
+  {
+    "name": "div",
+    "id": "d1fd6c3b",
+    "element_attr_content": "<div style=\"display:flex; align-items:center; gap:12px; margin-bottom:10px;\">",
+    "inner_content": "\n<c243ec3a>\n<9f90246d>\n",
+    "parent_id": "b309a37c",
+    "order": 178,
+    "level": 6
+  },
+  {
+    "name": "img",
+    "id": "c243ec3a",
+    "element_attr_content": "<img src=\"https://svituawww.github.io/uploads1/2025/06/logo.png\" alt=\"SVIT UA\" style=\"height:48px;\">",
+    "inner_content": "",
+    "parent_id": "d1fd6c3b",
+    "order": 179,
+    "level": 7
+  },
+  {
+    "name": "strong",
+    "id": "9f90246d",
+    "element_attr_content": "<strong style=\"color:#FFD700; font-size:18px;\">",
+    "inner_content": "SVIT UA",
+    "parent_id": "d1fd6c3b",
+    "order": 180,
+    "level": 7
+  },
+  {
+    "name": "p",
+    "id": "69ef8ac2",
+    "element_attr_content": "<p style=\"margin:0; line-height:1.5; color:#E8F4FD;\" class=\"Ukrainian\">",
+    "inner_content": "\n                    SVIT UA — це команда, яка об'єднує людей, які вірять у силу підтримки, солідарності та дії.\n                ",
+    "parent_id": "b309a37c",
+    "order": 181,
+    "level": 6
+  },
+  {
+    "name": "div",
+    "id": "b5c60417",
+    "element_attr_content": "<div style=\"flex:1 1 150px; min-width:150px;\">",
+    "inner_content": "\n <h4 style=\"color:#FFD700; margin-bottom:6px; font-weight:600;\">Kontakter</h4> \n<d190d333>\n<e19e6693>\n",
+    "parent_id": "6d85f903",
+    "order": 182,
+    "level": 5
+  },
+  {
+    "name": "h4",
+    "id": "d190d333",
+    "element_attr_content": "<h4 style=\"color:#FFD700; margin-bottom:6px; font-weight:600;\">",
+    "inner_content": "Контакти",
+    "parent_id": "b5c60417",
+    "order": 183,
+    "level": 6
+  },
+  {
+    "name": "p",
+    "id": "e19e6693",
+    "element_attr_content": "<p style=\"margin:0; color:#fff; font-weight:500;\">",
+    "inner_content": "+467 37 570 310",
+    "parent_id": "b5c60417",
+    "order": 184,
+    "level": 6
+  },
+  {
+    "name": "div",
+    "id": "61b3b58b",
+    "element_attr_content": "<div style=\"flex:1 1 250px; min-width:200px;\">",
+    "inner_content": "\n <h4 style=\"color:#FFD700; margin-bottom:6px; font-weight:600;\">Skicka ett e-postmeddelande</h4> \n<5696d6d6>\n<b48ac244>\n <h4 style=\"color:#FFD700; margin-bottom:6px; font-weight:600;\">Sociala medier</h4> \n<12cdd7e6>\n<741e1aa5>\n",
+    "parent_id": "6d85f903",
+    "order": 185,
+    "level": 5
+  },
+  {
+    "name": "h4",
+    "id": "5696d6d6",
+    "element_attr_content": "<h4 style=\"color:#FFD700; margin-bottom:6px; font-weight:600;\">",
+    "inner_content": " Зв'язатися з нами",
+    "parent_id": "61b3b58b",
+    "order": 186,
+    "level": 6
+  },
+  {
+    "name": "p",
+    "id": "b48ac244",
+    "element_attr_content": "<p style=\"margin:0 0 14px 0;\">",
+    "inner_content": "<b8827ed3>",
+    "parent_id": "61b3b58b",
+    "order": 187,
+    "level": 6
+  },
+  {
+    "name": "a",
+    "id": "b8827ed3",
+    "element_attr_content": "<a href=\"mailto:info@svitua.se\" style=\"color:#fff; text-decoration:none; font-weight:500;\">",
+    "inner_content": "info@svitua.se",
+    "parent_id": "b48ac244",
+    "order": 188,
+    "level": 7
+  },
+  {
+    "name": "h4",
+    "id": "12cdd7e6",
+    "element_attr_content": "<h4 style=\"color:#FFD700; margin-bottom:6px; font-weight:600;\">",
+    "inner_content": "Соціальні мережі",
+    "parent_id": "61b3b58b",
+    "order": 189,
+    "level": 6
+  },
+  {
+    "name": "div",
+    "id": "741e1aa5",
+    "element_attr_content": "<div style=\"display:flex; gap:12px; margin-top:6px;\">",
+    "inner_content": "\n Instagram \n<fb96f9bc>\n TikTok \n<c18ed9fb>\n Facebook \n<20e1fb5e>\n Telegram \n<fd52ca6e>\n LinkedIn \n<7baeb5a9>\n",
+    "parent_id": "61b3b58b",
+    "order": 190,
+    "level": 6
+  },
+  {
+    "name": "a",
+    "id": "fb96f9bc",
+    "element_attr_content": "<a href=\"https://www.instagram.com/svit_ua_se/\" style=\"background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); border-radius:50%; width:36px; height:36px; display:flex; align-items:center; justify-content:center; transition:all 0.3s ease;\" aria-label=\"Instagram\">",
+    "inner_content": "\n<035928d3>\n",
+    "parent_id": "741e1aa5",
+    "order": 191,
+    "level": 7
+  },
+  {
+    "name": "svg",
+    "id": "035928d3",
+    "element_attr_content": "<svg width=\"18\" height=\"18\" viewbox=\"0 0 24 24\" fill=\"white\" xmlns=\"http://www.w3.org/2000/svg\">",
+    "inner_content": "\n<0cfce3a6>\n",
+    "parent_id": "fb96f9bc",
+    "order": 192,
+    "level": 8
+  },
+  {
+    "name": "path",
+    "id": "0cfce3a6",
+    "element_attr_content": "<path d=\"M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z\">",
+    "inner_content": "",
+    "parent_id": "035928d3",
+    "order": 193,
+    "level": 9
+  },
+  {
+    "name": "a",
+    "id": "c18ed9fb",
+    "element_attr_content": "<a href=\"https://www.tiktok.com/@svit.ua8?_t=ZM-8yNdJtXJKno&_r=1\" style=\"background:#000; border-radius:50%; width:36px; height:36px; display:flex; align-items:center; justify-content:center; transition:all 0.3s ease;\" aria-label=\"TikTok\">",
+    "inner_content": "\n<01d37eb1>\n",
+    "parent_id": "741e1aa5",
+    "order": 194,
+    "level": 7
+  },
+  {
+    "name": "svg",
+    "id": "01d37eb1",
+    "element_attr_content": "<svg width=\"18\" height=\"18\" viewbox=\"0 0 24 24\" fill=\"white\" xmlns=\"http://www.w3.org/2000/svg\">",
+    "inner_content": "\n<96da49de>\n",
+    "parent_id": "c18ed9fb",
+    "order": 195,
+    "level": 8
+  },
+  {
+    "name": "path",
+    "id": "96da49de",
+    "element_attr_content": "<path d=\"M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-.88-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z\">",
+    "inner_content": "",
+    "parent_id": "01d37eb1",
+    "order": 196,
+    "level": 9
+  },
+  {
+    "name": "a",
+    "id": "20e1fb5e",
+    "element_attr_content": "<a href=\"https://fb.com/profile.php?id=61574891125034\" style=\"background:#1877F2; border-radius:50%; width:36px; height:36px; display:flex; align-items:center; justify-content:center; transition:all 0.3s ease;\" aria-label=\"Facebook\">",
+    "inner_content": "\n<b6a02694>\n",
+    "parent_id": "741e1aa5",
+    "order": 197,
+    "level": 7
+  },
+  {
+    "name": "svg",
+    "id": "b6a02694",
+    "element_attr_content": "<svg width=\"18\" height=\"18\" viewbox=\"0 0 24 24\" fill=\"white\" xmlns=\"http://www.w3.org/2000/svg\">",
+    "inner_content": "\n<a08cf020>\n",
+    "parent_id": "20e1fb5e",
+    "order": 198,
+    "level": 8
+  },
+  {
+    "name": "path",
+    "id": "a08cf020",
+    "element_attr_content": "<path d=\"M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z\">",
+    "inner_content": "",
+    "parent_id": "b6a02694",
+    "order": 199,
+    "level": 9
+  },
+  {
+    "name": "a",
+    "id": "fd52ca6e",
+    "element_attr_content": "<a href=\"https://t.me/svituainse\" style=\"background:#0088cc; border-radius:50%; width:36px; height:36px; display:flex; align-items:center; justify-content:center; transition:all 0.3s ease;\" aria-label=\"Telegram\">",
+    "inner_content": "\n<c187f54a>\n",
+    "parent_id": "741e1aa5",
+    "order": 200,
+    "level": 7
+  },
+  {
+    "name": "svg",
+    "id": "c187f54a",
+    "element_attr_content": "<svg width=\"18\" height=\"18\" viewbox=\"0 0 24 24\" fill=\"white\" xmlns=\"http://www.w3.org/2000/svg\">",
+    "inner_content": "\n<3fab7ee1>\n",
+    "parent_id": "fd52ca6e",
+    "order": 201,
+    "level": 8
+  },
+  {
+    "name": "path",
+    "id": "3fab7ee1",
+    "element_attr_content": "<path d=\"M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z\">",
+    "inner_content": "",
+    "parent_id": "c187f54a",
+    "order": 202,
+    "level": 9
+  },
+  {
+    "name": "a",
+    "id": "7baeb5a9",
+    "element_attr_content": "<a href=\"https://www.linkedin.com/company/svit-ua/\" style=\"background:#0A66C2; border-radius:50%; width:36px; height:36px; display:flex; align-items:center; justify-content:center; transition:all 0.3s ease;\" aria-label=\"LinkedIn\">",
+    "inner_content": "\n<70ba5211>\n",
+    "parent_id": "741e1aa5",
+    "order": 203,
+    "level": 7
+  },
+  {
+    "name": "svg",
+    "id": "70ba5211",
+    "element_attr_content": "<svg width=\"18\" height=\"18\" viewbox=\"0 0 24 24\" fill=\"white\" xmlns=\"http://www.w3.org/2000/svg\">",
+    "inner_content": "\n<13fa2ef8>\n",
+    "parent_id": "7baeb5a9",
+    "order": 204,
+    "level": 8
+  },
+  {
+    "name": "path",
+    "id": "13fa2ef8",
+    "element_attr_content": "<path d=\"M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z\">",
+    "inner_content": "",
+    "parent_id": "70ba5211",
+    "order": 205,
+    "level": 9
+  },
+  {
+    "name": "div",
+    "id": "0bfa0f65",
+    "element_attr_content": "<div style=\"border-top:1px solid rgba(255,215,0,0.3); margin-top:30px; padding-top:12px; display:flex; justify-content:space-between; flex-wrap:wrap; font-size:13px;\">",
+    "inner_content": "\n<81789648>\n<87773e41>\n",
+    "parent_id": "00542854",
+    "order": 206,
+    "level": 4
+  },
+  {
+    "name": "span",
+    "id": "81789648",
+    "element_attr_content": "<span style=\"color:#E8F4FD;\">",
+    "inner_content": "© 2025 SVIT UA",
+    "parent_id": "0bfa0f65",
+    "order": 207,
+    "level": 5
+  },
+  {
+    "name": "a",
+    "id": "87773e41",
+    "element_attr_content": "<a href=\"#\" style=\"color:#FFD700; text-decoration:none; font-weight:500;\">",
+    "inner_content": "Документи",
+    "parent_id": "0bfa0f65",
+    "order": 208,
+    "level": 5
+  },
+  {
+    "name": "a",
+    "id": "e030ac62",
+    "element_attr_content": "<a href=\"#donate\" class=\"floating-donate\">",
+    "inner_content": "Donate",
+    "parent_id": "2dc46095",
+    "order": 209,
+    "level": 3
+  }
+]

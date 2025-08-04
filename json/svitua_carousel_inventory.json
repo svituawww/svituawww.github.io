@@ -1,0 +1,370 @@
+{
+  "svitua_carousel_inventory": {
+    "created": "2025-01-03",
+    "source": "backup_2025-07-20-1826_CVIT_UA_ade756db2620-db",
+    "description": "Complete elementor-image-carousel inventory from svitua.se website backup database",
+    "carousels": {
+      "gallery_lightbox_carousel": {
+        "type": "elementor lightbox gallery",
+        "slideshow_id": "4e1d854",
+        "total_images": 9,
+        "images": [
+          {
+            "image": "galery-1-1.jpg",
+            "thumbnail": "galery-1-1-150x150.jpg",
+            "original_image": "galery-1-1.jpg",
+            "title": "galery-1",
+            "local_path": "uploads/2025/06/galery-1-1.jpg",
+            "local_thumbnail": "uploads/2025/06/galery-1-1-150x150.jpg",
+            "local_original_path": "uploads/2025/06/galery-1-1.jpg"
+          },
+          {
+            "image": "galery-2.jpg", 
+            "thumbnail": "galery-2-150x150.jpg",
+            "original_image": "galery-2.jpg",
+            "title": "galery-2",
+            "local_path": "uploads/2025/06/galery-2.jpg",
+            "local_thumbnail": "uploads/2025/06/galery-2-150x150.jpg",
+            "local_original_path": "uploads/2025/06/galery-2.jpg"
+          },
+          {
+            "image": "galery-3-scaled.jpg",
+            "thumbnail": "galery-3-150x150.jpg", 
+            "original_image": "galery-3.jpg",
+            "title": "galery-3",
+            "local_path": "uploads/2025/06/galery-3-scaled.jpg",
+            "local_thumbnail": "uploads/2025/06/galery-3-150x150.jpg",
+            "local_original_path": "uploads/2025/06/galery-3.jpg"
+          },
+          {
+            "image": "galery-4.jpg",
+            "thumbnail": "galery-4-150x150.jpg",
+            "original_image": "galery-4.jpg",
+            "title": "galery-4", 
+            "local_path": "uploads/2025/06/galery-4.jpg",
+            "local_thumbnail": "uploads/2025/06/galery-4-150x150.jpg",
+            "local_original_path": "uploads/2025/06/galery-4.jpg"
+          },
+          {
+            "image": "galery-5.jpg",
+            "thumbnail": "galery-5-150x150.jpg",
+            "original_image": "galery-5.jpg",
+            "title": "galery-5",
+            "local_path": "uploads/2025/06/galery-5.jpg",
+            "local_thumbnail": "uploads/2025/06/galery-5-150x150.jpg",
+            "local_original_path": "uploads/2025/06/galery-5.jpg"
+          },
+          {
+            "image": "galery-6.jpg",
+            "thumbnail": "galery-6-150x150.jpg",
+            "original_image": "galery-6.jpg",
+            "title": "galery-6",
+            "local_path": "uploads/2025/06/galery-6.jpg", 
+            "local_thumbnail": "uploads/2025/06/galery-6-150x150.jpg",
+            "local_original_path": "uploads/2025/06/galery-6.jpg"
+          },
+          {
+            "image": "galery-7.jpg",
+            "thumbnail": "galery-7-150x150.jpg",
+            "original_image": "galery-7.jpg",
+            "title": "galery-7",
+            "local_path": "uploads/2025/06/galery-7.jpg",
+            "local_thumbnail": "uploads/2025/06/galery-7-150x150.jpg",
+            "local_original_path": "uploads/2025/06/galery-7.jpg"
+          },
+          {
+            "image": "galery-8.jpg",
+            "thumbnail": "galery-8-150x150.jpg",
+            "original_image": "galery-8.jpg",
+            "title": "galery-8", 
+            "local_path": "uploads/2025/06/galery-8.jpg",
+            "local_thumbnail": "uploads/2025/06/galery-8-150x150.jpg",
+            "local_original_path": "uploads/2025/06/galery-8.jpg"
+          },
+          {
+            "image": "galery-9.jpg",
+            "thumbnail": "galery-9-150x150.jpg",
+            "original_image": "galery-9.jpg",
+            "title": "galery-9",
+            "local_path": "uploads/2025/06/galery-9.jpg",
+            "local_thumbnail": "uploads/2025/06/galery-9-150x150.jpg",
+            "local_original_path": "uploads/2025/06/galery-9.jpg"
+          }
+        ]
+      },
+      "partners_carousel": {
+        "type": "partners logo carousel",
+        "title": "Наші партнери",
+        "total_images": 37,
+        "images": [
+          {
+            "image": "01-150x150.jpg",
+            "original_image": "01.jpg",
+            "alt": "01",
+            "local_path": "uploads/2025/06/01-150x150.jpg",
+            "local_original_path": "uploads/2025/06/01.jpg"
+          },
+          {
+            "image": "02-150x150.jpg", 
+            "original_image": "02.jpg",
+            "alt": "02",
+            "local_path": "uploads/2025/06/02-150x150.jpg",
+            "local_original_path": "uploads/2025/06/02.jpg"
+          },
+          {
+            "image": "03-150x150.jpg",
+            "original_image": "03.jpg",
+            "alt": "03", 
+            "local_path": "uploads/2025/06/03-150x150.jpg",
+            "local_original_path": "uploads/2025/06/03.jpg"
+          },
+          {
+            "image": "04-150x150.jpg",
+            "original_image": "04.jpg",
+            "alt": "04",
+            "local_path": "uploads/2025/06/04-150x150.jpg",
+            "local_original_path": "uploads/2025/06/04.jpg"
+          },
+          {
+            "image": "05-150x150.jpg",
+            "original_image": "05.jpg",
+            "alt": "05",
+            "local_path": "uploads/2025/06/05-150x150.jpg",
+            "local_original_path": "uploads/2025/06/05.jpg"
+          },
+          {
+            "image": "06.jpg",
+            "original_image": "06.jpg",
+            "alt": "06",
+            "local_path": "uploads/2025/06/06.jpg",
+            "local_original_path": "uploads/2025/06/06.jpg"
+          },
+          {
+            "image": "07-150x150.jpg", 
+            "original_image": "07.jpg",
+            "alt": "07",
+            "local_path": "uploads/2025/06/07-150x150.jpg",
+            "local_original_path": "uploads/2025/06/07.jpg"
+          },
+          {
+            "image": "08-150x112.jpg",
+            "original_image": "08.jpg",
+            "alt": "08",
+            "local_path": "uploads/2025/06/08-150x112.jpg",
+            "local_original_path": "uploads/2025/06/08.jpg"
+          },
+          {
+            "image": "09-150x150.jpg",
+            "original_image": "09.jpg",
+            "alt": "09", 
+            "local_path": "uploads/2025/06/09-150x150.jpg",
+            "local_original_path": "uploads/2025/06/09.jpg"
+          },
+          {
+            "image": "10-150x150.jpg",
+            "original_image": "10.jpg",
+            "alt": "10",
+            "local_path": "uploads/2025/06/10-150x150.jpg",
+            "local_original_path": "uploads/2025/06/10.jpg"
+          },
+          {
+            "image": "11-150x150.jpg",
+            "original_image": "11.jpg",
+            "alt": "11",
+            "local_path": "uploads/2025/06/11-150x150.jpg",
+            "local_original_path": "uploads/2025/06/11.jpg"
+          },
+          {
+            "image": "12-150x150.jpg",
+            "original_image": "12.jpg",
+            "alt": "12",
+            "local_path": "uploads/2025/06/12-150x150.jpg",
+            "local_original_path": "uploads/2025/06/12.jpg"
+          },
+          {
+            "image": "13-150x150.jpg",
+            "original_image": "13.jpg",
+            "alt": "13",
+            "local_path": "uploads/2025/06/13-150x150.jpg",
+            "local_original_path": "uploads/2025/06/13.jpg"
+          },
+          {
+            "image": "14-150x150.jpg",
+            "original_image": "14.jpg",
+            "alt": "14",
+            "local_path": "uploads/2025/06/14-150x150.jpg",
+            "local_original_path": "uploads/2025/06/14.jpg"
+          },
+          {
+            "image": "15-150x150.jpg", 
+            "original_image": "15.jpg",
+            "alt": "15",
+            "local_path": "uploads/2025/06/15-150x150.jpg",
+            "local_original_path": "uploads/2025/06/15.jpg"
+          },
+          {
+            "image": "16-150x150.jpg",
+            "original_image": "16.jpg",
+            "alt": "16",
+            "local_path": "uploads/2025/06/16-150x150.jpg",
+            "local_original_path": "uploads/2025/06/16.jpg"
+          },
+          {
+            "image": "17-150x150.jpg",
+            "original_image": "17.jpg",
+            "alt": "17",
+            "local_path": "uploads/2025/06/17-150x150.jpg",
+            "local_original_path": "uploads/2025/06/17.jpg"
+          },
+          {
+            "image": "18-150x150.jpg",
+            "original_image": "18.jpg",
+            "alt": "18",
+            "local_path": "uploads/2025/06/18-150x150.jpg",
+            "local_original_path": "uploads/2025/06/18.jpg"
+          },
+          {
+            "image": "19-150x150.jpg",
+            "original_image": "19.jpg",
+            "alt": "19",
+            "local_path": "uploads/2025/06/19-150x150.jpg",
+            "local_original_path": "uploads/2025/06/19.jpg"
+          },
+          {
+            "image": "20-150x150.jpg",
+            "original_image": "20.jpg",
+            "alt": "20", 
+            "local_path": "uploads/2025/06/20-150x150.jpg",
+            "local_original_path": "uploads/2025/06/20.jpg"
+          },
+          {
+            "image": "21-150x150.jpg",
+            "original_image": "21.jpg",
+            "alt": "21",
+            "local_path": "uploads/2025/06/21-150x150.jpg",
+            "local_original_path": "uploads/2025/06/21.jpg"
+          },
+          {
+            "image": "22-150x150.jpg",
+            "original_image": "22.jpg",
+            "alt": "22",
+            "local_path": "uploads/2025/06/22-150x150.jpg",
+            "local_original_path": "uploads/2025/06/22.jpg"
+          },
+          {
+            "image": "23-150x150.jpg",
+            "original_image": "23.jpg",
+            "alt": "23",
+            "local_path": "uploads/2025/06/23-150x150.jpg",
+            "local_original_path": "uploads/2025/06/23.jpg"
+          },
+          {
+            "image": "24-150x150.jpg",
+            "original_image": "24.jpg",
+            "alt": "24",
+            "local_path": "uploads/2025/06/24-150x150.jpg",
+            "local_original_path": "uploads/2025/06/24.jpg"
+          },
+          {
+            "image": "25-150x150.jpg",
+            "original_image": "25.jpg",
+            "alt": "25",
+            "local_path": "uploads/2025/06/25-150x150.jpg",
+            "local_original_path": "uploads/2025/06/25.jpg"
+          },
+          {
+            "image": "26-150x150.jpg",
+            "original_image": "26.jpg",
+            "alt": "26",
+            "local_path": "uploads/2025/06/26-150x150.jpg",
+            "local_original_path": "uploads/2025/06/26.jpg"
+          },
+          {
+            "image": "27-150x150.jpg",
+            "original_image": "27.jpg",
+            "alt": "27",
+            "local_path": "uploads/2025/06/27-150x150.jpg",
+            "local_original_path": "uploads/2025/06/27.jpg"
+          },
+          {
+            "image": "28-150x150.jpg",
+            "original_image": "28.jpg",
+            "alt": "28",
+            "local_path": "uploads/2025/06/28-150x150.jpg",
+            "local_original_path": "uploads/2025/06/28.jpg"
+          },
+          {
+            "image": "29-150x150.jpg",
+            "original_image": "29.jpg",
+            "alt": "29",
+            "local_path": "uploads/2025/06/29-150x150.jpg",
+            "local_original_path": "uploads/2025/06/29.jpg"
+          },
+          {
+            "image": "30-150x150.jpg",
+            "original_image": "30.jpg",
+            "alt": "30",
+            "local_path": "uploads/2025/06/30-150x150.jpg",
+            "local_original_path": "uploads/2025/06/30.jpg"
+          },
+          {
+            "image": "31-150x150.jpg",
+            "original_image": "31.jpg",
+            "alt": "31",
+            "local_path": "uploads/2025/06/31-150x150.jpg",
+            "local_original_path": "uploads/2025/06/31.jpg"
+          },
+          {
+            "image": "32-150x150.jpg", 
+            "original_image": "32.jpg",
+            "alt": "32",
+            "local_path": "uploads/2025/06/32-150x150.jpg",
+            "local_original_path": "uploads/2025/06/32.jpg"
+          },
+          {
+            "image": "33-150x150.jpg",
+            "original_image": "33.jpg",
+            "alt": "33",
+            "local_path": "uploads/2025/06/33-150x150.jpg",
+            "local_original_path": "uploads/2025/06/33.jpg"
+          },
+          {
+            "image": "34-150x150.jpg",
+            "original_image": "34.jpg",
+            "alt": "34",
+            "local_path": "uploads/2025/06/34-150x150.jpg",
+            "local_original_path": "uploads/2025/06/34.jpg"
+          },
+          {
+            "image": "35-150x150.jpg",
+            "original_image": "35.jpg",
+            "alt": "35",
+            "local_path": "uploads/2025/06/35-150x150.jpg",
+            "local_original_path": "uploads/2025/06/35.jpg"
+          },
+          {
+            "image": "36-150x150.jpg",
+            "original_image": "36.jpg",
+            "alt": "36",
+            "local_path": "uploads/2025/06/36-150x150.jpg",
+            "local_original_path": "uploads/2025/06/36.jpg"
+          },
+          {
+            "image": "37-150x150.jpg",
+            "original_image": "37.jpg",
+            "alt": "37",
+            "local_path": "uploads/2025/06/37-150x150.jpg",
+            "local_original_path": "uploads/2025/06/37.jpg"
+          }
+        ]
+      }
+    },
+    "summary": {
+      "total_carousels": 2,
+      "total_carousel_images": 46,
+      "gallery_images": 9,
+      "partner_logos": 37,
+      "all_images_available_locally": true
+    }
+  }
+}

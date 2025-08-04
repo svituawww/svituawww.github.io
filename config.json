@@ -1,6 +1,0 @@
-[
-    {
-        "find": "uploads/",
-        "replace": "https://svituawww.github.io/uploads1/"
-    }
-]
