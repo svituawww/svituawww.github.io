@@ -1,0 +1,54 @@
+{
+
+"pages_database" : {
+    "main_page" : {
+        "html_file" : "index.html",
+        "css_file" : "index.css",
+        "js_file" : "index.js",
+        "uuid_id" : "page_a456-426614174000"
+    },
+    "team_page" : {
+        "html_file" : "team.html",
+        "css_file" : "team.css",
+        "js_file" : "team.js",
+        "uuid_id" : "page_a456-426614174001"
+    } 
+ },
+
+
+    "pages_template" : {
+        "main_page" : {
+            "from_file" : "templates/pages/index.html",
+            "header" : {
+             "header_start" : "<!-- Header begin \"uuid_id\":\"tmpl_a456-426614174002\" -->",
+             "header_end" : "<!-- Header end \"uuid_id\":\"tmpl_a456-426614174002\" -->",
+             "uuid_id" : "tmpl_a456-426614174002"
+            },
+            "footer" : {
+                "footer_start" : "<!-- Footer begin \"uuid_id\":\"tmpl_a456-426614174003\" -->",
+                "footer_end" : "<!-- Footer end \"uuid_id\":\"tmpl_a456-426614174003\" -->",
+                "uuid_id" : "tmpl_a456-426614174003"
+            }
+        },
+        "team_page" : {
+            "from_file" : "templates/pages/index.html",
+            "header" : {
+                "header_start" : "<!-- Header begin \"uuid_id\":\"tmpl_a456-426614174002\" -->",
+                "header_end" : "<!-- Header end \"uuid_id\":\"tmpl_a456-426614174002\" -->",
+                "uuid_id" : "tmpl_a456-426614174002"    
+            },
+            "footer" : {
+                "footer_start" : "<!-- Footer begin \"uuid_id\":\"tmpl_a456-426614174003\" -->",
+                "footer_end" : "<!-- Footer end \"uuid_id\":\"tmpl_a456-426614174003\" -->",
+                "uuid_id" : "tmpl_a456-426614174003"
+            }
+        }
+    }
+
+
+
+
+}
+
+
+

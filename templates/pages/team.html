@@ -5,50 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Команда - SVIT UA</title>
     <meta name="description" content="Знайомтеся з нашою командою волонтерів SVIT UA - людьми, які присвячують свій час допомозі українцям у Швеції.">    
-    
-    <!-- Common styles (load second) -->
-    <link rel="stylesheet" href="css/header.css">    
-    <link rel="stylesheet" href="css/mobile_menu.css">    
-    <!-- Page-specific styles (load last) -->
-    <link rel="stylesheet" href="css/teams_m.css">    
-    <script src="js/team.js"></script>
-
+    <link rel="stylesheet" href="team.css">
+    <script src="team.js"></script>
 </head>
 <body>
-    <!-- Header begin "uuid_id":"tmpl_a456-426614174002" -->
+    <!-- Header begin "uuid_id":"tmpl_a456-426614174004" -->
     <header>
-        <nav class="container">
-            <div class="logo">
-                <img src="https://svituawww.github.io/uploads1/2025/03/svitua_100x100.png" alt="SVIT UA Logo">
-                <h1>SVIT UA</h1>
-            </div>
-            
-            <ul class="nav-links">
-                <li><a href="index.html">Головна</a></li>
-                <li><a href="#services">Допомога</a></li>
-                <li><a href="team.html">Про нас</a></li>
-                <li><a href="#faq">FAQ</a></li>
-                <li><a href="#contact">Контакти</a></li>
-            </ul>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <img src="https://svituawww.github.io/uploads1/2025/06/logo.png" alt="SVIT UA Logo">
+                    <h1>SVIT UA</h1>
+                </div>
+                
+                <ul class="nav-links">
+                    <li><a href="variant1_1.html">Головна</a></li>
+                    <li><a href="#services">Допомога</a></li>
+                    <li><a href="team.html">Про нас</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#contact">Контакти</a></li>                    
+                </ul>
 
-            <!-- Mobile Menu Toggle -->
-            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()" aria-label="Menu">
-                ☰
-            </button>
-            
-            <div style="display: flex; align-items: center; gap: 20px;">
                 <div class="language-switch">
                     <a href="#" class="lang-btn active" title="Українська">🇺🇦</a>
                     <a href="#" class="lang-btn" title="Svenska">🇸🇪</a>
                     <a href="#" class="lang-btn" title="English">🇬🇧</a>
                 </div>
-            </div>
-        </nav>
+
+                <button class="mobile-menu-toggle" onclick="toggleMobileMenu()" aria-label="Menu">
+                    ☰
+                </button>
+            </nav>
+        </div>
 
         <!-- Mobile Menu Overlay -->
         <div class="mobile-menu-overlay" onclick="closeMobileMenu()"></div>
         
-        <!-- Mobile Menu -->
+        <!-- Mobile Menu with Fixed Language Flag Positioning -->
         <nav class="mobile-menu">
             <button class="mobile-menu-close" onclick="closeMobileMenu()" aria-label="Close Menu">
                 ✕
@@ -72,14 +65,14 @@
             </div>
         </nav>
     </header>
-  <!-- Header end "uuid_id":"tmpl_a456-426614174002" -->
+    <!-- Header end "uuid_id":"tmpl_a456-426614174004" -->
 
 
     <!-- Hero Section -->
     <section class="hero">
         <div class="container">
             <div class="hero-content">
-                <a href="index.html" class="back-btn">← Повернутися на головну</a>
+                <a href="variant1_1.html" class="back-btn">← Повернутися на головну</a>
                 <h1>Наша команда</h1>
                 <p>Знайомтеся з нашими волонтерами — людьми, які присвячують свій час допомозі українцям у Швеції. Кожен член нашої команди вносить унікальний внесок у створення підтримуючої спільноти.</p>
             </div>
@@ -107,7 +100,7 @@
         </div>
     </section>
 
-    <!-- Footer begin "uuid_id":"tmpl_a456-426614174003" -->
+    <!-- Footer begin "uuid_id":"tmpl_a456-426614174005" -->
     <footer style="background: linear-gradient(135deg, #0094e8 0%, #004494 100%); color:#fff; padding:40px 20px; font-family:sans-serif;">
         <div style="max-width:1200px; margin:0 auto; display:flex; flex-wrap:wrap; justify-content:space-between; align-items:flex-start; gap:30px;">
 
@@ -117,34 +110,22 @@
                     <img src="https://svituawww.github.io/uploads1/2025/06/logo.png" alt="SVIT UA" style="height:48px;">
                     <strong style="color:#FFD700; font-size:18px;">SVIT UA</strong>
                 </div>                
-                <!-- <p style="margin:0; line-height:1.5; color:#E8F4FD;" class="Swedish">
-                    SVIT UA är ett team som förenar människor som<br>
-                    tror på kraften i stöd, solidaritet och handling.
-                </p>
-                <p style="margin:0; line-height:1.5; color:#E8F4FD;" class="English">
-                    SVIT UA is a team that unites people who believe in the power of support, solidarity, and action.
-                </p> -->
                 <p style="margin:0; line-height:1.5; color:#E8F4FD;" class="Ukrainian">
                     SVIT UA — це команда, яка об'єднує людей, які вірять у силу підтримки, солідарності та дії.
                 </p>
-
-
             </div>
 
             <!-- Center -->
             <div style="flex:1 1 150px; min-width:150px;">
-                <!-- <h4 style="color:#FFD700; margin-bottom:6px; font-weight:600;">Kontakter</h4> -->
                 <h4 style="color:#FFD700; margin-bottom:6px; font-weight:600;">Контакти</h4>                
                 <p style="margin:0; color:#fff; font-weight:500;">+467 37 570 310</p>
             </div>
 
             <!-- Right Column -->
             <div style="flex:1 1 250px; min-width:200px;">
-                <!-- <h4 style="color:#FFD700; margin-bottom:6px; font-weight:600;">Skicka ett e-postmeddelande</h4> -->
                 <h4 style="color:#FFD700; margin-bottom:6px; font-weight:600;"> Зв'язатися з нами</h4>
                 <p style="margin:0 0 14px 0;"><a href="mailto:info@svitua.se" style="color:#fff; text-decoration:none; font-weight:500;">info@svitua.se</a></p>
 
-                <!-- <h4 style="color:#FFD700; margin-bottom:6px; font-weight:600;">Sociala medier</h4> -->
                 <h4 style="color:#FFD700; margin-bottom:6px; font-weight:600;">Соціальні мережі</h4>                
                 <div style="display:flex; gap:12px; margin-top:6px;">
                     <!-- Instagram -->
@@ -190,11 +171,7 @@
             <a href="#" style="color:#FFD700; text-decoration:none; font-weight:500;">Документи</a>
         </div>
     </footer>
-    <!-- Footer end "uuid_id":"tmpl_a456-426614174003" -->
-     
-    <!-- Floating Donate Button -->
-    <a href="#donate" class="floating-donate">Donate</a>
-
+    <!-- Footer end "uuid_id":"tmpl_a456-426614174005" -->
 
 </body>
 </html>
