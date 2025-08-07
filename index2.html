@@ -17,8 +17,6 @@
     <script src="assets/js/index.js"></script>
     <script src="assets/js/menu.js"></script>
     <script src="assets/js/mobile_menu_functions.js"></script>
-    <script src="assets/js/qrcode_index.js"></script>
-
 </head>
 <body class="compact-menu">
 
@@ -98,7 +96,7 @@
                 <h2>Гуманітарна допомога, волонтерство та інтеграція — ми поруч із тобою в Швеції</h2>
                 <p>Ставайте частиною змін — разом ми творимо майбутнє, де кожна дитина та родина має підтримку</p>
                 <div class="hero-buttons">
-                    <a href="donate.html" class="btn-primary">Підтримати</a>
+                    <a href="#donate" class="btn-primary">Підтримати</a>
                     <a href="#contact" class="btn-secondary">Зв'язатися</a>
                 </div>
             </div>
@@ -209,7 +207,7 @@
                     <div class="join-icon">💝</div>
                     <h3>Зробити пожертву</h3>
                     <p>Ваша фінансова підтримка допомагає нам розширювати програми та надавати більше допомоги тим, хто її потребує.</p>
-                    <a href="donate.html" class="join-btn">Підтримати</a>
+                    <a href="#donate" class="join-btn">Підтримати</a>
                 </div>
                 <div class="join-card">
                     <div class="join-icon">📢</div>
@@ -240,9 +238,12 @@
                 </div>
                 
                 <div class="petition-qr">
-                    <div id="petition-qrcode">
-                        <canvas id="petitionQrCanvas" class="qr-canvas" width="300" height="300"></canvas>
-                    </div>
+                    <img src="https://svitua.se/wp-content/uploads/2025/06/QR-petition.jpg" 
+                         alt="QR код для петиції" 
+                         srcset="https://svitua.se/wp-content/uploads/2025/06/QR-petition.jpg 925w, 
+                                 https://svitua.se/wp-content/uploads/2025/06/QR-petition-295x300.jpg 295w, 
+                                 https://svitua.se/wp-content/uploads/2025/06/QR-petition-768x780.jpg 768w" 
+                         sizes="(max-width: 800px) 100vw, 400px">
                     <p>Скануйте QR-код для підписання петиції</p>
                 </div>
             </div>
@@ -453,9 +454,7 @@
     <!-- Footer end "uuid_id":"tmpl_a456-426614174003" -->
 
     <!-- Floating Donate Button -->
-    <a href="donate.html" class="floating-donate">Donate</a>
-
-
+    <a href="#donate" class="floating-donate">Donate</a>
 
 </body>
 </html>

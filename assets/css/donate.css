@@ -1,0 +1,269 @@
+/* Donation Page Styles */
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    padding: 80px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Donation Methods Section */
+.donation-methods {
+    padding: 60px 0;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+/* Donation Card */
+.donation-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    padding: 30px;
+    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.donation-info {
+    padding-right: 20px;
+}
+
+.donation-info h3 {
+    font-size: 1.8rem;
+    color: #0094e8;
+    margin-bottom: 15px;
+}
+
+.donation-info p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.phone-number {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #0094e8;
+    margin: 20px 0;
+    padding: 10px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+.copy-button {
+    background: #0094e8;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.copy-button:hover {
+    background: #0052a3;
+    transform: translateY(-2px);
+}
+
+/* QR Container */
+.qr-container {
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #e9ecef;
+}
+
+.qr-container h4 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.qr-canvas {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Bank Details */
+.bank-details {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.bank-details p {
+    margin: 10px 0;
+    font-size: 1.1rem;
+}
+
+.bank-details strong {
+    color: #0094e8;
+    display: inline-block;
+    width: 100px;
+}
+
+/* Instructions Card */
+.instructions-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    padding: 30px;
+    margin-bottom: 40px;
+}
+
+.instructions-card h3 {
+    color: #0094e8;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.instructions-card ol {
+    padding-left: 20px;
+    margin-bottom: 30px;
+}
+
+.instructions-card li {
+    margin: 10px 0;
+    color: #666;
+    font-size: 1.1rem;
+}
+
+/* Impact Information */
+.impact-info {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.impact-info h3 {
+    color: #333;
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+}
+
+.impact-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.impact-card {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.impact-card:hover {
+    transform: translateY(-5px);
+}
+
+.impact-icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.impact-card h4 {
+    color: #0094e8;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.impact-card p {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Success/Error Messages */
+.success-message {
+    color: #28a745;
+    font-weight: bold;
+    margin: 10px 0;
+    padding: 10px;
+    background: #f8fff9;
+    border-radius: 5px;
+}
+
+.error-message {
+    color: #dc3545;
+    font-weight: bold;
+    margin: 10px 0;
+    padding: 10px;
+    background: #fff8f8;
+    border-radius: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .donation-card {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .donation-info {
+        padding-right: 0;
+    }
+
+    .impact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .phone-number {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .donation-methods {
+        padding: 40px 0;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .donation-card {
+        padding: 20px;
+    }
+
+    .bank-details strong {
+        width: auto;
+        margin-right: 10px;
+    }
+}

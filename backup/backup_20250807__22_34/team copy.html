@@ -9,15 +9,12 @@
     <!-- Common styles (load second) -->
     <link rel="stylesheet" href="assets/css/header.css">    
     <link rel="stylesheet" href="assets/css/mobile_menu.css">    
-    <link rel="stylesheet" href="assets/css/enhanced_menu.css">    
     <!-- Page-specific styles (load last) -->
     <link rel="stylesheet" href="assets/css/teams_m.css">    
     <script src="assets/js/team.js"></script>
-    <script src="assets/js/index.js"></script>
-    <script src="assets/js/menu.js"></script>
-    <script src="assets/js/mobile_menu_functions.js"></script>
+
 </head>
-<body class="compact-menu">
+<body>
     <!-- Header begin "uuid_id":"tmpl_a456-426614174002" -->
     <header>
         <nav class="container">
@@ -27,6 +24,11 @@
             </div>
             
             <ul class="nav-links">
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="#services">Допомога</a></li>
+                <li><a href="team.html">Про нас</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact">Контакти</a></li>
             </ul>
 
             <!-- Mobile Menu Toggle -->
@@ -53,7 +55,11 @@
             </button>
             
             <ul class="mobile-nav-links">
-
+                <li><a href="index.html" onclick="closeMobileMenu()">Головна</a></li>
+                <li><a href="#services" onclick="closeMobileMenu()">Допомога</a></li>
+                <li><a href="team.html" onclick="closeMobileMenu()">Про нас</a></li>
+                <li><a href="#faq" onclick="closeMobileMenu()">FAQ</a></li>
+                <li><a href="#contact" onclick="closeMobileMenu()">Контакти</a></li>
             </ul>
 
             <div class="mobile-language-section">
@@ -187,7 +193,7 @@
     <!-- Footer end "uuid_id":"tmpl_a456-426614174003" -->
      
     <!-- Floating Donate Button -->
-    <a href="donate.html" class="floating-donate">Donate</a>
+    <a href="#donate" class="floating-donate">Donate</a>
 
 
 </body>

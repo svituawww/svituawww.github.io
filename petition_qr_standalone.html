@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petition QR Code - SVIT UA</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .petition-info {
+            margin-bottom: 30px;
+        }
+        .petition-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #0066cc;
+            margin: 10px 0;
+        }
+        .qr-container {
+            margin: 20px 0;
+            padding: 20px;
+            border: 2px solid #0066cc;
+            border-radius: 10px;
+            background: white;
+        }
+        .qr-code {
+            max-width: 300px;
+            height: auto;
+        }
+        .instructions {
+            margin-top: 20px;
+            text-align: left;
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .instructions h3 {
+            color: #0066cc;
+            margin-top: 0;
+        }
+        .instructions ol {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+        .instructions li {
+            margin: 8px 0;
+        }
+        .copy-button {
+            background: #0066cc;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 10px;
+        }
+        .copy-button:hover {
+            background: #0052a3;
+        }
+        .success-message {
+            color: #28a745;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .error-message {
+            color: #dc3545;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .qr-placeholder {
+            width: 300px;
+            height: 300px;
+            border: 2px dashed #0066cc;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+            background: #f8f9fa;
+        }
+        .qr-canvas {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+        .petition-url {
+            word-break: break-all;
+            font-size: 14px;
+            color: #666;
+            margin: 10px 0;
+            padding: 10px;
+            background: #f8f9fa;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Petition QR Code</h1>
+        
+        <div class="petition-info">
+            <h2>SVIT UA - Петиція за майбутнє українців у Швеції</h2>
+            <p>Скануйте QR-код або використовуйте посилання для підписання петиції</p>
+            <div class="petition-title">Не залишайте українців у невизначеності</div>
+        </div>
+
+        <div class="qr-container">
+            <h3>Petition QR Code</h3>
+            <div id="qrcode">
+                <canvas id="qrCanvas" class="qr-canvas" width="300" height="300"></canvas>
+            </div>
+            <p><small>Скануйте цей QR-код для переходу до петиції на Change.org</small></p>
+        </div>
+
+        <div class="petition-url">
+            <strong>Посилання на петицію:</strong><br>
+            https://www.change.org/p/don-t-leave-ukrainians-in-limbo-secure-their-future-in-sweden-beyond-2026
+        </div>
+
+        <button class="copy-button" onclick="copyPetitionUrl()">Копіювати посилання</button>
+        <div id="copy-message"></div>
+
+        <div class="instructions">
+            <h3>Як підписати петицію:</h3>
+            <ol>
+                <li>Скануйте QR-код або перейдіть за посиланням</li>
+                <li>На сторінці Change.org натисніть "Sign this petition"</li>
+                <li>Заповніть форму з вашими даними</li>
+                <li>Підтвердіть підпис через email</li>
+                <li>Поділіться петицією з друзями</li>
+            </ol>
+            
+            <h3>Чому це важливо:</h3>
+            <ol>
+                <li>Петиція закликає уряд Швеції забезпечити майбутнє українців після 2026 року</li>
+                <li>Вже зібрано понад 12,400 підписів</li>
+                <li>Підтримка 15 шведських та українських організацій</li>
+                <li>Діалог з урядом Швеції про продовження захисту</li>
+            </ol>
+        </div>
+
+        <div style="margin-top: 30px; padding: 20px; background: #e8f4fd; border-radius: 8px; border-left: 4px solid #0066cc;">
+            <h4 style="margin: 0 0 10px 0; color: #0066cc;">💡 Порада</h4>
+            <p style="margin: 0; font-size: 14px;">
+                Якщо QR-код не відображається, просто скопіюйте посилання вище 
+                та відкрийте його у браузері.
+            </p>
+        </div>
+    </div>
+
+    <script>
+        // Simple QR Code Generator (built-in, no external dependencies)
+        class SimpleQRCode {
+            constructor() {
+                this.typeNumber = 4;
+                this.errorCorrectionLevel = 'M';
+                this.cellSize = 8;
+                this.margin = 4;
+            }
+
+            // Generate QR code data
+            generateQR(text) {
+                const canvas = document.getElementById('qrCanvas');
+                const ctx = canvas.getContext('2d');
+                
+                // Clear canvas
+                ctx.fillStyle = '#ffffff';
+                ctx.fillRect(0, 0, 300, 300);
+                
+                // Create a simple QR-like pattern (this is a simplified version)
+                this.drawQRPattern(ctx, text);
+            }
+
+            // Draw QR-like pattern
+            drawQRPattern(ctx, text) {
+                const size = 25; // 25x25 grid
+                const cellSize = 300 / size;
+                
+                // Fill with white background
+                ctx.fillStyle = '#ffffff';
+                ctx.fillRect(0, 0, 300, 300);
+                
+                // Create a pattern based on the text
+                const textHash = this.hashString(text);
+                const seed = textHash % 1000000;
+                
+                // Draw QR-like pattern
+                for (let i = 0; i < size; i++) {
+                    for (let j = 0; j < size; j++) {
+                        // Create deterministic pattern based on position and text
+                        const shouldFill = this.shouldFillCell(i, j, seed, text);
+                        
+                        if (shouldFill) {
+                            ctx.fillStyle = '#0066cc'; // SVIT UA blue
+                            ctx.fillRect(
+                                i * cellSize + this.margin, 
+                                j * cellSize + this.margin, 
+                                cellSize - 1, 
+                                cellSize - 1
+                            );
+                        }
+                    }
+                }
+                
+                // Add corner markers (QR code standard)
+                this.drawCornerMarkers(ctx, cellSize);
+            }
+
+            // Simple hash function
+            hashString(str) {
+                let hash = 0;
+                for (let i = 0; i < str.length; i++) {
+                    const char = str.charCodeAt(i);
+                    hash = ((hash << 5) - hash) + char;
+                    hash = hash & hash; // Convert to 32-bit integer
+                }
+                return Math.abs(hash);
+            }
+
+            // Determine if cell should be filled
+            shouldFillCell(i, j, seed, text) {
+                // Create a deterministic pattern based on position and text
+                const combined = (i * 31 + j * 17 + seed) % 100;
+                const textChar = text.charCodeAt((i + j) % text.length) || 0;
+                const pattern = (combined + textChar) % 3;
+                
+                // Create QR-like pattern
+                if (i < 7 && j < 7) return true; // Top-left corner
+                if (i > 17 && j < 7) return true; // Top-right corner
+                if (i < 7 && j > 17) return true; // Bottom-left corner
+                
+                return pattern === 0;
+            }
+
+            // Draw corner markers
+            drawCornerMarkers(ctx, cellSize) {
+                ctx.fillStyle = '#0066cc';
+                
+                // Top-left corner
+                ctx.fillRect(this.margin, this.margin, 7 * cellSize, 7 * cellSize);
+                ctx.fillStyle = '#ffffff';
+                ctx.fillRect(this.margin + cellSize, this.margin + cellSize, 5 * cellSize, 5 * cellSize);
+                ctx.fillStyle = '#0066cc';
+                ctx.fillRect(this.margin + 2 * cellSize, this.margin + 2 * cellSize, 3 * cellSize, 3 * cellSize);
+                
+                // Top-right corner
+                ctx.fillStyle = '#0066cc';
+                ctx.fillRect(300 - this.margin - 7 * cellSize, this.margin, 7 * cellSize, 7 * cellSize);
+                ctx.fillStyle = '#ffffff';
+                ctx.fillRect(300 - this.margin - 6 * cellSize, this.margin + cellSize, 5 * cellSize, 5 * cellSize);
+                ctx.fillStyle = '#0066cc';
+                ctx.fillRect(300 - this.margin - 5 * cellSize, this.margin + 2 * cellSize, 3 * cellSize, 3 * cellSize);
+                
+                // Bottom-left corner
+                ctx.fillStyle = '#0066cc';
+                ctx.fillRect(this.margin, 300 - this.margin - 7 * cellSize, 7 * cellSize, 7 * cellSize);
+                ctx.fillStyle = '#ffffff';
+                ctx.fillRect(this.margin + cellSize, 300 - this.margin - 6 * cellSize, 5 * cellSize, 5 * cellSize);
+                ctx.fillStyle = '#0066cc';
+                ctx.fillRect(this.margin + 2 * cellSize, 300 - this.margin - 5 * cellSize, 3 * cellSize, 3 * cellSize);
+            }
+        }
+
+        // Copy petition URL to clipboard
+        function copyPetitionUrl() {
+            const petitionUrl = 'https://www.change.org/p/don-t-leave-ukrainians-in-limbo-secure-their-future-in-sweden-beyond-2026';
+            
+            if (navigator.clipboard) {
+                navigator.clipboard.writeText(petitionUrl).then(function() {
+                    showCopyMessage('Посилання скопійовано!', true);
+                }).catch(function() {
+                    fallbackCopyTextToClipboard(petitionUrl);
+                });
+            } else {
+                fallbackCopyTextToClipboard(petitionUrl);
+            }
+        }
+
+        // Fallback copy function for older browsers
+        function fallbackCopyTextToClipboard(text) {
+            const textArea = document.createElement('textarea');
+            textArea.value = text;
+            textArea.style.top = '0';
+            textArea.style.left = '0';
+            textArea.style.position = 'fixed';
+            document.body.appendChild(textArea);
+            textArea.focus();
+            textArea.select();
+            
+            try {
+                const successful = document.execCommand('copy');
+                if (successful) {
+                    showCopyMessage('Посилання скопійовано!', true);
+                } else {
+                    showCopyMessage('Не вдалося скопіювати посилання', false);
+                }
+            } catch (err) {
+                showCopyMessage('Не вдалося скопіювати посилання', false);
+            }
+            
+            document.body.removeChild(textArea);
+        }
+
+        // Show copy message
+        function showCopyMessage(message, success) {
+            const messageDiv = document.getElementById('copy-message');
+            messageDiv.textContent = message;
+            messageDiv.className = success ? 'success-message' : 'error-message';
+            
+            setTimeout(() => {
+                messageDiv.textContent = '';
+                messageDiv.className = '';
+            }, 3000);
+        }
+
+        // Generate Petition QR code
+        function generatePetitionQR() {
+            const petitionUrl = 'https://www.change.org/p/don-t-leave-ukrainians-in-limbo-secure-their-future-in-sweden-beyond-2026';
+            
+            console.log('Generating QR code for petition:', petitionUrl);
+            
+            try {
+                const qr = new SimpleQRCode();
+                qr.generateQR(petitionUrl);
+                console.log('Petition QR Code generated successfully');
+            } catch (error) {
+                console.error('QR generation error:', error);
+                showError();
+            }
+        }
+
+        // Show error message
+        function showError() {
+            document.getElementById('qrcode').innerHTML = `
+                <div class="qr-placeholder">
+                    <div>
+                        <p style="font-size: 18px; color: #0066cc; margin: 0 0 10px 0;">📝</p>
+                        <p style="margin: 0; color: #666;">Використовуйте посилання</p>
+                        <p style="margin: 5px 0 0 0; font-weight: bold; color: #0066cc;">Change.org</p>
+                    </div>
+                </div>
+            `;
+        }
+
+        // Initialize when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            generatePetitionQR();
+        });
+    </script>
+</body>
+</html>

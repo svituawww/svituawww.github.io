@@ -3,7 +3,7 @@ const menuConfig = {
     "menu_structure": {
         "Головна": {
             "enabled": true,
-            "url": "index.html",
+            "url": "#home",
             "mobile_enabled": true
         },
         "Допомога": {
@@ -157,7 +157,7 @@ const compactMenuConfig = {
     "menu_structure": {
         "Головна": {
             "enabled": true,
-            "url": "index.html",
+            "url": "#home",
             "mobile_enabled": true
         },
         "Допомога": {
