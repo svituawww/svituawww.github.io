@@ -142,6 +142,17 @@ const TeamImageConfig = {
             "actualDimensions": "718x813",
             "aspectRatio": 0.88,
             "note": "Manual crop - good portrait alignment"
+          },
+          "AnnaSlipchenkoKacani.jpg": {
+            "name": "Anna (Slipchenko) Kacani",
+            "scaleX": 100,
+            "scaleY": 100,
+            "offsetX": 0,
+            "offsetY": +3,
+            "objectPosition": "center center",
+            "actualDimensions": "720x1280",
+            "aspectRatio": 0.56,
+            "note": "Manual crop - good portrait alignment"
           }
         },
         "defaultSettings": {
@@ -162,9 +173,9 @@ const TeamImageConfig = {
                     "position": "Голова організації",
                     "email": "anna@svit.ua",
                     "phone": "+46737570310",
-                    "image_url": "/uploads/2025/06/01-4-824x1024.jpg",
+                    "image_url": "uploads1/2025/06/01-4-824x1024.jpg",
                     "image_full_url": "https://svitua.se/wp-content/uploads/2025/06/01-4-824x1024.jpg",
-                    "github_image_full_url": "https://svituawww.github.io/uploads1/2025/06/01-4-824x1024.jpg",
+                    "github_image_full_url": "https://svituawww.github.io/uploads1/2025/06/01-4-824x1024.jpg",                    
                     "description": "Голова організації"
                 },
                 {
@@ -172,7 +183,7 @@ const TeamImageConfig = {
                     "position": "Представник у місті Євлє",
                     "email": "tetiana.kozhusko@svit.ua",
                     "phone": "+46739911119",
-                    "image_url": "/uploads/2025/06/02-4.jpg",
+                    "image_url": "uploads1/2025/06/02-4.jpg",
                     "image_full_url": "https://svitua.se/wp-content/uploads/2025/06/02-4.jpg",
                     "github_image_full_url": "https://svituawww.github.io/uploads1/2025/06/02-4.jpg",
                     "description": "Представник у місті Євлє"
@@ -182,7 +193,7 @@ const TeamImageConfig = {
                     "position": "Менеджер з комунікацій",
                     "email": "hanna.moroz@svitua.se",
                     "phone": "+46737157477",
-                    "image_url": "/uploads/2025/06/03.png",
+                    "image_url": "uploads1/2025/06/03.png",
                     "image_full_url": "https://svitua.se/wp-content/uploads/2025/06/03.png",
                     "github_image_full_url": "https://svituawww.github.io/uploads1/2025/06/03.png",
                     "description": "Менеджер з комунікацій"
@@ -192,7 +203,7 @@ const TeamImageConfig = {
                     "position": "Психолог з підтримки в міграції",
                     "email": "nataliia.doroshenko@svitua.se",
                     "phone": "",
-                    "image_url": "/uploads/2025/06/04-4-767x1024.jpg",
+                    "image_url": "uploads1/2025/06/04-4-767x1024.jpg",
                     "image_full_url": "https://svitua.se/wp-content/uploads/2025/06/04-4-767x1024.jpg",
                     "github_image_full_url": "https://svituawww.github.io/uploads1/2025/06/04-4-767x1024.jpg",
                     "description": "Психолог з підтримки в міграції"
@@ -202,7 +213,7 @@ const TeamImageConfig = {
                     "position": "Координатор з підтримки ветеранів та військовослужбовців на реабілітації",
                     "email": "yevheniia.smychyk@svitua.se",
                     "phone": "+46727722418",
-                    "image_url": "/uploads/2025/06/05-4-768x1024.jpg",
+                    "image_url": "uploads1/2025/06/05-4-768x1024.jpg",
                     "image_full_url": "https://svitua.se/wp-content/uploads/2025/06/05-4-768x1024.jpg",
                     "github_image_full_url": "https://svituawww.github.io/uploads1/2025/06/05-4-768x1024.jpg",
                     "description": "Координатор з підтримки ветеранів та військовослужбовців на реабілітації"
@@ -212,7 +223,7 @@ const TeamImageConfig = {
                     "position": "Content creator",
                     "email": "yurii.bakurov@svitua.se",
                     "phone": "",
-                    "image_url": "/uploads/2025/06/06-4-768x1024.jpg",
+                    "image_url": "uploads1/2025/06/06-4-768x1024.jpg",
                     "image_full_url": "https://svitua.se/wp-content/uploads/2025/06/06-4-768x1024.jpg",
                     "github_image_full_url": "https://svituawww.github.io/uploads1/2025/06/06-4-768x1024.jpg",
                     "description": "Content creator"
@@ -222,7 +233,7 @@ const TeamImageConfig = {
                     "position": "Content creator",
                     "email": "pavel.samoshko@svitua.se",
                     "phone": "",
-                    "image_url": "/uploads/2025/06/07-4-768x1024.jpg",
+                    "image_url": "uploads1/2025/06/07-4-768x1024.jpg",
                     "image_full_url": "https://svitua.se/wp-content/uploads/2025/06/07-4-768x1024.jpg",
                     "github_image_full_url": "https://svituawww.github.io/uploads1/2025/06/07-4-768x1024.jpg",
                     "description": "Content creator"
@@ -232,7 +243,7 @@ const TeamImageConfig = {
                     "position": "Менеджер з комунікації",
                     "email": "olesya.koval@svitua.se",
                     "phone": "+46739687180",
-                    "image_url": "/uploads/2025/06/08-4-768x1024.jpg",
+                    "image_url": "uploads1/2025/06/08-4-768x1024.jpg",
                     "image_full_url": "https://svitua.se/wp-content/uploads/2025/06/08-4-768x1024.jpg",
                     "github_image_full_url": "https://svituawww.github.io/uploads1/2025/06/08-4-768x1024.jpg",
                     "description": "Менеджер з комунікації"
@@ -242,7 +253,7 @@ const TeamImageConfig = {
                     "position": "Інформаційний менеджер",
                     "email": "nataliia.burdina@svitua.se",
                     "phone": "+46764421616",
-                    "image_url": "/uploads/2025/06/09-3-838x1024.jpg",
+                    "image_url": "uploads1/2025/06/09-3-838x1024.jpg",
                     "image_full_url": "https://svitua.se/wp-content/uploads/2025/06/09-3-838x1024.jpg",
                     "github_image_full_url": "https://svituawww.github.io/uploads1/2025/06/09-3-838x1024.jpg",
                     "description": "Інформаційний менеджер"
@@ -252,7 +263,7 @@ const TeamImageConfig = {
                     "position": "Менеджер з комунікацій",
                     "email": "viktor.petrov@svitua.se",
                     "phone": "+46764140017",
-                    "image_url": "/uploads/2025/06/10-1-768x1024.jpg",
+                    "image_url": "uploads1/2025/06/10-1-768x1024.jpg",
                     "image_full_url": "https://svitua.se/wp-content/uploads/2025/06/10-1-768x1024.jpg",
                     "github_image_full_url": "https://svituawww.github.io/uploads1/2025/06/10-1-768x1024.jpg",
                     "description": "Менеджер з комунікацій"
@@ -262,7 +273,7 @@ const TeamImageConfig = {
                     "position": "Менеджер з комунікацій",
                     "email": "natalia.zhelezniak@svitua.se",
                     "phone": "+46704768382",
-                    "image_url": "/uploads/2025/06/11-1-768x1024.jpg",
+                    "image_url": "uploads1/2025/06/11-1-768x1024.jpg",
                     "image_full_url": "https://svitua.se/wp-content/uploads/2025/06/11-1-768x1024.jpg",
                     "github_image_full_url": "https://svituawww.github.io/uploads1/2025/06/11-1-768x1024.jpg",
                     "description": "Менеджер з комунікацій"
@@ -272,7 +283,7 @@ const TeamImageConfig = {
                     "position": "Еколог",
                     "email": "olesia.filenko@svitua.se",
                     "phone": "+46767515450",
-                    "image_url": "/uploads/2025/06/12-1.jpg",
+                    "image_url": "uploads1/2025/06/12-1.jpg",
                     "image_full_url": "https://svitua.se/wp-content/uploads/2025/06/12-1.jpg",
                     "github_image_full_url": "https://svituawww.github.io/uploads1/2025/06/12-1.jpg",
                     "description": "Еколог"
@@ -282,9 +293,19 @@ const TeamImageConfig = {
                     "position": "Представник у місті Упсала",
                     "email": "oksana.demyanova@svitua.se",
                     "phone": "+46735760735",
-                    "image_url": "/uploads/2025/06/13-1.jpg",
+                    "image_url": "uploads1/2025/06/13-1.jpg",
                     "image_full_url": "https://svitua.se/wp-content/uploads/2025/06/13-1.jpg",
                     "github_image_full_url": "https://svituawww.github.io/uploads1/2025/06/13-1.jpg",
+                    "description": "Представник у місті Упсала"
+                },
+                {
+                    "name": "Anna (Slipchenko) Kacani",
+                    "position": "Менеджер з комунікацій Upplands Väsby",
+                    "email": "anna.kacani@svitua.se",
+                    "phone": "+46735750336",
+                    "image_url": "uploads1/2025/06/AnnaSlipchenkoKacani.jpg",
+                    "image_full_url": "https://svitua.se/wp-content/uploads/2025/06/AnnaSlipchenkoKacani.jpg",
+                    "github_image_full_url": "https://svituawww.github.io/uploads1/2025/06/AnnaSlipchenkoKacani.jpg",
                     "description": "Представник у місті Упсала"
                 }
             ]
@@ -319,7 +340,7 @@ const TeamImageConfig = {
                 
                 return `
                     <div class="team-card">
-                        <img src="${member.github_image_full_url}" 
+                        <img src="${member.image_url}" 
                              alt="${member.name}"
                              data-member="${member.name}"
                              onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZGRkIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZmlsbD0iIzk5OSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPk5vIEltYWdlPC90ZXh0Pjwvc3ZnPg=='; this.style.border='2px dashed #ccc';"
