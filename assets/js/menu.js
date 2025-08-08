@@ -258,9 +258,9 @@ const compactMenuConfig = {
             "url": "#contact",
             "mobile_enabled": true,
             "submenu": {
-                "Написати нам": {
+                "Задати питання": {
                     "enabled": true,
-                    "url": "#contact-form",
+                    "url": "question.html",
                     "mobile_enabled": true
                 },
                 "Стати волонтером": {
@@ -290,7 +290,7 @@ const compactMenuConfig = {
 };
 
 // Function to generate menu HTML based on configuration
-function generateMenuHTML(config = menuConfig) {
+function generateMenuHTML(config = compactMenuConfig) {
     let desktopMenu = '';
     let mobileMenu = '';
     

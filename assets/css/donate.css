@@ -120,12 +120,16 @@
 .bank-details p {
     margin: 10px 0;
     font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .bank-details strong {
     color: #0094e8;
+    min-width: 140px;
     display: inline-block;
-    width: 100px;
+    font-weight: 600;
 }
 
 /* Instructions Card */
@@ -247,6 +251,8 @@
     .phone-number {
         font-size: 1.5rem;
     }
+
+
 }
 
 @media (max-width: 480px) {

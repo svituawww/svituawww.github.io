@@ -46,14 +46,17 @@ nav {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    border: 3px solid #0094e8;
+    border: 3px solid #0094e8;    
     box-shadow: 0 4px 15px rgba(0, 87, 184, 0.3);
 }
 
 .logo h1 {
     font-size: 24px;
     font-weight: bold;
-    color: #0094e8;
+    /* color: #0094e8; */
+    color: #05648a
+    
+
 }
 
 .nav-links {

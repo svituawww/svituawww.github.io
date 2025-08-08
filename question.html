@@ -3,32 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Команда - SVIT UA</title>
-    <meta name="description" content="Знайомтеся з нашою командою волонтерів SVIT UA - людьми, які присвячують свій час допомозі українцям у Швеції.">    
+    <title>SVIT UA - Задати питання</title>
+    <meta name="description" content="Зв'яжіться з нами - задайте питання про гуманітарну допомогу, волонтерство та інтеграцію українців у Швеції">
     
-    <!-- Common styles (load second) -->
+    <!-- Common styles -->
     <link rel="stylesheet" href="assets/css/header.css">    
     <link rel="stylesheet" href="assets/css/mobile_menu.css">    
-    <!-- Page-specific styles (load last) -->
-    <link rel="stylesheet" href="assets/css/teams_m.css">    
-    <script src="assets/js/team.js"></script>
+    <link rel="stylesheet" href="assets/css/enhanced_menu.css">    
+    <!-- Page-specific styles -->
+    <link rel="stylesheet" href="assets/css/question.css">
+    
+    <script src="assets/js/index.js"></script>
+    <script src="assets/js/menu.js"></script>
+    <script src="assets/js/mobile_menu_functions.js"></script>
+    <script src="assets/js/question_form.js"></script>
+
 
 </head>
-<body>
+<body class="compact-menu">
+
     <!-- Header begin "uuid_id":"tmpl_a456-426614174002" -->
     <header>
         <nav class="container">
             <div class="logo">
-                <img src="uploads1/2025/03/svitua_100x100.png" alt="SVIT UA Logo">
+                <img src="uploads1/2025/06/logo.png" alt="SVIT UA Logo">
                 <h1>SVIT UA</h1>
             </div>
             
             <ul class="nav-links">
-                <li><a href="index.html">Головна</a></li>
-                <li><a href="#services">Допомога</a></li>
-                <li><a href="team.html">Про нас</a></li>
-                <li><a href="#faq">FAQ</a></li>
-                <li><a href="#contact">Контакти</a></li>
+
+
+
             </ul>
 
             <!-- Mobile Menu Toggle -->
@@ -55,11 +60,7 @@
             </button>
             
             <ul class="mobile-nav-links">
-                <li><a href="index.html" onclick="closeMobileMenu()">Головна</a></li>
-                <li><a href="#services" onclick="closeMobileMenu()">Допомога</a></li>
-                <li><a href="team.html" onclick="closeMobileMenu()">Про нас</a></li>
-                <li><a href="#faq" onclick="closeMobileMenu()">FAQ</a></li>
-                <li><a href="#contact" onclick="closeMobileMenu()">Контакти</a></li>
+
             </ul>
 
             <div class="mobile-language-section">
@@ -72,40 +73,84 @@
             </div>
         </nav>
     </header>
-  <!-- Header end "uuid_id":"tmpl_a456-426614174002" -->
+    <!-- Header end "uuid_id":"tmpl_a456-426614174002" -->
 
-
-    <!-- Hero Section -->
-    <section class="hero">
+    <!-- Form Section begin "uuid_id":"tmpl_a456-426614174764" -->
+    <section class="question-section">
         <div class="container">
-            <div class="hero-content">
-                <a href="index.html" class="back-btn">← Повернутися на головну</a>
-                <h1>Наша команда</h1>
-                <p>Знайомтеся з нашими волонтерами — людьми, які присвячують свій час допомозі українцям у Швеції. Кожен член нашої команди вносить унікальний внесок у створення підтримуючої спільноти.</p>
+            <div class="question-header">
+                <h1 id="pageTitle"></h1>
+                <p id="pageDescription"></p>
+            </div>
+
+
+            
+            <div class="question-form-container">
+                <form id="questionForm" class="question-form" novalidate>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="lastName"></label>
+                            <input type="text" id="lastName" name="lastName" required>
+                            <span class="error-message" id="lastNameError"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="firstName"></label>
+                            <input type="text" id="firstName" name="firstName" required>
+                            <span class="error-message" id="firstNameError"></span>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email"></label>
+                            <input type="email" id="email" name="email" required>
+                            <span class="error-message" id="emailError"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone"></label>
+                            <input type="tel" id="phone" name="phone" required>
+                            <span class="error-message" id="phoneError"></span>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="kommun"></label>
+                        <input type="text" id="kommun" name="kommun" required>
+                        <span class="error-message" id="kommunError"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="question"></label>                        
+                        <textarea id="question" name="question" rows="6" required placeholder=""></textarea>                        
+                        <span class="error-message" id="questionError"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <button type="submit" class="submit-btn">
+                            <span class="btn-text"></span>
+                            <span class="btn-loading" style="display: none;"></span>
+                        </button>
+                    </div>
+
+                    <div class="contact-note" id="contactNoteContainer">
+                        <!-- Content will be populated from JSON -->
+                    </div>        
+
+
+                    <div class="form-info" id="formInfoContainer">
+                        <!-- Content will be populated from JSON -->
+                    </div>
+        
+
+                </form>
+                
             </div>
         </div>
     </section>
 
-    <!-- Team Section -->
-    <section class="team-section">
-        <div class="container">
-            <h2 class="section-title">Волонтери SVIT UA</h2>
-            <div class="team-grid" id="teamGrid">
-                <!-- Team cards will be dynamically generated here -->
-            </div>
-        </div>
-    </section>
-
-    <!-- Volunteer Section -->
-    <section class="volunteer-section">
-        <div class="container">
-            <div class="volunteer-content">
-                <h2>Стань волонтером та допоможи іншим</h2>
-                <p>Приєднуйся до нашої команди волонтерів і зроби свій внесок у добро. Разом ми можемо підтримати тих, хто цього потребує, зробити життя кращим і надихнути інших на добрі вчинки. Волонтерство — це можливість розвиватися, знайти нових друзів і відчути справжнє щастя від допомоги. Готовий долучитися? Заповни форму нижче, і ми зв'яжемося з тобою найближчим часом!</p>
-                <a href="#contact" class="volunteer-btn">Стати волонтером</a>
-            </div>
-        </div>
-    </section>
+    <!-- Form Section end "uuid_id":"tmpl_a456-426614174764" -->
 
     <!-- Footer begin "uuid_id":"tmpl_a456-426614174003" -->
     <footer style="background: linear-gradient(135deg, #0094e8 0%, #004494 100%); color:#fff; padding:40px 20px; font-family:sans-serif;">
@@ -191,10 +236,9 @@
         </div>
     </footer>
     <!-- Footer end "uuid_id":"tmpl_a456-426614174003" -->
-     
-    <!-- Floating Donate Button -->
-    <a href="#donate" class="floating-donate">Donate</a>
 
+    <!-- Floating Donate Button -->
+    <a href="donate.html" class="floating-donate">Donate</a>
 
 </body>
 </html>
