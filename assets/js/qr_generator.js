@@ -4,7 +4,7 @@
 const QR_COLOR = '#84b9eaff';
 const QR_BG = '#ffffff';
 
-function renderRealCustomQR(text, canvas, targetSize){
+function renderRealCustomQR(text, canvas, targetSize, color = QR_COLOR){
   if(!canvas) return false;
   try {
     // Use QRious library for reliable QR generation
@@ -13,7 +13,7 @@ function renderRealCustomQR(text, canvas, targetSize){
       value: text,
       size: targetSize,
       background: QR_BG,
-      foreground: QR_COLOR,
+      foreground: color,
       level: 'M'  // Error correction level M
     });
     
@@ -38,6 +38,7 @@ function generateCustomQR() {
   const textEl = document.getElementById('qrText');
   const widthEl = document.getElementById('qrWidth');
   const heightEl = document.getElementById('qrHeight');
+  const colorEl = document.getElementById('qrColor');
   const statusEl = document.getElementById('status');
   const canvas = document.getElementById('customQrCanvas');
   const downloadBtn = document.getElementById('downloadBtn');
@@ -52,8 +53,9 @@ function generateCustomQR() {
   const width = validateSize(widthEl.value, 300); // we use one dimension for scaling
   const height = validateSize(heightEl.value, 300); // kept for UI symmetry; we take min
   const target = Math.min(width, height);
+  const selectedColor = colorEl.value || QR_COLOR;
 
-  const info = renderRealCustomQR(text, canvas, target);
+  const info = renderRealCustomQR(text, canvas, target, selectedColor);
   if (info) {
     statusEl.textContent = `QR-код згенеровано (~${info.size}px, модулів: ${info.modules}).`;
     statusEl.className = 'status ok';
