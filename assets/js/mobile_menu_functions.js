@@ -6,8 +6,8 @@ function toggleMobileMenu() {
     const mobileMenu = document.querySelector('.mobile-menu');
     const overlay = document.querySelector('.mobile-menu-overlay');
     
-    mobileMenu.classList.add('active');
-    overlay.classList.add('active');
+    if (mobileMenu) mobileMenu.classList.add('active');
+    if (overlay) overlay.classList.add('active');
     document.body.style.overflow = 'hidden'; // Prevent scroll
 }
 
@@ -15,8 +15,8 @@ function closeMobileMenu() {
     const mobileMenu = document.querySelector('.mobile-menu');
     const overlay = document.querySelector('.mobile-menu-overlay');
     
-    mobileMenu.classList.remove('active');
-    overlay.classList.remove('active');
+    if (mobileMenu) mobileMenu.classList.remove('active');
+    if (overlay) overlay.classList.remove('active');
     document.body.style.overflow = ''; // Restore scroll
     
     // Close all dropdowns when closing menu
@@ -28,8 +28,8 @@ function closeMobileMenu() {
 }
 
 function toggleMobileDropdown(element) {
-    const dropdown = element.nextElementSibling;
-    const parent = element.parentElement;
+    const dropdown = element?.nextElementSibling;
+    const parent = element?.parentElement;
     
     // Close other dropdowns
     const allDropdowns = document.querySelectorAll('.mobile-dropdown.active');
@@ -41,8 +41,8 @@ function toggleMobileDropdown(element) {
     });
     
     // Toggle current dropdown
-    dropdown.classList.toggle('active');
-    parent.classList.toggle('active');
+    if (dropdown) dropdown.classList.toggle('active');
+    if (parent) parent.classList.toggle('active');
 }
 
 // Close mobile menu on window resize if it's open
@@ -61,6 +61,12 @@ document.addEventListener('click', function(event) {
 
 // Initialize when page loads
 document.addEventListener('DOMContentLoaded', function() {
+    // Ensure overlay exists
+    if (!document.querySelector('.mobile-menu-overlay')) {
+        const overlay = document.createElement('div');
+        overlay.className = 'mobile-menu-overlay';
+        document.body.appendChild(overlay);
+    }
     // Initialize existing functions from index.js
     if (typeof initPartnersCarousel === 'function') {
         initPartnersCarousel();

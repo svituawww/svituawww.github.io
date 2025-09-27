@@ -153,7 +153,19 @@ const TeamImageConfig = {
             "actualDimensions": "720x1280",
             "aspectRatio": 0.56,
             "note": "Manual crop - good portrait alignment"
-          }
+          },
+          "2025-08-10 10.42.27.jpg": {
+            "name": "Anna Lebid",
+            "scaleX": 100,
+            "scaleY": 100,
+            "offsetX": 0,
+            "offsetY": +3,
+            "objectPosition": "center center",
+            "actualDimensions": "720x1280",
+            "aspectRatio": 0.56,
+            "note": "Manual crop - good portrait alignment"
+          }          
+
         },
         "defaultSettings": {
           "scaleX": 85,
@@ -306,6 +318,16 @@ const TeamImageConfig = {
                     "image_url": "uploads1/2025/06/AnnaSlipchenkoKacani.jpg",
                     "image_full_url": "https://svitua.se/wp-content/uploads/2025/06/AnnaSlipchenkoKacani.jpg",
                     "github_image_full_url": "https://svituawww.github.io/uploads1/2025/06/AnnaSlipchenkoKacani.jpg",
+                    "description": "Представник у місті Упсала"
+                },
+                {
+                    "name": "Anna Lebid",
+                    "position": "Представник в Östersund",
+                    "email": "anna.lebid@svitua.se",
+                    "phone": "+46767087177",
+                    "image_url": "media1/v1/2025-08-10 10.42.27.jpg",
+                    "image_full_url": "https://test.svitua.se/media1/v1/2025-08-10-10.42.27.jpg",
+                    "github_image_full_url": "https://svituawww.github.io/uploads1/2025/08/2025-08-10-10.42.27.jpg",
                     "description": "Представник у місті Упсала"
                 }
             ]

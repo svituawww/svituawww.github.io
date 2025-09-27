@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Генератор QR-кодів</title>
+  <meta name="description" content="Простий генератор QR-кодів із налаштуванням розміру та можливістю завантаження PNG." />
+  <link rel="stylesheet" href="assets/css/header.css">
+  <link rel="stylesheet" href="assets/css/enhanced_menu.css">
+  <link rel="stylesheet" href="assets/css/mobile_menu.css">
+  <style>
+    body { font-family: system-ui, Arial, sans-serif; background:#f5f7fa; margin:0; }
+    .qr-wrapper { max-width:980px; margin:40px auto; background:#fff; padding:30px 30px 60px; border-radius:16px; box-shadow:0 4px 18px rgba(0,0,0,0.08); }
+    h1 { margin-top:0; font-size:28px; letter-spacing:.5px; background:linear-gradient(90deg,#007adf,#00b5ff); -webkit-background-clip:text; color:transparent; }
+    fieldset { border:1px solid #e0e6ed; border-radius:10px; padding:20px; margin-bottom:25px; }
+    legend { padding:0 8px; font-weight:600; font-size:14px; color:#005a96; }
+    label { display:block; font-size:14px; font-weight:500; margin:0 0 6px; color:#203040; }
+    input[type="text"], input[type="number"], textarea { width:100%; padding:10px 12px; border:1px solid #c8d2dc; border-radius:8px; font-size:14px; resize:vertical; background:#fdfefe; box-sizing:border-box; }
+    input[type="number"] { max-width:140px; }
+    textarea { min-height:90px; }
+    .controls-row { display:flex; flex-wrap:wrap; gap:20px; align-items:flex-end; margin-top:10px; }
+    button { cursor:pointer; border:none; border-radius:8px; padding:12px 22px; font-size:14px; font-weight:600; display:inline-flex; gap:8px; align-items:center; background:#007adf; color:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.15); transition:.25s; }
+    button.secondary { background:#5b7083; }
+    button:disabled { opacity:.55; cursor:not-allowed; }
+    button:hover:not(:disabled) { background:#005fa8; }
+    .canvas-panel { text-align:center; padding:25px; background:#f0f6fb; border:1px dashed #b6ccd9; border-radius:14px; position:relative; }
+    .canvas-panel canvas { background:#fff; border-radius:6px; box-shadow:0 2px 8px rgba(0,0,0,0.12); }
+    .hint { font-size:12px; color:#5b6b78; margin-top:4px; }
+    .footer-note { font-size:12px; text-align:center; margin-top:40px; color:#5b6b78; }
+    .status { margin-top:12px; font-size:13px; font-weight:500; }
+    .status.ok { color:#0b7a2c; }
+    .status.err { color:#b00020; }
+    .size-group { display:flex; gap:12px; }
+    .size-group .form-unit { flex:1; }
+    .actions { display:flex; flex-wrap:wrap; gap:12px; }
+    @media (max-width:700px){ .size-group { flex-direction:column; } input[type="number"] { max-width:100%; } }
+  </style>
+  <script src="assets/js/menu.js" defer></script>
+  <script src="assets/js/mobile_menu_functions.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/qrious@4.0.2/dist/qrious.min.js"></script>
+  <script src="assets/js/qr_generator.js" defer></script>
+</head>
+<body class="compact-menu">
+  <div class="qr-wrapper">
+    <h1>Генератор QR-кодів</h1>
+    <p>Введіть текст або URL, виберіть розмір (ширина × висота) і натисніть <strong>Створити QR</strong>. Потім ви можете завантажити зображення у форматі PNG.</p>
+
+    <form id="qrForm" onsubmit="event.preventDefault(); generateCustomQR();">
+      <fieldset>
+        <legend>Дані</legend>
+        <label for="qrText">Текст / URL</label>
+        <textarea id="qrText" placeholder="https://example.com/ або будь-який текст" required>https://svitua.se/</textarea>
+        <div class="hint">Рекомендовано: короткі URL для кращої щільності візерунка.</div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Розмір</legend>
+        <div class="size-group">
+          <div class="form-unit">
+            <label for="qrWidth">Ширина (px)</label>
+            <input type="number" id="qrWidth" min="64" max="1200" value="300" required />
+            <div class="hint">Мін 64 · Макс 1200</div>
+          </div>
+          <div class="form-unit">
+            <label for="qrHeight">Висота (px)</label>
+            <input type="number" id="qrHeight" min="64" max="1200" value="300" required />
+            <div class="hint">Мін 64 · Макс 1200</div>
+          </div>
+        </div>
+      </fieldset>
+
+      <div class="actions">
+        <button type="submit" id="generateBtn">Створити QR</button>
+        <button type="button" class="secondary" id="downloadBtn" disabled>Завантажити PNG</button>
+        <button type="button" class="secondary" id="clearBtn">Очистити</button>
+      </div>
+      <div id="status" class="status" aria-live="polite"></div>
+    </form>
+
+    <div class="canvas-panel" style="margin-top:35px;">
+      <canvas id="customQrCanvas" width="300" height="300"></canvas>
+      <div class="hint">Попередній перегляд QR-коду</div>
+    </div>
+
+    <div class="footer-note">Генератор базується на спрощеному візерунку (не для платіжних систем). Для офіційних застосувань використовуйте стандартизовані бібліотеки.</div>
+  </div>
+</body>
+</html>

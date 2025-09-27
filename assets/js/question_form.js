@@ -214,13 +214,227 @@ function getQuestionFormConfig() {
     };
 }
 
+function getBecomememberFormConfig() {
+    return {
+        title: "SVIT UA Contact Form",
+        emailTarget: "anna@svitua.se",
+        subject: "Стати членом організації",
+        pageContent: {
+            header: {
+                title: "Стати членом організації:",
+                description: "Заповніть форму, щоб стати членом організації, та ми вам передзвонимо. 200 крон/рік"
+            }
+        },
+        fields: {
+            lastName: {
+                label: "Прізвище",
+                type: "text",
+                required: false,
+                minLength: 2,
+                maxLength: 50,
+                validation: {
+                    required: "Прізвище є обов'язковим полем",
+                    minLength: "Прізвище має бути довшим за 2 символи",
+                    maxLength: "Прізвище не може бути довшим за 50 символів"
+                }
+            },
+            firstName: {
+                label: "Ім'я",
+                type: "text",
+                required: true,
+                minLength: 2,
+                maxLength: 50,
+                validation: {
+                    required: "Ім'я є обов'язковим полем",
+                    minLength: "Ім'я має бути довшим за 2 символи",
+                    maxLength: "Ім'я не може бути довшим за 50 символів"
+                }
+            },
+            email: {
+                label: "Електронна пошта",
+                type: "email",
+                required: true,
+                validation: {
+                    required: "Email є обов'язковим полем",
+                    format: "Введіть коректний email адрес"
+                }
+            },
+            phone: {
+                label: "Телефон",
+                type: "tel",
+                required: true,
+                validation: {
+                    required: "Телефон є обов'язковим полем",
+                    format: "Введіть коректний номер телефону"
+                }
+            },
+            kommun: {
+                label: "Комуна",
+                type: "text",
+                required: false,
+                minLength: 2,
+                maxLength: 100,
+                validation: {
+                    required: "Комуна є обов'язковим полем",
+                    minLength: "Назва комуни має бути довшою за 2 символи",
+                    maxLength: "Назва комуни не може бути довшою за 100 символів"
+                }
+            },
+            question: {
+                label: "Ваше повідомлення",
+                type: "textarea",
+                required: true,
+                minLength: 10,
+                maxLength: 2000,
+                rows: 6,
+                placeholder: "Опишіть ваше повідомлення детально...",
+                validation: {
+                    required: "Повідомлення є обов'язковим полем",
+                    minLength: "Повідомлення має бути довшим за 10 символів",
+                    maxLength: "Повідомлення не може бути довшим за 2000 символів"
+                }
+            }
+        },
+        submitButton: {
+            text: "Надіслати повідомлення",
+            loadingText: "Надсилання...",
+            successMessage: "Дякуємо! Ваше повідомлення успішно надіслано.",
+            errorMessage: "Помилка при надсиланні форми. Спробуйте ще раз або зв'яжіться з нами безпосередньо."
+        },
+        contactInfo: {
+            title: "Контактна інформація",
+            email: "anna@svitua.se",
+            phone: "+467 37 570 310",
+            address: "Швеція",
+            autoSendNote: {
+                title: "📧 Автоматична відправка",
+                description: "Ваше повідомлення буде автоматично надіслано на email:",
+                responseTime: "Ми відповімо вам протягом 24 годин."
+            }
+        },
+        validation: {
+            emailRegex: "^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$",
+            phoneRegex: "^[\\+]?[0-9\\s\\-\\(\\)]{7,15}$"
+        }
+    };
+}
+
+function getPartnerrequestFormConfig() {
+    return {
+        title: "SVIT UA Donate Form",
+        emailTarget: "anna@svitua.se",
+        pageContent: {
+            header: {
+                title: "Партнерський запит",
+                description: "Заповніть форму, щоб стати партнером, та ми вам передзвонимо"
+            }
+        },
+        fields: {
+            lastName: {
+                label: "Назва організації",
+                type: "text",
+                required: false,
+                minLength: 2,
+                maxLength: 50,
+                validation: {
+                    required: "Назва організації є обов'язковим полем",
+                    minLength: "Назва організації має бути довшою за 2 символи",
+                    maxLength: "Назва організації не може бути довшою за 100 символів"
+                }
+            },
+            firstName: {
+                label: "Ім'я",
+                type: "text",
+                required: true,
+                minLength: 2,
+                maxLength: 50,
+                validation: {
+                    required: "Ім'я є обов'язковим полем",
+                    minLength: "Ім'я має бути довшим за 2 символи",
+                    maxLength: "Ім'я не може бути довшим за 50 символів"
+                }
+            },
+            email: {
+                label: "Електронна пошта",
+                type: "email",
+                required: true,
+                validation: {
+                    required: "Email є обов'язковим полем",
+                    format: "Введіть коректний email адрес"
+                }
+            },
+            phone: {
+                label: "Телефон",
+                type: "tel",
+                required: false,
+                validation: {
+                    required: "Телефон є обов'язковим полем",
+                    format: "Введіть коректний номер телефону"
+                }
+            },
+            kommun: {
+                label: "Комуна",
+                type: "text",
+                required: false,
+                minLength: 2,
+                maxLength: 100,
+                validation: {
+                    required: "Комуна є обов'язковим полем",
+                    minLength: "Назва комуни має бути довшою за 2 символи",
+                    maxLength: "Назва комуни не може бути довшою за 100 символів"
+                }
+            },
+            question: {
+                label: "Повідомлення",
+                type: "textarea",
+                required: true,
+                minLength: 10,
+                maxLength: 2000,
+                rows: 6,
+                placeholder: "Опишіть ваше повідомлення щодо учасів в проекті...",
+                validation: {
+                    required: "Повідомлення є обов'язковим полем",
+                    minLength: "Повідомлення має бути довшим за 10 символів",
+                    maxLength: "Повідомлення не може бути довшим за 2000 символів"
+                }
+            }
+        },
+        submitButton: {
+            text: "Надіслати повідомлення",
+            loadingText: "Надсилання...",
+            successMessage: "Дякуємо! Ваше повідомлення успішно надіслано.",
+            errorMessage: "Помилка при надсиланні форми. Спробуйте ще раз або зв'яжіться з нами безпосередньо."
+        },
+        contactInfo: {
+            title: "Контактна інформація",
+            email: "anna@svitua.se",
+            phone: "+467 37 570 310",
+            address: "Швеція",
+            autoSendNote: {
+                title: "📧 Автоматична відправка",
+                description: "Ваші побажання буде автоматично надіслано на email:",
+                responseTime: "Ми відповімо вам протягом 24 годин."
+            }
+        },
+        validation: {
+            emailRegex: "^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$",
+            phoneRegex: "^[\\+]?[0-9\\s\\-\\(\\)]{7,15}$"
+        }
+    };
+}
+
 function getJsonFormConfig(formName) {
     switch (formName) {
         case 'question':
             return getQuestionFormConfig();
         case 'becomevolunteer':
             return getBecomevolunteerFormConfig();
+        case 'becomemember':
+            return getBecomememberFormConfig();
+        case 'partnerrequest':
+            return getPartnerrequestFormConfig();
         default:
+            console.warn('Unknown form type:', formName);
             return null;
     }
 }
@@ -237,6 +451,8 @@ class QuestionFormValidator {
     
     init() {
         try {
+            console.log('🚀 Initializing Dynamic Form System...');
+            
             // Load configuration
             this.loadConfig();
             
@@ -252,14 +468,32 @@ class QuestionFormValidator {
             // Add event listeners
             this.addEventListeners();
             
+            console.log('✅ Dynamic Form System initialized successfully!');
+            
         } catch (error) {
-            console.error('Failed to initialize form:', error);
+            console.error('❌ Failed to initialize form:', error);
         }
     }
     
     loadConfig() {
-        // Load configuration from external function
-        this.config = getJsonFormConfig('question');        
+        // Detect form type from URL parameter
+        const urlParams = new URLSearchParams(window.location.search);
+        const formType = urlParams.get('form') || 'question'; // Default to 'question' if no parameter
+        
+        console.log('🔍 Dynamic Form System - Detected form type from URL:', formType);
+        console.log('🔍 Current URL:', window.location.href);
+        
+        // Load configuration based on form type
+        this.config = getJsonFormConfig(formType);
+        
+        if (!this.config) {
+            console.error('❌ Invalid form type:', formType);
+            // Fallback to question form if invalid type
+            this.config = getJsonFormConfig('question');
+        }
+        
+        console.log('✅ Form configuration loaded:', this.config.title);
+        console.log('📧 Email target:', this.config.emailTarget);
     }
     
     initializeFields() {

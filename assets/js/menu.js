@@ -1,159 +1,5 @@
-// Menu Configuration JSON
-const menuConfig = {
-    "menu_structure": {
-        "Головна": {
-            "enabled": true,
-            "url": "index.html",
-            "mobile_enabled": true
-        },
-        "Допомога": {
-            "enabled": true,
-            "url": "#help",
-            "mobile_enabled": true,
-            "submenu": {
-                "Гуманітарна допомога": {
-                    "enabled": true,
-                    "url": "#humanitarian",
-                    "mobile_enabled": true
-                },
-                "Волонтерство і громадська активність": {
-                    "enabled": true,
-                    "url": "#volunteering",
-                    "mobile_enabled": true
-                },
-                "Підтримка і інтеграція мігрантів": {
-                    "enabled": true,
-                    "url": "#migration",
-                    "mobile_enabled": true
-                }
-            }
-        },
-        "Наші проекти": {
-            "enabled": true,
-            "url": "#projects",
-            "mobile_enabled": true,
-            "submenu": {
-                "Поточні проекти": {
-                    "enabled": true,
-                    "url": "#current-projects",
-                    "mobile_enabled": true
-                },
-                "Завершені проекти": {
-                    "enabled": true,
-                    "url": "#completed-projects",
-                    "mobile_enabled": true
-                },
-                "Плани на майбутнє": {
-                    "enabled": true,
-                    "url": "#future-plans",
-                    "mobile_enabled": true
-                }
-            }
-        },
-        "Події/Новини": {
-            "enabled": true,
-            "url": "#events",
-            "mobile_enabled": true,
-            "submenu": {
-                "Останні події/новини": {
-                    "enabled": true,
-                    "url": "#latest-events",
-                    "mobile_enabled": true
-                },
-                "Архів новин": {
-                    "enabled": true,
-                    "url": "#news-archive",
-                    "mobile_enabled": true
-                }
-            }
-        },
-        "Співпраця": {
-            "enabled": true,
-            "url": "#collaboration",
-            "mobile_enabled": true,
-            "submenu": {
-                "Партнери": {
-                    "enabled": true,
-                    "url": "#partners",
-                    "mobile_enabled": true
-                },
-                "Донатори": {
-                    "enabled": false,
-                    "url": "#donors",
-                    "mobile_enabled": false
-                },
-                "Волонтери": {
-                    "enabled": false,
-                    "url": "#volunteers",
-                    "mobile_enabled": false
-                }
-            }
-        },
-        "Про нас": {
-            "enabled": true,
-            "url": "#about",
-            "mobile_enabled": true,
-            "submenu": {
-                "Наша місія": {
-                    "enabled": true,
-                    "url": "#mission",
-                    "mobile_enabled": true
-                },
-                "Команда": {
-                    "enabled": true,
-                    "url": "team.html",
-                    "mobile_enabled": true
-                },
-                "Історія": {
-                    "enabled": true,
-                    "url": "#history",
-                    "mobile_enabled": true
-                }
-            }
-        },
-        "FAQ": {
-            "enabled": true,
-            "url": "#faq",
-            "mobile_enabled": true
-        },
-        "Контакти": {
-            "enabled": true,
-            "url": "#contacts",
-            "mobile_enabled": true,
-            "submenu": {
-                "Зв'язатися з нами": {
-                    "enabled": true,
-                    "url": "#contact-us",
-                    "mobile_enabled": true
-                },
-                "Стати волонтером": {
-                    "enabled": true,
-                    "url": "#become-volunteer",
-                    "mobile_enabled": true
-                },
-                "Стати членом організації": {
-                    "enabled": true,
-                    "url": "#become-member",
-                    "mobile_enabled": true
-                }
-            }
-        }
-    },
-    "mobile_settings": {
-        "dropdown_animation": true,
-        "overlay_enabled": true,
-        "close_on_click_outside": true,
-        "auto_close_on_resize": true
-    },
-    "desktop_settings": {
-        "hover_dropdown": true,
-        "dropdown_animation": true,
-        "sticky_header": false
-    }
-};
-
 // Compact Menu Configuration for Variant 2
-const compactMenuConfig = {
+const compactMenuConfig_old = {
     "menu_structure": {
         "Головна": {
             "enabled": true,
@@ -221,6 +67,11 @@ const compactMenuConfig = {
                 }
             }
         },
+        "Галерея": {
+            "enabled": true,
+            "url": "gallery.html",
+            "mobile_enabled": true
+        },
         "Партнери": {
             "enabled": true,
             "url": "#partners",
@@ -258,21 +109,103 @@ const compactMenuConfig = {
             "url": "#contact",
             "mobile_enabled": true,
             "submenu": {
+                "Контакти": {
+                    "enabled": true,
+                    "url": "index.html#contact",
+                    "mobile_enabled": true
+                },
                 "Задати питання": {
                     "enabled": true,
-                    "url": "question.html",
+                    "url": "question.html?form=question",
+                    "mobile_enabled": true
+                },
+                "Партнерський запит": {
+                    "enabled": true,
+                    "url": "question.html?form=partnerrequest",
                     "mobile_enabled": true
                 },
                 "Стати волонтером": {
                     "enabled": true,
-                    "url": "#volunteer-form",
+                    "url": "question.html?form=becomevolunteer",
                     "mobile_enabled": true
                 },
-                "Приєднатися": {
+                "Стати членом організації": {
                     "enabled": true,
-                    "url": "#join-us",
+                    "url": "question.html?form=becomemember",
                     "mobile_enabled": true
-                }
+                },
+
+            }
+        }
+    },
+    "mobile_settings": {
+        "dropdown_animation": true,
+        "overlay_enabled": true,
+        "close_on_click_outside": true,
+        "auto_close_on_resize": true
+    },
+    "desktop_settings": {
+        "hover_dropdown": true,
+        "dropdown_animation": true,
+        "sticky_header": false
+    }
+};
+
+// Compact Menu Configuration for Variant 2
+const compactMenuConfig = {
+    "menu_structure": {
+        "Головна": {
+            "enabled": true,
+            "url": "index.html",
+            "mobile_enabled": true
+        },
+ 
+        "Галерея / Події": {
+            "enabled": true,
+            "url": "gallery.html",
+            "mobile_enabled": true
+        },
+        "Команда": {
+            "enabled": true,
+            "url": "team.html",
+            "mobile_enabled": true
+        },
+        "FAQ": {
+            "enabled": false,
+            "url": "#faq",
+            "mobile_enabled": false
+        },
+        "Контакти": {
+            "enabled": true,
+            "url": "#contact",
+            "mobile_enabled": true,
+            "submenu": {
+                "Контакти": {
+                    "enabled": true,
+                    "url": "index.html#contact",
+                    "mobile_enabled": true
+                },
+                "Задати питання": {
+                    "enabled": true,
+                    "url": "question.html?form=question",
+                    "mobile_enabled": true
+                },
+                "Партнерський запит": {
+                    "enabled": true,
+                    "url": "question.html?form=partnerrequest",
+                    "mobile_enabled": true
+                },
+                "Стати волонтером": {
+                    "enabled": true,
+                    "url": "question.html?form=becomevolunteer",
+                    "mobile_enabled": true
+                },
+                "Стати членом організації": {
+                    "enabled": true,
+                    "url": "question.html?form=becomemember",
+                    "mobile_enabled": true
+                },
+
             }
         }
     },
@@ -290,6 +223,16 @@ const compactMenuConfig = {
 };
 
 // Function to generate menu HTML based on configuration
+function normalizeUrl(u) {
+    if (!u) return u;
+    // keep anchors, absolute and mailto
+    if (u.startsWith('#') || u.startsWith('http://') || u.startsWith('https://') || u.startsWith('mailto:')) return u;
+    // already absolute
+    if (u.startsWith('/')) return u;
+    // make root-relative
+    return '/' + u;
+}
+
 function generateMenuHTML(config = compactMenuConfig) {
     let desktopMenu = '';
     let mobileMenu = '';
@@ -297,6 +240,7 @@ function generateMenuHTML(config = compactMenuConfig) {
     Object.entries(config.menu_structure).forEach(([key, item]) => {
         // Only generate menu items that are enabled
         if (item.enabled) {
+            const itemHref = normalizeUrl(item.url);
             // Desktop menu item
             if (item.submenu) {
                 // Check if there are any enabled submenu items
@@ -305,11 +249,12 @@ function generateMenuHTML(config = compactMenuConfig) {
                 if (enabledSubItems.length > 0) {
                     desktopMenu += `
                         <li class="has-dropdown">
-                            <a href="${item.url}">${key}</a>
+                            <a href="${itemHref}">${key}</a>
                             <div class="nav-dropdown">
                     `;
                     enabledSubItems.forEach(([subKey, subItem]) => {
-                        desktopMenu += `<a href="${subItem.url}">${subKey}</a>`;
+                        const subHref = normalizeUrl(subItem.url);
+                        desktopMenu += `<a href="${subHref}">${subKey}</a>`;
                     });
                     desktopMenu += `
                             </div>
@@ -317,10 +262,10 @@ function generateMenuHTML(config = compactMenuConfig) {
                     `;
                 } else {
                     // If no submenu items are enabled, show as regular link
-                    desktopMenu += `<li><a href="${item.url}">${key}</a></li>`;
+                    desktopMenu += `<li><a href="${itemHref}">${key}</a></li>`;
                 }
             } else {
-                desktopMenu += `<li><a href="${item.url}">${key}</a></li>`;
+                desktopMenu += `<li><a href="${itemHref}">${key}</a></li>`;
             }
             
             // Mobile menu item
@@ -334,11 +279,12 @@ function generateMenuHTML(config = compactMenuConfig) {
                     if (enabledMobileSubItems.length > 0) {
                         mobileMenu += `
                             <li class="has-dropdown">
-                                <a href="${item.url}" onclick="toggleMobileDropdown(this)">${key}</a>
+                                <a href="${itemHref}" onclick="toggleMobileDropdown(this)">${key}</a>
                                 <div class="mobile-dropdown">
                         `;
                         enabledMobileSubItems.forEach(([subKey, subItem]) => {
-                            mobileMenu += `<a href="${subItem.url}" onclick="closeMobileMenu()">${subKey}</a>`;
+                            const subHref = normalizeUrl(subItem.url);
+                            mobileMenu += `<a href="${subHref}" onclick="closeMobileMenu()">${subKey}</a>`;
                         });
                         mobileMenu += `
                                 </div>
@@ -346,10 +292,10 @@ function generateMenuHTML(config = compactMenuConfig) {
                         `;
                     } else {
                         // If no mobile submenu items are enabled, show as regular link
-                        mobileMenu += `<li><a href="${item.url}" onclick="closeMobileMenu()">${key}</a></li>`;
+                        mobileMenu += `<li><a href="${itemHref}" onclick="closeMobileMenu()">${key}</a></li>`;
                     }
                 } else {
-                    mobileMenu += `<li><a href="${item.url}" onclick="closeMobileMenu()">${key}</a></li>`;
+                    mobileMenu += `<li><a href="${itemHref}" onclick="closeMobileMenu()">${key}</a></li>`;
                 }
             }
         }
