@@ -1,3 +1,26 @@
+        let GL_Settings = {
+            "language": "uk"  // Will be dynamically set based on URL
+        };
+        
+        // Function to extract language from URL
+        function detectLanguageFromURL() {
+            const pathname = window.location.pathname;
+            
+            // Check for language code after domain
+            const langMatch = pathname.match(/^\/([a-z]{2})\//);
+            
+            if (langMatch) {
+                const detectedLang = langMatch[1];
+                // Validate against supported languages
+                if (['en', 'sv'].includes(detectedLang)) {
+                    return detectedLang;
+                }
+            }
+            
+            // Default to Ukrainian for root domain or invalid codes
+            return 'uk';
+        }        
+
         // Partners data from partners1.json
         const partnersData = {
             "www_path_to": "https://svituawww.github.io/",
@@ -298,5 +321,10 @@
 
         // Initialize when page loads
         document.addEventListener('DOMContentLoaded', function() {
+            // Detect and set language from URL
+            GL_Settings.language = detectLanguageFromURL();
+            console.log('Detected language:', GL_Settings.language);
+            
+            // Initialize partners carousel
             initPartnersCarousel();
         });

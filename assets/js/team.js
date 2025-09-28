@@ -177,6 +177,249 @@ const TeamImageConfig = {
 };
 
 
+        const teamData_tr_ua = {
+            "team_members": [
+                {
+                    "name": "Anna Martynenko",
+                    "position": "Голова організації",
+                    "description": "Голова організації"
+                },
+                {
+                    "name": "Tetiana Kozhushko",
+                    "position": "Представник у місті Євлє",
+                    "description": "Представник у місті Євлє"
+                },
+                {
+                    "name": "Hanna Moroz",
+                    "position": "Менеджер з комунікацій",
+                    "description": "Менеджер з комунікацій"
+                },
+                {
+                    "name": "Nataliia Doroshenko",
+                    "position": "Психолог з підтримки в міграції",
+                    "description": "Психолог з підтримки в міграції"
+                },
+                {
+                    "name": "Yevheniia Smychyk",
+                    "position": "Координатор з підтримки ветеранів та військовослужбовців на реабілітації",                   
+                    "description": "Координатор з підтримки ветеранів та військовослужбовців на реабілітації"
+                },
+                {
+                    "name": "Yurii Bakurov",
+                    "position": "Content creator",
+                    "description": "Content creator"
+                },
+                {
+                    "name": "Pavel Samoshko",
+                    "position": "Content creator",
+                    "description": "Content creator"
+                },
+                {
+                    "name": "Olesya Koval",
+                    "position": "Менеджер з комунікації",
+                    "description": "Менеджер з комунікації"
+                },
+                {
+                    "name": "Nataliia Burdina",
+                    "position": "Інформаційний менеджер",
+                    "description": "Інформаційний менеджер"
+                },
+                {
+                    "name": "Viktor Petrov",
+                    "position": "Менеджер з комунікацій",
+                    "description": "Менеджер з комунікацій"
+                },
+                {
+                    "name": "Natalia Zhelizniak",
+                    "position": "Менеджер з комунікацій",
+                    "description": "Менеджер з комунікацій"
+                },
+                {
+                    "name": "Olesia Filenko",
+                    "position": "Еколог",
+                    "description": "Еколог"
+                },
+                {
+                    "name": "Oksana Demyanova",
+                    "position": "Представник у місті Упсала",
+                    "description": "Представник у місті Упсала"
+                },
+                {
+                    "name": "Anna (Slipchenko) Kacani",
+                    "position": "Менеджер з комунікацій Upplands Väsby",
+                    "description": "Менеджер з комунікацій Upplands Väsby"
+                },
+                {
+                    "name": "Anna Lebid",
+                    "position": "Представник в Jämtland",
+                    "description": "Представник в Jämtland"
+                }
+            ]
+        };
+
+
+        const teamData_tr_sv = {
+            "team_members": [
+                {
+                    "name": "Anna Martynenko",
+                    "position": "Organisationschef",
+                    "description": "Organisationschef"
+                },
+                {
+                    "name": "Tetiana Kozhushko",
+                    "position": "Representant i Gävle",
+                    "description": "Representant i Gävle"
+                },
+                {
+                    "name": "Hanna Moroz",
+                    "position": "Kommunikationschef",
+                    "description": "Kommunikationschef"
+                },
+                {
+                    "name": "Nataliia Doroshenko",
+                    "position": "Psykolog för migrationsstöd",
+                    "description": "Psykolog för migrationsstöd"
+                },
+                {
+                    "name": "Yevheniia Smychyk",
+                    "position": "Koordinator för stöd till veteraner och militärpersonal i rehabilitering",
+                    "description": "Koordinator för stöd till veteraner och militärpersonal i rehabilitering"
+                },
+                {
+                    "name": "Yurii Bakurov",
+                    "position": "Innehållsskapare",
+                    "description": "Innehållsskapare"
+                },
+                {
+                    "name": "Pavel Samoshko",
+                    "position": "Innehållsskapare",
+                    "description": "Innehållsskapare"
+                },
+                {
+                    "name": "Olesya Koval",
+                    "position": "Kommunikationschef",
+                    "description": "Kommunikationschef"
+                },
+                {
+                    "name": "Nataliia Burdina",
+                    "position": "Informationschef",
+                    "description": "Informationschef"
+                },
+                {
+                    "name": "Viktor Petrov",
+                    "position": "Kommunikationschef",
+                    "description": "Kommunikationschef"
+                },
+                {
+                    "name": "Natalia Zhelizniak",
+                    "position": "Kommunikationschef",
+                    "description": "Kommunikationschef"
+                },
+                {
+                    "name": "Olesia Filenko",
+                    "position": "Ekolog",
+                    "description": "Ekolog"
+                },
+                {
+                    "name": "Oksana Demyanova",
+                    "position": "Representant i Uppsala",
+                    "description": "Representant i Uppsala"
+                },
+                {
+                    "name": "Anna (Slipchenko) Kacani",
+                    "position": "Kommunikationschef Upplands Väsby",
+                    "description": "Kommunikationschef Upplands Väsby"
+                },
+                {
+                    "name": "Anna Lebid",
+                    "position": "Representant i Jämtland",
+                    "description": "Representant i Jämtland"
+                }
+            ]
+        };
+
+        const teamData_tr_en = {
+            "team_members": [
+                {
+                    "name": "Anna Martynenko",
+                    "position": "Head of Organization",
+                    "description": "Head of Organization"
+                },
+                {
+                    "name": "Tetiana Kozhushko",
+                    "position": "Representative in Gävle",
+                    "description": "Representative in Gävle"
+                },
+                {
+                    "name": "Hanna Moroz",
+                    "position": "Communications Manager",
+                    "description": "Communications Manager"
+                },
+                {
+                    "name": "Nataliia Doroshenko",
+                    "position": "Migration Support Psychologist",
+                    "description": "Migration Support Psychologist"
+                },
+                {
+                    "name": "Yevheniia Smychyk",
+                    "position": "Coordinator for Veterans and Military Personnel Rehabilitation Support",
+                    "description": "Coordinator for Veterans and Military Personnel Rehabilitation Support"
+                },
+                {
+                    "name": "Yurii Bakurov",
+                    "position": "Content Creator",
+                    "description": "Content Creator"
+                },
+                {
+                    "name": "Pavel Samoshko",
+                    "position": "Content Creator",
+                    "description": "Content Creator"
+                },
+                {
+                    "name": "Olesya Koval",
+                    "position": "Communications Manager",
+                    "description": "Communications Manager"
+                },
+                {
+                    "name": "Nataliia Burdina",
+                    "position": "Information Manager",
+                    "description": "Information Manager"
+                },
+                {
+                    "name": "Viktor Petrov",
+                    "position": "Communications Manager",
+                    "description": "Communications Manager"
+                },
+                {
+                    "name": "Natalia Zhelizniak",
+                    "position": "Communications Manager",
+                    "description": "Communications Manager"
+                },
+                {
+                    "name": "Olesia Filenko",
+                    "position": "Ecologist",
+                    "description": "Ecologist"
+                },
+                {
+                    "name": "Oksana Demyanova",
+                    "position": "Representative in Uppsala",
+                    "description": "Representative in Uppsala"
+                },
+                {
+                    "name": "Anna (Slipchenko) Kacani",
+                    "position": "Communications Manager Upplands Väsby",
+                    "description": "Communications Manager Upplands Väsby"
+                },
+                {
+                    "name": "Anna Lebid",
+                    "position": "Representative in Jämtland",
+                    "description": "Representative in Jämtland"
+                }
+            ]
+        };
+
+
+        
 
         const teamData = {
             "team_members": [
@@ -328,7 +571,7 @@ const TeamImageConfig = {
                     "image_url": "media1/v1/2025-08-10 10.42.27.jpg",
                     "image_full_url": "https://test.svitua.se/media1/v1/2025-08-10-10.42.27.jpg",
                     "github_image_full_url": "https://svituawww.github.io/uploads1/2025/08/2025-08-10-10.42.27.jpg",
-                    "description": "Представник у місті Упсала"
+                    "description": "Представник в Jämtland"
                 }
             ]
         };
