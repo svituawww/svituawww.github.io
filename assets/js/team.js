@@ -322,9 +322,9 @@ const TeamImageConfig = {
                 },
                 {
                     "name": "Anna Lebid",
-                    "position": "Представник в Östersund",
+                    "position": "Представник в Jämtland",
                     "email": "anna.lebid@svitua.se",
-                    "phone": "+46767087177",
+                    "phone": "+46733589093",
                     "image_url": "media1/v1/2025-08-10 10.42.27.jpg",
                     "image_full_url": "https://test.svitua.se/media1/v1/2025-08-10-10.42.27.jpg",
                     "github_image_full_url": "https://svituawww.github.io/uploads1/2025/08/2025-08-10-10.42.27.jpg",
