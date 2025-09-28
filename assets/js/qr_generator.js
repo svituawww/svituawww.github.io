@@ -1,8 +1,10 @@
 // QR generator using QRious library - 100% working algorithm
 // Provides dynamic size & PNG download. Guaranteed scannable output.
 
-const QR_COLOR = '#84b9eaff';
+const QR_COLOR = '#0094e8';
 const QR_BG = '#ffffff';
+const QR_MAX_SIZE = 2200; // max canvas size to prevent crashes
+const QR_MIN_SIZE = 64;   // min canvas size for usability
 
 function renderRealCustomQR(text, canvas, targetSize, color = QR_COLOR){
   if(!canvas) return false;
@@ -30,7 +32,7 @@ function renderRealCustomQR(text, canvas, targetSize, color = QR_COLOR){
 
 function validateSize(value, fallback) {
   const n = parseInt(value, 10);
-  if (isNaN(n) || n < 64 || n > 1200) return fallback;
+  if (isNaN(n) || n < QR_MIN_SIZE || n > QR_MAX_SIZE) return fallback;
   return n;
 }
 
@@ -91,6 +93,20 @@ function clearForm() {
 
 // Wire buttons after DOM ready
 window.addEventListener('DOMContentLoaded', () => {
+  // Set max values dynamically from constants
+  const widthInput = document.getElementById('qrWidth');
+  const heightInput = document.getElementById('qrHeight');
+  
+  if (widthInput) {
+    widthInput.setAttribute('max', QR_MAX_SIZE);
+    widthInput.nextElementSibling.textContent = `Мін ${QR_MIN_SIZE} · Макс ${QR_MAX_SIZE}`;
+  }
+  
+  if (heightInput) {
+    heightInput.setAttribute('max', QR_MAX_SIZE);
+    heightInput.nextElementSibling.textContent = `Мін ${QR_MIN_SIZE} · Макс ${QR_MAX_SIZE}`;
+  }
+  
   document.getElementById('downloadBtn').addEventListener('click', downloadQR);
   document.getElementById('clearBtn').addEventListener('click', clearForm);
 });
