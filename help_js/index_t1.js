@@ -33,17 +33,30 @@ if (typeof window !== 'undefined' && window.D_UUID_ONLY_TEXT_MODE == null) {
 	const INDEX = Object.create(null);
 	const collisions = new Set();
 	let newlyAssigned = 0;
-	let reused = 0;
+	let reused = 0;	
 
-	// Simple Fowler–Noll–Vo (FNV-1a) hash for deterministic id seeds
-	function fnv1a(str){
-		let h = 0x811c9dc5;
-		for(let i=0;i<str.length;i++){
-			h ^= str.charCodeAt(i);
-			h = (h >>> 0) * 0x01000193;
-		}
-		return (h >>> 0).toString(36); // base36
-	}
+	// // Simple Fowler–Noll–Vo (FNV-1a) hash for deterministic id seeds
+	// function fnv1a(str){
+	// 	let h = 0x811c9dc5;
+	// 	for(let i=0;i<str.length;i++){
+	// 		h ^= str.charCodeAt(i);
+	// 		h = (h >>> 0) * 0x01000193;
+	// 	}
+	// 	return (h >>> 0).toString(36); // base36
+	// }
+
+	function fnv1aBytes(str){
+      const bytes = new TextEncoder().encode((str ?? '').normalize('NFKC'));
+      let h = 0x811c9dc5 >>> 0;
+      for (const b of bytes) { h ^= b; h = Math.imul(h, 0x01000193) >>> 0; }
+      return h >>> 0; // uint32
+    }
+
+    function hash10FromText(str){
+      const a = fnv1aBytes(str);
+      const b = fnv1aBytes(a.toString(36) + '|' + (str?.length ?? 0));
+      return (a.toString(36) + b.toString(36)).replace(/[^a-z0-9]/g,'').slice(0,10).padEnd(10,'0');
+    }
 
 	function randomId(){
 		return Math.random().toString(36).slice(2, 12).padEnd(10,'0').slice(0,10);
@@ -65,8 +78,10 @@ if (typeof window !== 'undefined' && window.D_UUID_ONLY_TEXT_MODE == null) {
 	}
 
 	function generateDeterministicId(el){
-		const basis = el.tagName.toLowerCase() + '|' + elementIndexPath(el);
-		let hash = fnv1a(basis).replace(/[^a-z0-9]/g,'');
+		//const basis = el.tagName.toLowerCase() + '|' + elementIndexPath(el);
+		//let hash = fnv1a(basis).replace(/[^a-z0-9]/g,'');
+		const basis = el.outerHTML.toLowerCase();
+		let hash = hash10FromText(basis).replace(/[^a-z0-9]/g,'');
 		if(hash.length < 10) hash = (hash + randomId()).slice(0,10);
 		return hash.slice(0,10);
 	}
@@ -199,7 +214,7 @@ if (typeof window !== 'undefined' && window.D_UUID_ONLY_TEXT_MODE == null) {
 						}
 					}
 					if(!parts.length) continue; // no direct text content after trim
-					out.push({ d_uuid: id, content: parts.join(' ') });
+					out.push({ d_uuid: id, content_uk: parts.join(' '), content_en: "", content_sv: "" }); // content_en empty for translation
 				}
 				window.D_UUID_TEXT_ARRAY = out;
 				// Pretty print JSON by default (2-space indent) unless explicitly disabled via window.D_UUID_PRETTY_JSON=false

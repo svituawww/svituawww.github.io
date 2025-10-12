@@ -38,44 +38,56 @@ function testOnSwedishLanguage(sentence1) {
 
 
 function transformData() {
-    var content_data = window.CONTENT_DATA_JSON.content_data;
-    const translationFrom = window.CONTENT_DATA_JSON.translationFrom || "uk";
-    const translationTo = window.CONTENT_DATA_JSON.translationTo || "en";
-    output_data = [];
-    var el1 = {};   
+    const content_data = (window.CONTENT_DATA_JSON && Array.isArray(window.CONTENT_DATA_JSON.content_data))
+        ? window.CONTENT_DATA_JSON.content_data
+        : [];
+    const translationFrom = (window.CONTENT_DATA_JSON && window.CONTENT_DATA_JSON.translationFrom) || "uk";
+    const translationTo = (window.CONTENT_DATA_JSON && window.CONTENT_DATA_JSON.translationTo) || "en";
 
-    for (var i = 0; i < content_data.length; i++) {
-        var item = content_data[i];
-        var d_uuid = item.d_uuid;
-        var content = item.content;
-        var idx = i + 11;
-        // if (translationFrom === "uk") {
-        //     if (testOnUkrainianLanguage(content)) {
-        //         el1.needs_translation = true;                
-        //     }
-        // }
-        // else if (translationFrom === "en") {
-        //     if (testOnEnglishLanguage(content)) {
-        //         el1.needs_translation = true;                
-        //     }
-        // }
-        // else if (translationFrom === "sv") {
-        //     if (testOnSwedishLanguage(content)) {
-        //         el1.needs_translation = true;                
-        //     }
-        // }
-        el1 = {
-            "idsentence": idx,
-            "d_uuid": d_uuid,
-            "content": content,
-            "sentence_from": content,
-            "sentence_to": "",
-            "needs_translation": true
+    const output_data = [];
+
+    for (let i = 0; i < content_data.length; i++) {
+        const item = content_data[i] || {};
+        const d_uuid = item.d_uuid;
+        const idx = i + 11;
+
+        // Determine source sentence based on translationFrom with sensible fallbacks
+        let sentence_from = '';
+        if (translationFrom === 'uk') {
+            sentence_from = item.content_uk || item.sentence_en || item.content || '';
+        } else if (translationFrom === 'en') {
+            sentence_from = item.content_en || item.sentence_en || item.content_uk || item.content || '';
+        } else if (translationFrom === 'sv') {
+            sentence_from = item.content_sv || item.sentence_sv || item.content || '';
+        } else {
+            sentence_from = item.content || item.sentence_en || '';
+        }
+
+        // Determine existing target (if any) to compute needs_translation
+        let sentence_to = '';
+        if (translationTo === 'uk') {
+            sentence_to = item.content_uk || '';
+        } else if (translationTo === 'en') {
+            sentence_to = item.content_en || '';
+        } else if (translationTo === 'sv') {
+            sentence_to = item.content_sv || '';
+        } else if (typeof item.sentence_to === 'string') {
+            sentence_to = item.sentence_to;
+        }
+
+        const needs_translation = !(String(sentence_to || '').trim().length > 0);
+
+        const el1 = {
+            idsentence: idx,
+            d_uuid: d_uuid,
+            sentence_from: String(sentence_from || ''),
+            sentence_to: String(sentence_to || ''),
+            needs_translation
         };
         output_data.push(el1);
     }
 
-   return output_data;
+    return output_data;
 }
 
 function displayBigSmall_sentencesFromBlock(id_block, valSize) {
@@ -433,7 +445,7 @@ function Save_1Block_ToBase_Sent_TransTo(id_block) {
     if (dataToSave.length > 0) {
         // Call your save function here, e.g., SaveSentencesToFirebase(dataToSave);
         SaveTransReadyDataToFireBase(dataToSave);
-        alert('Sentences saved successfully!');
+        console.log('Sentences saved successfully!');
     } else {
         alert('No valid sentences to save.');
     }
@@ -468,16 +480,37 @@ function SaveAllFramesToDatabase(dataToSave) {
        // Save to Firebase or any other database
        if (dataToSave.length > 0) {
            // Call your save function here, e.g., SaveSentencesToFirebase(dataToSave);
-           SaveTransReadyDataToFireBase(dataToSave);
-           alert('Sentences saved successfully!');
+           SaveTransReadyDataToFireBase(dataToSave);           
+           console.log('Sentences saved successfully for one block!');
        } else {
            alert('No valid sentences to save.');
        }
    });
+    
+   
+    var content_data = window.CONTENT_DATA_JSON.content_data;
+    const translationFrom = window.CONTENT_DATA_JSON.translationFrom || "uk";
+    const translationTo = window.CONTENT_DATA_JSON.translationTo || "en";   
+    const inputData1 = window.for_trans_data;    
+    for (let i = 0; i < inputData1.length; i++) {
+        let sentence = inputData1[i];
+        let d_uuid = sentence.d_uuid;
+        let sentence_from = sentence.sentence_from;
+        let sentence_to = sentence.sentence_to;
+        // Find the corresponding item in content_data by matching content_uk
+        let contentItem = content_data.find(item => item.d_uuid === d_uuid);
+        if (contentItem) {
+            if (translationFrom === "uk" && translationTo === "en") {
+                contentItem.content_en = sentence_to;
+            } else if (translationFrom === "en" && translationTo === "sv") {
+                contentItem.content_sv = sentence_to;
+            }                
+        } else {
+            console.warn(`No matching content found for sentence_from: ${sentence_from}`);
+        }
+    }
 
-    const output = window.for_trans_data;
-    const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(output, null, 2));
-
+    const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(content_data, null, 2));
     const downloadLink = document.createElement("a");
     downloadLink.href = dataStr;
     const now = new Date();
