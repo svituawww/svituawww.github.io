@@ -322,7 +322,7 @@
         // Initialize when page loads
         document.addEventListener('DOMContentLoaded', function() {
             // Detect and set language from URL
-            GL_Settings.language = detectLanguageFromURL();
+           // GL_Settings.language = detectLanguageFromURL();
             console.log('Detected language:', GL_Settings.language);
             
             // Initialize partners carousel

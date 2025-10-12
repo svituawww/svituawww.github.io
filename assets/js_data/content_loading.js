@@ -4,7 +4,8 @@ function loadContentData() {
   if (!data || !Array.isArray(data.content_data)) return;
 
   const contentData = data.content_data;
-  const defaultLang = data.default_lang || 'uk';
+  //const defaultLang = data.default_lang || 'uk';
+  const defaultLang = GL_Settings.language || 'uk';
   const lang = defaultLang;
 
   for (const item of contentData) {
