@@ -559,6 +559,25 @@ document.addEventListener('DOMContentLoaded', function() {
     refreshMenu();
 });
 
+// Fallback: ensure header is rendered even if other scripts race
+function ensureHeaderRendered() {
+    const root = document.getElementById('header-root');
+    if (!root) return;
+    if (!root.firstElementChild) {
+        try { renderHeaderIntoRoot(); } catch {}
+        try { updateMenuVisibility(); } catch {}
+        try { renderLanguageSwitch(); } catch {}
+    }
+}
+
+// Try immediately if DOM is already parsed
+if (document.readyState !== 'loading') {
+    ensureHeaderRendered();
+}
+// Try shortly after in case of late data
+setTimeout(ensureHeaderRendered, 0);
+window.addEventListener('load', ensureHeaderRendered, { once: true });
+
 // Function to apply configuration changes and refresh menu
 function applyMenuConfiguration() {
     refreshMenu();
