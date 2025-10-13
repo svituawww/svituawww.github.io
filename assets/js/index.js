@@ -1,6 +1,6 @@
-        let GL_Settings = {
-            "language": "uk"  // Will be dynamically set based on URL
-        };
+        // let GL_Settings = {
+        //     "language": "uk"  // Will be dynamically set based on URL
+        // };
         
         // Function to extract language from URL
         function detectLanguageFromURL() {
