@@ -251,37 +251,6 @@ const compactMenuConfig = {
     }
 };
 
-const menuLanguageConfig = {
-    "menu_structure": {
-        "uk": {
-            "name_en": "Ukrainian",
-            "name_sv": "Ukrainska",
-            "name_uk": "Українська",
-            "enabled": true,
-            "prefix_url": "uk"
-        },
-        "sv": {
-            "name_en": "Swedish",
-            "name_sv": "Svenska",
-            "name_uk": "Шведська",
-            "enabled": true,
-            "prefix_url": "sv"
-        },
-        "en": {
-            "name_en": "English",
-            "name_sv": "Engelska",
-            "name_uk": "Англійська",
-            "enabled": true,
-            "prefix_url": "en"
-        }
-    },
-    "settings": {
-        "show_flags": false,
-        "show_language_names": true
-    }
-};
-
-
 // Function to generate menu HTML based on configuration
 function normalizeUrl(u) {
     if (!u) return u;
@@ -293,133 +262,78 @@ function normalizeUrl(u) {
     return '/' + u;
 }
 
-// --- Header Renderer (injects header shell into #header-root) ---
-function renderHeaderIntoRoot() {
-        const root = document.getElementById('header-root');
-        if (!root) return; // not this page
-
-        const logoSrc = '/uploads1/2025/06/logo.png';
-
-        root.innerHTML = `
-        <header>
-            <nav class="container">
-                <div class="logo">
-                    <img src="${logoSrc}" alt="SVIT UA Logo">
-                    <h1 d_uuid="fowcy61amc">SVIT UA</h1>
-                </div>
-
-                <ul class="nav-links"></ul>
-
-                <button class="mobile-menu-toggle" onclick="toggleMobileMenu()" aria-label="Menu" d_uuid="13aasmz1ay">☰</button>
-
-                <div style="display:flex; align-items:center; gap:20px;">
-                    <div class="language-switch"></div>
-                </div>
-            </nav>
-
-            <div class="mobile-menu-overlay" onclick="closeMobileMenu()"></div>
-      
-            <nav class="mobile-menu">
-                <button class="mobile-menu-close" onclick="closeMobileMenu()" aria-label="Close Menu" d_uuid="1owbqn1ofi">✕</button>
-                <ul class="mobile-nav-links"></ul>
-                <div class="mobile-language-section">
-                    <h4 d_uuid="353m501nni">Мова / Language</h4>
-                    <div class="mobile-language-switch"></div>
-                </div>
-            </nav>
-        </header>`;
-}
-
-// --- Language Switch Renderer ---
-function renderLanguageSwitch() {
-        const lang = (window.GL_Settings && GL_Settings.language) || 'uk';
-        const urlname = (window.GL_Settings && GL_Settings.urlname) || 'index.html';
-        const desktopWrap = document.querySelector('.language-switch');
-        const mobileWrap = document.querySelector('.mobile-language-switch');
-        const links = [
-                { code: 'uk', title: 'Українська', emoji: '🇺🇦', href: `/uk/${urlname}`, d_uuid: 'ctsnhy4kmn' },
-                { code: 'sv', title: 'Svenska',     emoji: '🇸🇪', href: `/sv/${urlname}`, d_uuid: '2rus946jnh' },
-                { code: 'en', title: 'English',     emoji: '🇬🇧', href: `/en/${urlname}`, d_uuid: 'w572t7uwil' }
-        ];
-        if (desktopWrap) {
-                desktopWrap.innerHTML = links.map(l => `<a href="${l.href}" class="lang-btn${l.code===lang?' active':''}" title="${l.title}" d_uuid="${l.d_uuid}">${l.emoji}</a>`).join('');
-        }
-        if (mobileWrap) {
-                mobileWrap.innerHTML = links.map(l => `<a href="${l.href}" class="lang-btn${l.code===lang?' active':''}" title="${l.title}">${l.emoji}</a>`).join('');
-        }
-}
-
-  
-
-// function generateLanguageMenuHTML(config = compactMenuConfig) {
-//     let languageMenu = '';
-//     const lang = GL_Settings.language || 'uk';
-//     const prefixUrl = menuLanguageConfig.menu_structure[lang].prefix_url;
-
-//     // add button to toggle mobile menu
-//     languageMenu += `
-//         <button class="mobile-menu-toggle" onclick="toggleMobileMenu()" aria-label="Menu" d_uuid="13aasmz1ay">
-//             ☰
-//         </button>
-//         <div style="display: flex; align-items: center; gap: 20px;">
-//             <div class="language-switch">
-//                 <a href="/uk/${GL_Settings.urlname || 'index.html'}" class="lang-btn ${lang === 'uk' ? 'active' : ''}" title="Українська" d_uuid="ctsnhy4kmn">🇺🇦</a>
-//                 <a href="/sv/${GL_Settings.urlname || 'index.html'}" class="lang-btn ${lang === 'sv' ? 'active' : ''}" title="Svenska" d_uuid="2rus946jnh">🇸🇪</a>
-//                 <a href="/en/${GL_Settings.urlname || 'index.html'}" class="lang-btn ${lang === 'en' ? 'active' : ''}" title="English" d_uuid="w572t7uwil">🇬🇧</a>
-//             </div>
-//         </div>
-//     `;
-
-//     return languageMenu;
-// }
-
 function generateMenuHTML(config = compactMenuConfig) {
-    const lang = (window.GL_Settings && GL_Settings.language) || 'uk';
     let desktopMenu = '';
     let mobileMenu = '';
-
-    for (const [key, item] of Object.entries(config.menu_structure)) {
-        if (!item || !item.enabled) continue;
-        const itemHref = normalizeUrl(item.url);
-        const displayName = item[`name_${lang}`] || key;
-
-        // Desktop menu item
-        if (item.submenu) {
-            const enabledSubItems = Object.entries(item.submenu).filter(([, subItem]) => subItem && subItem.enabled);
-            if (enabledSubItems.length > 0) {
-                desktopMenu += `<li class="has-dropdown"><a href="${itemHref}">${displayName}</a><div class="nav-dropdown">`;
-                for (const [subKey, subItem] of enabledSubItems) {
-                    const subHref = normalizeUrl(subItem.url);
-                    const subDisplayName = subItem[`name_${lang}`] || subKey;
-                    desktopMenu += `<a href="${subHref}">${subDisplayName}</a>`;
+    
+    Object.entries(config.menu_structure).forEach(([key, item]) => {
+        // Only generate menu items that are enabled
+        if (item.enabled) {
+            const itemHref = normalizeUrl(item.url);
+            const lang = GL_Settings.language || 'uk';
+            const displayName = item[`name_${lang}`] || key;            
+            // Desktop menu item
+            if (item.submenu) {
+                // Check if there are any enabled submenu items
+                const enabledSubItems = Object.entries(item.submenu).filter(([subKey, subItem]) => subItem.enabled);
+                
+                if (enabledSubItems.length > 0) {
+                    desktopMenu += `
+                        <li class="has-dropdown">
+                            <a href="${itemHref}">${displayName}</a>
+                            <div class="nav-dropdown">
+                    `;
+                    enabledSubItems.forEach(([subKey, subItem]) => {
+                        const subHref = normalizeUrl(subItem.url);
+                        const subDisplayName = subItem[`name_${lang}`] || subKey;
+                        desktopMenu += `<a href="${subHref}">${subDisplayName}</a>`;
+                    });
+                    desktopMenu += `
+                            </div>
+                        </li>
+                    `;
+                } else {
+                    // If no submenu items are enabled, show as regular link
+                    desktopMenu += `<li><a href="${itemHref}">${displayName}</a></li>`;
                 }
-                desktopMenu += `</div></li>`;
             } else {
                 desktopMenu += `<li><a href="${itemHref}">${displayName}</a></li>`;
             }
-        } else {
-            desktopMenu += `<li><a href="${itemHref}">${displayName}</a></li>`;
-        }
-
-        // Mobile menu item
-        if (item.submenu) {
-            const enabledMobileSubItems = Object.entries(item.submenu).filter(([, subItem]) => subItem && subItem.enabled && subItem.mobile_enabled);
-            if (enabledMobileSubItems.length > 0) {
-                mobileMenu += `<li class="has-dropdown"><a href="${itemHref}" onclick="toggleMobileDropdown(this)">${displayName}</a><div class="mobile-dropdown">`;
-                for (const [subKey, subItem] of enabledMobileSubItems) {
-                    const subHref = normalizeUrl(subItem.url);
-                    const subDisplayName = subItem[`name_${lang}`] || subKey;
-                    mobileMenu += `<a href="${subHref}" onclick="closeMobileMenu()">${subDisplayName}</a>`;
+            
+            // Mobile menu item
+            if (item.mobile_enabled) {
+                if (item.submenu) {
+                    // Check if there are any enabled mobile submenu items
+                    const enabledMobileSubItems = Object.entries(item.submenu).filter(([subKey, subItem]) => 
+                        subItem.enabled && subItem.mobile_enabled
+                    );
+                    
+                    if (enabledMobileSubItems.length > 0) {                                                
+                        mobileMenu += `
+                            <li class="has-dropdown">
+                                <a href="${itemHref}" onclick="toggleMobileDropdown(this)">${displayName}</a>
+                                <div class="mobile-dropdown">
+                        `;
+                        enabledMobileSubItems.forEach(([subKey, subItem]) => {
+                            const subHref = normalizeUrl(subItem.url);
+                            const subDisplayName = subItem[`name_${lang}`] || subKey;
+                            mobileMenu += `<a href="${subHref}" onclick="closeMobileMenu()">${subDisplayName}</a>`;
+                        });
+                        mobileMenu += `
+                                </div>
+                            </li>
+                        `;
+                    } else {
+                        // If no mobile submenu items are enabled, show as regular link
+                        mobileMenu += `<li><a href="${itemHref}" onclick="closeMobileMenu()">${displayName}</a></li>`;
+                    }
+                } else {
+                    mobileMenu += `<li><a href="${itemHref}" onclick="closeMobileMenu()">${displayName}</a></li>`;
                 }
-                mobileMenu += `</div></li>`;
-            } else {
-                mobileMenu += `<li><a href="${itemHref}" onclick="closeMobileMenu()">${displayName}</a></li>`;
             }
-        } else {
-            mobileMenu += `<li><a href="${itemHref}" onclick="closeMobileMenu()">${displayName}</a></li>`;
         }
-    }
-
+    });
+    
     return { desktopMenu, mobileMenu };
 }
 
@@ -503,9 +417,6 @@ function refreshMenu() {
 
 // Initialize menu when DOM is loaded
 document.addEventListener('DOMContentLoaded', function() {
-    // Inject header shell if placeholder exists
-    try { renderHeaderIntoRoot(); } catch {}
-
     // Check if we're on a page that uses compact menu (variant 2)
     const isCompactMenu = document.querySelector('body').classList.contains('compact-menu') || 
                          window.location.pathname.includes('index_v2');
@@ -515,31 +426,10 @@ document.addEventListener('DOMContentLoaded', function() {
     } else {
         updateMenuVisibility();
     }
-    // Render language switch into header
-    try { renderLanguageSwitch(); } catch {}
     
     // Apply any configuration changes immediately
     refreshMenu();
 });
-
-// Fallback: ensure header is rendered even if other scripts race
-function ensureHeaderRendered() {
-    const root = document.getElementById('header-root');
-    if (!root) return;
-    if (!root.firstElementChild) {
-        try { renderHeaderIntoRoot(); } catch {}
-        try { updateMenuVisibility(); } catch {}
-        try { renderLanguageSwitch(); } catch {}
-    }
-}
-
-// Try immediately if DOM is already parsed
-if (document.readyState !== 'loading') {
-    ensureHeaderRendered();
-}
-// Try shortly after in case of late data
-setTimeout(ensureHeaderRendered, 0);
-window.addEventListener('load', ensureHeaderRendered, { once: true });
 
 // Function to apply configuration changes and refresh menu
 function applyMenuConfiguration() {
@@ -562,19 +452,4 @@ if (typeof module !== 'undefined' && module.exports) {
         refreshMenu,
         applyMenuConfiguration
     };
-}
-
-// Ensure functions are accessible on window in the browser
-try {
-    if (typeof window !== 'undefined') {
-        window.renderHeaderIntoRoot = window.renderHeaderIntoRoot || renderHeaderIntoRoot;
-        window.renderLanguageSwitch = window.renderLanguageSwitch || renderLanguageSwitch;
-        window.generateMenuHTML = window.generateMenuHTML || generateMenuHTML;
-        window.updateMenuVisibility = window.updateMenuVisibility || updateMenuVisibility;
-        window.updateCompactMenuVisibility = window.updateCompactMenuVisibility || updateCompactMenuVisibility;
-        window.refreshMenu = window.refreshMenu || refreshMenu;
-        window.applyMenuConfiguration = window.applyMenuConfiguration || applyMenuConfiguration;
-    }
-} catch (e) {
-    // noop
 }
