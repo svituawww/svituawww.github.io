@@ -349,66 +349,29 @@ function renderLanguageSwitch() {
         }
 }
 
+  
 
-            // <button class="mobile-menu-toggle" onclick="toggleMobileMenu()" aria-label="Menu" d_uuid="13aasmz1ay">
-            //     ☰
-            // </button>
-            
-            // <div style="display: flex; align-items: center; gap: 20px;">
-            //     <div class="language-switch">
-            //         <a href="#" class="lang-btn active" title="Українська" d_uuid="ctsnhy4kmn">🇺🇦</a>
-            //         <a href="/sv/index.html" class="lang-btn" title="Svenska" d_uuid="2rus946jnh">🇸🇪</a>
-            //         <a href="/en/index.html" class="lang-btn" title="English" d_uuid="w572t7uwil">🇬🇧</a>
-            //     </div>
-            // </div>
+// function generateLanguageMenuHTML(config = compactMenuConfig) {
+//     let languageMenu = '';
+//     const lang = GL_Settings.language || 'uk';
+//     const prefixUrl = menuLanguageConfig.menu_structure[lang].prefix_url;
 
+//     // add button to toggle mobile menu
+//     languageMenu += `
+//         <button class="mobile-menu-toggle" onclick="toggleMobileMenu()" aria-label="Menu" d_uuid="13aasmz1ay">
+//             ☰
+//         </button>
+//         <div style="display: flex; align-items: center; gap: 20px;">
+//             <div class="language-switch">
+//                 <a href="/uk/${GL_Settings.urlname || 'index.html'}" class="lang-btn ${lang === 'uk' ? 'active' : ''}" title="Українська" d_uuid="ctsnhy4kmn">🇺🇦</a>
+//                 <a href="/sv/${GL_Settings.urlname || 'index.html'}" class="lang-btn ${lang === 'sv' ? 'active' : ''}" title="Svenska" d_uuid="2rus946jnh">🇸🇪</a>
+//                 <a href="/en/${GL_Settings.urlname || 'index.html'}" class="lang-btn ${lang === 'en' ? 'active' : ''}" title="English" d_uuid="w572t7uwil">🇬🇧</a>
+//             </div>
+//         </div>
+//     `;
 
-
-        // <!-- Mobile Menu Overlay -->
-        // <div class="mobile-menu-overlay" onclick="closeMobileMenu()"></div>
-        
-        // <!-- Mobile Menu -->
-        // <nav class="mobile-menu">
-        //     <button class="mobile-menu-close" onclick="closeMobileMenu()" aria-label="Close Menu" d_uuid="1owbqn1ofi">
-        //         ✕
-        //     </button>
-            
-        //     <ul class="mobile-nav-links">
-
-        //     </ul>
-
-        //     <div class="mobile-language-section">
-        //         <h4 d_uuid="353m501nni">Мова / Language</h4>
-        //         <div class="mobile-language-switch">
-        //             <a href="#" class="lang-btn active" title="Українська" d_uuid="1rmkzyg1ow">🇺🇦</a>
-        //             <a href="/sv/index.html" class="lang-btn" title="Svenska" d_uuid="pgfy87ct5f">🇸🇪</a>
-        //             <a href="/en/index.html" class="lang-btn" title="English" d_uuid="1360ilc1t9">🇬🇧</a>
-        //         </div>
-        //     </div>
-        // </nav>
-
-
-function generateLanguageMenuHTML(config = compactMenuConfig) {
-    let languageMenu = '';
-    const lang = GL_Settings.language || 'uk';
-    const prefixUrl = menuLanguageConfig.menu_structure[lang].prefix_url;
-
-    // add button to toggle mobile menu
-    languageMenu += `
-        <button class="mobile-menu-toggle" onclick="toggleMobileMenu()" aria-label="Menu" d_uuid="13aasmz1ay">
-            ☰
-        </button>
-        <div style="display: flex; align-items: center; gap: 20px;">
-            <div class="language-switch">
-                <a href="/uk/${GL_Settings.urlname || 'index.html'}" class="lang-btn ${lang === 'uk' ? 'active' : ''}" title="Українська" d_uuid="ctsnhy4kmn">🇺🇦</a>
-                <a href="/sv/${GL_Settings.urlname || 'index.html'}" class="lang-btn ${lang === 'sv' ? 'active' : ''}" title="Svenska" d_uuid="2rus946jnh">🇸🇪</a>
-                <a href="/en/${GL_Settings.urlname || 'index.html'}" class="lang-btn ${lang === 'en' ? 'active' : ''}" title="English" d_uuid="w572t7uwil">🇬🇧</a>
-            </div>
-        </div>
-    `;
-
-    return languageMenu;
-}
+//     return languageMenu;
+// }
 
 function generateMenuHTML(config = compactMenuConfig) {
     const lang = (window.GL_Settings && GL_Settings.language) || 'uk';
@@ -599,4 +562,19 @@ if (typeof module !== 'undefined' && module.exports) {
         refreshMenu,
         applyMenuConfiguration
     };
+}
+
+// Ensure functions are accessible on window in the browser
+try {
+    if (typeof window !== 'undefined') {
+        window.renderHeaderIntoRoot = window.renderHeaderIntoRoot || renderHeaderIntoRoot;
+        window.renderLanguageSwitch = window.renderLanguageSwitch || renderLanguageSwitch;
+        window.generateMenuHTML = window.generateMenuHTML || generateMenuHTML;
+        window.updateMenuVisibility = window.updateMenuVisibility || updateMenuVisibility;
+        window.updateCompactMenuVisibility = window.updateCompactMenuVisibility || updateCompactMenuVisibility;
+        window.refreshMenu = window.refreshMenu || refreshMenu;
+        window.applyMenuConfiguration = window.applyMenuConfiguration || applyMenuConfiguration;
+    }
+} catch (e) {
+    // noop
 }
