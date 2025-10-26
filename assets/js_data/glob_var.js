@@ -152,7 +152,7 @@ class GlobalVars {
 
   SaveToFB_Content_By_Index(IndexContent, var_item_content, content_text) {
     let addurl = "root_content/tables/0/rows"+"/"+IndexContent+"/"+var_item_content;
-    let ObjRequest = GetObjForRequest();
+    let ObjRequest = this.URL_DS.GetObjForRequest();
     ObjRequest.vobj = content_text;
     ObjRequest.ametod = 'PUT';
     ObjRequest.addUrl = addurl;      
