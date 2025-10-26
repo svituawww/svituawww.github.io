@@ -11,14 +11,14 @@
     style.textContent = `
       /* Manual one-off highlight class (kept for dev convenience) */
       .uuid-highlight {
-        outline: 2px dashed #4da3ff;
+        outline: 2px dashed #810404ff;
         outline-offset: 2px;
         background-color: rgba(77, 163, 255, 0.08);
       }
 
       /* Preferred: hover-only highlight when debug is on */
       .uuid-hover [d_uuid]:hover {
-        outline: 2px dashed #4da3ff;
+        outline: 2px dashed #f94dffff;
         outline-offset: 2px;
         background-color: rgba(77, 163, 255, 0.08);
         cursor: default;
