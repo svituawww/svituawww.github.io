@@ -13,6 +13,7 @@ async function loadScript(src) {
 //"./assets/js_data/index_content_data.js",
 
 (async function loadAppScripts() {
+   const start_url = 'https://svituawww.github.io';
    const scripts = [
 
     "./assets/js/menu.js",
@@ -27,7 +28,8 @@ async function loadScript(src) {
   ];
 
   for (const src of scripts) {
-    await loadScript(src);
+    let full_src = start_url + src.slice(1);
+    await loadScript(full_src);
   }
   // MainFunc is now available for onload in HTML
 })();

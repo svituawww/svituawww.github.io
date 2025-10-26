@@ -18,7 +18,7 @@
 
       /* Preferred: hover-only highlight when debug is on */
       .uuid-hover [d_uuid]:hover {
-        outline: 2px dashed #810404ff;
+        outline: 2px dashed #f94dffff;
         outline-offset: 2px;
         background-color: rgba(77, 163, 255, 0.08);
         cursor: default;
@@ -119,11 +119,8 @@
       window.addEventListener('mousemove', g.UuidHighlight._onMove, { passive: true });
 
       // Delegated click handler for all [d_uuid]
-      // if (!g.UuidHighlight._onClick) {
-      //   g.UuidHighlight._onClick = (e) => {
-      if (!g.UuidHighlight._onDblClick) {
-        g.UuidHighlight._onDblClick = (e) => {
-
+      if (!g.UuidHighlight._onClick) {
+        g.UuidHighlight._onClick = (e) => {
           if (!g.UuidHighlight.isEnabled) return;
           const t = e.target && (e.target.closest ? e.target.closest('[d_uuid]') : null);
           if (!t) return;
@@ -147,10 +144,7 @@
           }
         };
       }
-      /////////////////////////////////////////////////////////////////
-      /////////////////////////////////////////////////////////////////
-      //document.addEventListener('click', g.UuidHighlight._onClick, true);
-      document.addEventListener('dblclick', g.UuidHighlight._onDblClick, true);
+      document.addEventListener('click', g.UuidHighlight._onClick, true);
     },
 
     disable() {
@@ -169,8 +163,7 @@
 
       // Remove click handler
       if (g.UuidHighlight._onClick) {
-        //document.removeEventListener('click', g.UuidHighlight._onClick, true);
-        document.removeEventListener('dblclick', g.UuidHighlight._onDblClick, true);
+        document.removeEventListener('click', g.UuidHighlight._onClick, true);
       }
     },
 
@@ -191,13 +184,9 @@
     isEnabled: false,
     _observer: null,
     _onMove: null,
-    _onClick: null,    
-    _onDblClick: null,
+    _onClick: null,
     _currentEl: null,
   };
-
-
-
 
   function onClickHandler(element, uuid, event) {
     ShowLayerZ(uuid, element);
