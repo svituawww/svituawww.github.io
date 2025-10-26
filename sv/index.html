@@ -12,18 +12,22 @@
     <!-- Page-specific styles -->
     <link rel="stylesheet" href="/assets/css/index_m.css">
     <link rel="stylesheet" href="/assets/css/petition.css">
-    <script> const GL_Settings = { language: "sv" }; </script>
-    <script src="/assets/js/index.js"></script>
-    <script src="/assets/js/menu.js"></script>
-    <script src="/assets/js/mobile_menu_functions.js"></script>
+    <script> 
+        const GL_Settings = { 
+                language: "sv",
+                page_idstr: "index.html",
+                loadFromFirebase: true, 
+                debugHighlight: true, 
+                UuidHighlight: true
+             };
+     </script>
     <script src="https://cdn.jsdelivr.net/npm/qrious@4.0.2/dist/qrious.min.js"></script>
-    <script src="/assets/js/qrcode_index.js"></script>
-    <script src="/assets/js_data/content_loading.js"></script>
-    <script src="/assets/js_data/index_content_data.js"></script>    
-    <!-- <script src="help_js/index_t1.js"></script> -->
+    <script src="/assets/js_data/main_loadscripts.js"></script>
+
 
 </head>
-<body class="compact-menu" onload="loadContentData();">
+<!-- <body class="compact-menu" onload="loadContentData();"> -->
+<body class="compact-menu" onload="MainFunc();">
 
     <!-- Header begin "uuid_id":"tmpl_a456-426614174002" -->
     <header>
@@ -33,11 +37,7 @@
                 <h1 d_uuid="fowcy61amc">SVIT UA</h1>
             </div>
             
-            <ul class="nav-links">
-
-
-
-            </ul>
+            <ul class="nav-links">  </ul>
 
             <!-- Mobile Menu Toggle -->
             <button class="mobile-menu-toggle" onclick="toggleMobileMenu()" aria-label="Menu" d_uuid="13aasmz1ay">
