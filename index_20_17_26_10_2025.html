@@ -14,20 +14,66 @@
     <link rel="stylesheet" href="/assets/css/petition.css">
     <script> const GL_Settings = { language: "uk", urlname: "index.html" }; </script>
     <script src="/assets/js/index.js"></script>
-    <script src="/assets/js/menu.js"></script>
-    <script src="/assets/js/mobile_menu_functions.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/qrious@4.0.2/dist/qrious.min.js"></script>
+
+    <script src="/assets/js/menu.js"></script>
+    <script src="/assets/js/mobile_menu_functions.js"></script>    
     <script src="/assets/js/qrcode_index.js"></script>
     <script src="/assets/js_data/content_loading.js"></script>
-    <script src="/assets/js_data/index_content_data.js"></script>
-    <script src="/assets/js/header_fallback.js"></script>
+    <script src="/assets/js_data/index_content_data.js"></script>    
     <!-- <script src="help_js/index_t1.js"></script> -->
 
 </head>
 <body class="compact-menu" onload="loadContentData();">
 
-    <!-- Header will be rendered dynamically by assets/js/menu.js -->
-    <div id="header-root"></div>
+    <!-- Header begin "uuid_id":"tmpl_a456-426614174002" -->
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <img src="/uploads1/2025/06/logo.png" alt="SVIT UA Logo">
+                <h1 d_uuid="fowcy61amc">SVIT UA</h1>
+            </div>
+            
+            <ul class="nav-links">  </ul>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()" aria-label="Menu" d_uuid="13aasmz1ay">
+                ☰
+            </button>
+            
+            <div style="display: flex; align-items: center; gap: 20px;">
+                <div class="language-switch">
+                    <a href="#" class="lang-btn active" title="Українська" d_uuid="ctsnhy4kmn">🇺🇦</a>
+                    <a href="/sv/index.html" class="lang-btn" title="Svenska" d_uuid="2rus946jnh">🇸🇪</a>
+                    <a href="/en/index.html" class="lang-btn" title="English" d_uuid="w572t7uwil">🇬🇧</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu Overlay -->
+        <div class="mobile-menu-overlay" onclick="closeMobileMenu()"></div>
+        
+        <!-- Mobile Menu -->
+        <nav class="mobile-menu">
+            <button class="mobile-menu-close" onclick="closeMobileMenu()" aria-label="Close Menu" d_uuid="1owbqn1ofi">
+                ✕
+            </button>
+            
+            <ul class="mobile-nav-links">
+
+            </ul>
+
+            <div class="mobile-language-section">
+                <h4 d_uuid="353m501nni">Мова / Language</h4>
+                <div class="mobile-language-switch">
+                    <a href="#" class="lang-btn active" title="Українська" d_uuid="1rmkzyg1ow">🇺🇦</a>
+                    <a href="/sv/index.html" class="lang-btn" title="Svenska" d_uuid="pgfy87ct5f">🇸🇪</a>
+                    <a href="/en/index.html" class="lang-btn" title="English" d_uuid="1360ilc1t9">🇬🇧</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+  <!-- Header end "uuid_id":"tmpl_a456-426614174002" -->
 
 
     <!-- Hero Section -->
